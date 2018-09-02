@@ -25,6 +25,7 @@ Carril = Pessoa("Fernando Carril")
 Ceci = Pessoa("Cecilia Tanaka")
 Christian = Pessoa("Christian") # nome completo?
 Dandara = Pessoa("Dandara Jatobá")
+DanielaIwassa = Pessoa("Daniela Iwassa")
 Dente = Pessoa("Marcelo Araujo Dente")
 DQ = Pessoa("Daniel Quadros")
 Emerson = Pessoa("Emerson Monteiro Sobreiro") #padawan do Fabricio
@@ -121,6 +122,13 @@ jedis = [
 ]
 
 CMC = ConselhoMandaChuva(jedis)
+
+# CMC de 19 de Janeiro de 2016:
+CMC.data("2016-01-19")
+Mike.apresenta_padawans([DanielaIwassa,
+                         Carril])
+CMC.aprova_associado(DanielaIwassa, endosso=[Mike])
+CMC.aprova_associado(Carril, endosso=[Mike])
 
 # CMC de 16 de Fevereiro de 2016:
 CMC.data("2016-02-16")
