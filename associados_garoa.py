@@ -6,6 +6,7 @@ Abdo = Pessoa("Alexandre Abdo")
 Abreu = Pessoa("Abreu") #nome?
 Alexandra = Pessoa("Alexandra Percario")
 Aleph = Pessoa("Alberto Fabiano Caires de Medeiros")
+AlexPorto = Pessoa("Alex Porto")
 Allan = Pessoa("Allan") #nome completo? Seria esse o Allan Moreira?
 AllanTrindade = Pessoa("Allan Trindade") # (de São Vicente)
 Anchises = Pessoa("Anchises Moraes Guimarães de Paula")
@@ -53,6 +54,7 @@ Gabs = Pessoa("Gabriel 'Gabs'") #nome completo?
 GabrielAraujo = Pessoa("Gabriel Araújo")
 Giovanna = Pessoa("Giovanna")
 GringoMexico = Pessoa("Gringo do México") #nome real?
+Gola = Pessoa("Bruno Gola")
 Guisso = Pessoa("Fernando Guisso")
 GustavoRibeiro = Pessoa("GustavoRibeiro")
 Gutem = Pessoa("Gutemberg Nunes de Carvalho")
@@ -76,6 +78,7 @@ Lechuga = Pessoa("Lechuga") #nome completo?
 LeonardoSantos = Pessoa("Leonardo Garcia Tales dos Santos")
 Lint = Pessoa("Carlos Lint")
 LoganBr = Pessoa("Ricardo 'Logan'") #nome completo?
+Luca = Pessoa("Luca Toledo")
 LuisLeao = Pessoa("Luis Fernando de Oliveira Leão")
 Luiz = Pessoa("Luiz") #nome completo?
 LuizVieira = Pessoa("Luiz Vieira")
@@ -124,6 +127,7 @@ VJPixel = Pessoa("VJ Pixel")
 Vrech = Pessoa("Matheus Vral Vrech") # (São Carlos)
 Yumi = Pessoa("Amanda Yumi Ambriola")
 Yanava = Pessoa("Yanava") # nome?
+WagnerSartori = Pessoa("Wagner Sartori")
 Wesley = Pessoa("Wesley Shaimon")
 
 #HACK:
@@ -192,6 +196,9 @@ CMC.data("2011-05-24")
 CMC.data("2011-06-21")
 Oda.apresenta_padawan(Samir)
 Anchises.apresenta_padawan(CleitonAlves)
+# Em alguma data o Tony se associou (sem passar por padawanice?). Precisamos verificar.
+# Por enquanto vai constar aqui, pois é a primeira ata em que o nome dele é citado:
+CMC.aprova_associado(Tony, endosso="HACK")
 
 # CMC de 26 de Julho de 2011:
 CMC.data("2011-07-26")
@@ -220,6 +227,14 @@ VJPixel.apresenta_padawans([TiagoTadeu,
 Anchises.apresenta_padawans([GabrielAraujo,
                              LuizVieira,
                              LoganBr])
+
+# CMC de 18 de Outubro de 2011:
+CMC.data("2011-10-18")
+Agaelebe.apresenta_padawan(WagnerSartori)
+Aylons.apresenta_padawan(Gola)
+Tony.apresenta_padawan(AlexPorto)
+Oda.apresenta_padawan(Luca)
+CMC.aprova_associado(Carine)
 
 #HACK:
 Alguem.apresenta_padawans([
@@ -251,7 +266,6 @@ for a in [Allan,
           Roger,
           Tales,
           Tiago,
-          Tony,
           Vido,
           Yanava,
           Yumi,
