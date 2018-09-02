@@ -5,12 +5,13 @@ from garoa import Pessoa, ConselhoMandaChuva
 Abdo = Pessoa("Alexandre Abdo")
 Abreu = Pessoa("Abreu") #nome?
 Alexandra = Pessoa("Alexandra Percario")
+Aleph = Pessoa("Alberto Fabiano")
 Allan = Pessoa("Allan") #nome completo?
 AllanTrindade = Pessoa("Allan Trindade") # (de São Vicente)
 Anchises = Pessoa("Anchises")
 Anderson = Pessoa("Anderson Queiroz") # irmao gemeo do Tiago
 Andre = Pessoa("Andre") #nome completo? (seria esse o Hermann? ou o Oliveira?)
-AndreOliveira = Pessoa("Andre Oliveira")
+AndreOliveira = Pessoa("Andre de Oliveira")
 AndreHermann = Pessoa("André Hermann")
 Afonso = Pessoa("Afonso Coutinho")
 Agaelebe = Pessoa("Hugo Lima Borges")
@@ -20,6 +21,7 @@ BrunoBorges = Pessoa("Bruno Lima Borges") # (Irmão do Hugo)
 BrunoLP = Pessoa("Bruno Luiz de Paula")
 CSM = Pessoa("CSM") #nome? Seria esse o Carlos CM?
 CarlosCM = Pessoa("Carlos CM") # do time de CTF do Garoa
+Carril = Pessoa("Fernando Carril")
 Christian = Pessoa("Christian") # nome completo?
 Dandara = Pessoa("Dandara Jatobá")
 Dente = Pessoa("Marcelo Araujo Dente")
@@ -32,8 +34,9 @@ Eros = Pessoa("Eros") #nome completo?
 FabioH = Pessoa("Fabio Hirano")
 FabricioBiazzotto = Pessoa("Fabricio Biazzotto")
 Fellype = Pessoa("Fellype Cazorino")
-FMolina = Pessoa("Fernando Molina")
 FelipeMoreira = Pessoa("Felipe Moreira")
+Fernanda = Pessoa("Fernanda") # do Lab de Garagem #nome completo?
+FMolina = Pessoa("Fernando Molina")
 FSouza = Pessoa("Felipe Souza")
 Gabi = Pessoa("Gabriela Fonseca")
 Gabrielzinho = Pessoa("Gabriel Almeida")
@@ -54,6 +57,8 @@ Juca = Pessoa("Felipe Correa da Silva Sanches")
 Kemel = Pessoa("Kemel Zaidan")
 LaTeX = Pessoa("Leandro Teixeira (LaTeX)")
 LAlcantara = Pessoa("Lucas Alcântara")
+Lechuga = Pessoa("Lechuga") #nome completo?
+LeonardoSantos = Pessoa("Leonardo Garcia Tales dos Santos")
 LuisLeao = Pessoa("Luis Fernando de Oliveira Leão")
 Marcel = Pessoa("Marcel") #nome?
 MarceloCampos = Pessoa("Marcelo Campos")
@@ -83,6 +88,7 @@ Tony = Pessoa("Tony de Marco")
 Thomas = Pessoa("Thomas") # Francês
 Ulysses = Pessoa("Ulysses Soldá Junior")
 VAlves = Pessoa("Vitor Alves")
+Vecchio = Pessoa("Vecchio") #nome completo?
 Vitor = Pessoa("Vitor Fernandes")
 Vido = Pessoa("Lucas Vido")
 Villares = Pessoa("Alexandre Villares")
@@ -99,7 +105,6 @@ jedis = [
   Anchises,
   Juca,
   Vido,
-  Guisso,
   Mike,
   Tiago,
   Yumi,
@@ -108,6 +113,16 @@ jedis = [
 ]
 
 CMC = ConselhoMandaChuva(jedis)
+
+# CMC de 18 de Outubro de 2016:
+CMC.data("2016-10-18")
+CMC.aprova_associado(Sandro, endosso=[Mike])
+CMC.observa_desligamento(AndreOliveira, motivo="3 (ou mais) meses de atraso na mensalidade")
+CMC.observa_desligamento(LeonardoSantos, motivo="3 (ou mais) meses de atraso na mensalidade")
+
+# CMC de 15 de Novembro de 2016:
+CMC.data("2016-11-15")
+FabricioBiazzotto.apresenta_padawan(RodrigoSilveira)
 
 # CMC de 20 de Dezembro de 2016:
 CMC.data("2016-12-20")
