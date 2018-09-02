@@ -30,6 +30,7 @@ Carril = Pessoa("Fernando Carril")
 Ceci = Pessoa("Cecilia Tanaka")
 Christian = Pessoa("Christian") # nome completo?
 CleitonAlves = Pessoa("Cleiton Alves")
+Coruja = Pessoa("Gustavo Lima")
 Dandara = Pessoa("Dandara Jatobá")
 DanielaIwassa = Pessoa("Daniela Iwassa")
 DavidRobert = Pessoa("David Robert")
@@ -93,6 +94,7 @@ Miklos = Pessoa("Cláudio Miklos")
 Moreno = Pessoa("Moreno Hassem")
 NelsonCanton = Pessoa("Nelson Canton")
 NelsonBrito = Pessoa("Nelson Brito")
+Nessa = Pessoa("Vanessa Guedes")
 Oda = Pessoa("Eduardo Oda")
 Otto = Pessoa("Otto Heringer")
 Pampolha = Pessoa("Pampolha") #nome?
@@ -120,6 +122,7 @@ Thomas = Pessoa("Thomas") # Francês
 Ulysses = Pessoa("Ulysses Soldá Junior")
 VAlves = Pessoa("Vitor Alves")
 Vecchio = Pessoa("Vecchio") #nome completo?
+VictorScattone = Pessoa("Victor Scattone")
 Vitor = Pessoa("Vitor Fernandes")
 Vido = Pessoa("Lucas Vido")
 Villares = Pessoa("Alexandre Villares")
@@ -235,6 +238,13 @@ Aylons.apresenta_padawan(Gola)
 Tony.apresenta_padawan(AlexPorto)
 Oda.apresenta_padawan(Luca)
 CMC.aprova_associado(Carine)
+
+# CMC de 22 de Novembro de 2011:
+CMC.data("2011-11-22")
+Carine.apresenta_padawan(Nessa)
+CMC.aprova_associado(WagnerSartori, endosso=[Agaelebe])
+Anchises.apresenta_padawans([VictorScattone,
+                             Coruja])
 
 #HACK:
 Alguem.apresenta_padawans([
