@@ -16,6 +16,7 @@ CarlosCM = "Carlos CM" # do time de CTF do Garoa
 Dandara = "Dandara Jatobá"
 Dente = "Dente" # nome?
 DQ = "Daniel Quadros"
+Emerson = "Emerson Monteiro Sobreiro" #padawan do Fabricio
 Erik = "Erik Dataleak Ramos" #nome real?
 Erin = "Erin" #nome completo?
 FabioH = "Fabio Hirano"
@@ -26,6 +27,7 @@ FSouza = "Felipe Souza"
 Gabrielzinho = "Gabriel Almeida"
 GringoMexico = "Gringo do México" #nome real?
 Guisso = "Fernando Guisso"
+GustavoRibeiro = "GustavoRibeiro"
 Gutem = "Gutemberg Nunes"
 GutoMaia = "Gustavo Maia Neto"
 Helena = "Helena (amiga do Afonso)"
@@ -57,7 +59,7 @@ Sandro = "Sandro Friedland"
 Sebastiao = "Sebastião" #nome completo? Seria esse o Sebastiao Barreto ?
 Subnet = "Luís Guilherme Pires Martins de Abreu"
 Tales = "Tales Cione"
-Taumaturgo = "Taumaturgo" #nome completo? Padawan do Dente
+Taumaturgo = "Raphael Taumaturgo" # "o cara da cerveja"
 Thiago = "Thiago" # seria o irmao gemeo do Anderson?
 Thomas = "Thomas" # Francês
 Ulysses = "Ulysses Soldá Junior"
@@ -68,6 +70,18 @@ VJPixel = "VJ Pixel"
 Vrech = "Matheus Vral Vrech" # (São Carlos)
 Yumi = "Amanda Yumi Ambriola"
 Wesley = "Wesley Shaimon"
+
+# CMC de 18 de Julho de 2017:
+CMC.data("2017-07-18")
+CMC.readmite_associado(DQ)
+CMC.aprova_associado(Emerson, endosso=[Vido])
+
+# CMC de 15 de Agosto de 2017:
+CMC.data("2017-08-15")
+Dente.apresenta_padawan(Traumaturgo) # "o cara da cerveja"
+Juca.apresenta_padawan(GustavoRibeiro)
+CMC.aprova_associado(GustavoRibeiro, endosso=[Juca])
+CMC.observa_desligamento(GutoMaia, motivo="3 meses de atraso na mensalidade")
 
 # CMC de 19 de Setembro de 2017:
 CMC.data("2017-09-19")
