@@ -122,6 +122,14 @@ jedis = [
 
 CMC = ConselhoMandaChuva(jedis)
 
+# CMC de 16 de Fevereiro de 2016:
+CMC.data("2016-02-16")
+Ramalho.apresenta_padawan(Villares)
+Mike.apresenta_padawan(MarceloCampos)
+CMC.aprova_associado(Villares, endosso=[Ramalho])
+CMC.aprova_associado(MarceloCampos, endosso=[Mike])
+# Pitanga apresentou uma proposta de "endorsements" que foi acatada ao Regimento Interno, mas nunca vi ser implementada de fato.
+
 # CMC de 15 de Março de 2016:
 CMC.data("2016-03-15")
 Mike.apresenta_padawans([Gutem,
