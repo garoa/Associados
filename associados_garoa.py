@@ -68,6 +68,7 @@ Ismael = Pessoa("Ismael Lopes")
 JAFreitas = Pessoa("João Adriano Freitas")
 JamesRaznor = Pessoa("James Raznor")
 JamesSouza = Pessoa("James Souza")
+JeanPaul = Pessoa("Jean Paul")
 JonDroid = Pessoa("JonDroid") #nome real?
 Jonnes = Pessoa("Jonnes") #nome completo?
 Juca = Pessoa("Felipe Correa da Silva Sanches")
@@ -245,6 +246,17 @@ Carine.apresenta_padawan(Nessa)
 CMC.aprova_associado(WagnerSartori, endosso=[Agaelebe])
 Anchises.apresenta_padawans([VictorScattone,
                              Coruja])
+
+# CMC de 13 de Dezembro de 2011:
+CMC.data("2011-12-13")
+Lechuga.apresenta_padawan(LuisLeao)
+Juca.apresenta_padawan(JeanPaul)
+CMC.aprova_associado(AlexPorto, endosso=[Tony])
+CMC.aprova_associado(VictorScattone)
+CMC.aprova_associado(LoganBr)
+CMC.aprova_associado(Nessa)
+CMC.aprova_associado(Coruja)
+
 
 #HACK:
 Alguem.apresenta_padawans([
