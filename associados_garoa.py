@@ -9,11 +9,13 @@ Allan = Pessoa("Allan") #nome completo?
 AllanTrindade = Pessoa("Allan Trindade") # (de São Vicente)
 Anchises = Pessoa("Anchises")
 Anderson = Pessoa("Anderson Queiroz") # irmao gemeo do Tiago
-Andre = Pessoa("Andre") #nome completo? (seria esse o Hermann?)
+Andre = Pessoa("Andre") #nome completo? (seria esse o Hermann? ou o Oliveira?)
+AndreOliveira = Pessoa("Andre Oliveira")
 AndreHermann = Pessoa("André Hermann")
 Afonso = Pessoa("Afonso Coutinho")
 Agaelebe = Pessoa("Hugo Lima Borges")
 Aylons = Pessoa("Gustavo Bruno")
+Belasco = Pessoa("Pedro Belasco")
 BrunoBorges = Pessoa("Bruno Lima Borges") # (Irmão do Hugo)
 BrunoLP = Pessoa("Bruno Luiz de Paula")
 CSM = Pessoa("CSM") #nome? Seria esse o Carlos CM?
@@ -26,14 +28,17 @@ Emerson = Pessoa("Emerson Monteiro Sobreiro") #padawan do Fabricio
 Erick = Pessoa("Erick") #nome completo? Ou seria o Dataleak abaixo?
 ErikDataleak = Pessoa("Erik Dataleak Ramos") #nome real?
 Erin = Pessoa("Erin") #nome completo?
+Eros = Pessoa("Eros") #nome completo?
 FabioH = Pessoa("Fabio Hirano")
 FabricioBiazzotto = Pessoa("Fabricio Biazzotto")
 Fellype = Pessoa("Fellype Cazorino")
 FMolina = Pessoa("Fernando Molina")
+FelipeMoreira = Pessoa("Felipe Moreira")
 FSouza = Pessoa("Felipe Souza")
 Gabi = Pessoa("Gabriela Fonseca")
 Gabrielzinho = Pessoa("Gabriel Almeida")
 Gabs = Pessoa("Gabriel 'Gabs'") #nome completo?
+Giovanna = Pessoa("Giovanna")
 GringoMexico = Pessoa("Gringo do México") #nome real?
 Guisso = Pessoa("Fernando Guisso")
 GustavoRibeiro = Pessoa("GustavoRibeiro")
@@ -46,6 +51,7 @@ JAdriano = Pessoa("João Adriano")
 JamesRaznor = Pessoa("James Raznor")
 JamesSouza = Pessoa("James Souza")
 Juca = Pessoa("Felipe Correa da Silva Sanches")
+Kemel = Pessoa("Kemel Zaidan")
 LaTeX = Pessoa("Leandro Teixeira (LaTeX)")
 LAlcantara = Pessoa("Lucas Alcântara")
 LuisLeao = Pessoa("Luis Fernando de Oliveira Leão")
@@ -55,27 +61,32 @@ MarceloRodrigues = Pessoa("Marcelo Rodrigues") # Lab de Garagem
 Mesel = Pessoa("Vinicius Mesel")
 Micael = Pessoa("Micael Vitor DJ")
 Mike = Pessoa("Mike Howard")
+Moreno = Pessoa("Moreno Hassem")
 NelsonCanton = Pessoa("Nelson Canton")
 NelsonBrito = Pessoa("Nelson Brito")
 Oda = Pessoa("Eduardo Oda")
 Pampolha = Pessoa("Pampolha") #nome?
 Pitanga = Pessoa("Rodrigo Rodrigues da Silva")
-RobertJr = Pessoa("Robert Junior") # Guisso disse: "Ele é um cabeludinho, magrinho, com cara de nerd, que vem com o pai."
+Ramalho = Pessoa("Luciano Ramalho")
 RdosGatos = Pessoa("Rodrigo dos Gatos") # nome real? Rodrigo Silveira talvez?
+RobertJr = Pessoa("Robert Junior") # Guisso disse: "Ele é um cabeludinho, magrinho, com cara de nerd, que vem com o pai."
 RodrigoSilveira = Pessoa("Rodrigo Silveira")
-Rubens = Pessoa("Rubão") #verificar nome completo (Rubens Tadeu talvez?)
+Roger = Pessoa("Roger") #nome completo?
 RogerioMunhoz = Pessoa("Rogério Munhoz")
+Rubens = Pessoa("Rubão") #verificar nome completo (Rubens Tadeu talvez?)
 Sandro = Pessoa("Sandro Friedland")
 Sebastiao = Pessoa("Sebastião") #nome completo? Seria esse o Sebastiao Barreto ?
 Subnet = Pessoa("Luís Guilherme Pires Martins de Abreu")
 Tales = Pessoa("Tales Cione")
 Taumaturgo = Pessoa("Raphael Taumaturgo") # "o cara da cerveja"
 Tiago = Pessoa("Tiago Queiroz") # irmao gemeo do Anderson
+Tony = Pessoa("Tony de Marco")
 Thomas = Pessoa("Thomas") # Francês
 Ulysses = Pessoa("Ulysses Soldá Junior")
 VAlves = Pessoa("Vitor Alves")
 Vitor = Pessoa("Vitor Fernandes")
 Vido = Pessoa("Lucas Vido")
+Villares = Pessoa("Alexandre Villares")
 VJPixel = Pessoa("VJ Pixel")
 Vrech = Pessoa("Matheus Vral Vrech") # (São Carlos)
 Yumi = Pessoa("Amanda Yumi Ambriola")
@@ -92,10 +103,30 @@ jedis = [
   Mike,
   Tiago,
   Yumi,
-  FabricioBiazzotto
+  FabricioBiazzotto,
+  Ramalho
 ]
 
 CMC = ConselhoMandaChuva(jedis)
+
+# CMC de 17 de Janeiro de 2017:
+CMC.data("2017-01-17")
+Ramalho.apresenta_padawan(Belasco)
+# Ata confusa. Esse dois foram desligados? Acho que não:
+#        Pitanga
+#        Allan
+CMC.observa_desligamento(LuisLeao,  motivo="3 (ou mais) meses de atraso na mensalidade")
+CMC.observa_desligamento(Tony,  motivo="3 (ou mais) meses de atraso na mensalidade")
+CMC.observa_desligamento(Tales, motivo="3 (ou mais) meses de atraso na mensalidade")
+CMC.observa_desligamento(Kemel, motivo="3 (ou mais) meses de atraso na mensalidade")
+CMC.observa_desligamento(Eros,          motivo="3 (ou mais) meses de atraso na mensalidade")
+CMC.observa_desligamento(FelipeMoreira, motivo="3 (ou mais) meses de atraso na mensalidade")
+CMC.observa_desligamento(Roger,         motivo="3 (ou mais) meses de atraso na mensalidade")
+CMC.observa_desligamento(AndreOliveira, motivo="3 (ou mais) meses de atraso na mensalidade")
+
+# CMC de 21 de Fevereiro de 2017:
+CMC.data("2017-02-21")
+# Nenhuma alteração no quadro de associados/padawans
 
 # CMC de 21 de Março de 2017:
 CMC.data("2017-03-21")
