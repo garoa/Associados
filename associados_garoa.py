@@ -78,6 +78,7 @@ Otto = Pessoa("Otto Heringer")
 Pampolha = Pessoa("Pampolha") #nome?
 Pitanga = Pessoa("Rodrigo Rodrigues da Silva")
 Ramalho = Pessoa("Luciano Ramalho")
+RafaelML = Pessoa("Rafael M Lopes")
 RobertJr = Pessoa("Robert Junior") # Guisso disse: "Ele é um cabeludinho, magrinho, com cara de nerd, que vem com o pai."
 RodrigoSilveira = Pessoa("Rodrigo Gomes da Silveira") # "dos gatos"
 Roger = Pessoa("Roger") #nome completo?
@@ -110,7 +111,6 @@ jedis = [
   Anchises,
   Agaelebe,
   FabioH,
-  FabricioBiazzotto,
   Juca,
   Mike,
   Ramalho,
@@ -121,9 +121,22 @@ jedis = [
 
 CMC = ConselhoMandaChuva(jedis)
 
+# CMC de 21 de Junho de 2016:
+CMC.data("2016-06-21")
+Tiago.apresenta_padawan(FabricioBiazzotto)
+# A ata tem uma piada que pode gerar confusão: "Quem é Tiago Queiroz? O Fabrício apresenta o Tiago como associado do Garoa"
+CMC.observa_desligamento(LuisLeao,      motivo="3 (ou mais) meses de atraso na mensalidade")
+CMC.observa_desligamento(RafaelML,      motivo="3 (ou mais) meses de atraso na mensalidade")
+CMC.observa_desligamento(Kemel,         motivo="3 (ou mais) meses de atraso na mensalidade")
+CMC.observa_desligamento(Otto,          motivo="3 (ou mais) meses de atraso na mensalidade")
+CMC.observa_desligamento(Eros,          motivo="3 (ou mais) meses de atraso na mensalidade")
+CMC.observa_desligamento(FelipeMoreira, motivo="3 (ou mais) meses de atraso na mensalidade")
+CMC.observa_desligamento(AndreOliveira, motivo="3 (ou mais) meses de atraso na mensalidade")
+
+
 # CMC de 19 de Julho de 2016:
 CMC.data("2016-07-19")
-CMC.aprova_associado(FabricioBiazzotto, endosso=[Tiago]) # presume-se que seja o Tiago Queiroz, a ata diz apenas "Tiago"
+CMC.aprova_associado(FabricioBiazzotto, endosso=[Tiago])
 
 # CMC de 16 de Agosto de 2016:
 CMC.data("2016-08-16")
