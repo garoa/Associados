@@ -1,75 +1,95 @@
-Abdo = "Alexandre Abdo"
-Abreu = "Abreu" #nome?
-Alexandra = "Alexandra Percario"
-AllanTrindade = "Allan Trindade" # (de São Vicente)
-Anchises = "Anchises"
-Anderson = "Anderson" # seria o irmao gemeo do Thiago?
-Andre = "Andre" #nome completo? (seria esse o Hermann?)
-AndreHermann = "André Hermann"
-Afonso = "Afonso Coutinho"
-Agaelebe = "Hugo Lima Borges"
-Aylons = "Gustavo Bruno"
-BrunoBorges = "Bruno Lima Borges" # (Irmão do Hugo)
-BrunpLP = "Bruno Luiz de Paula"
-CSM = "CSM" #nome? Seria esse o Carlos CM?
-CarlosCM = "Carlos CM" # do time de CTF do Garoa
-Dandara = "Dandara Jatobá"
-Dente = "Dente" # nome?
-DQ = "Daniel Quadros"
-Emerson = "Emerson Monteiro Sobreiro" #padawan do Fabricio
-Erik = "Erik Dataleak Ramos" #nome real?
-Erin = "Erin" #nome completo?
-FabioH = "Fabio Hirano"
-FabricioBiazzoto = "Fabricio Biazzotto"
-Fellype = "Fellype Cazorino"
-FMolina = "Fernando Molina"
-FSouza = "Felipe Souza"
-Gabrielzinho = "Gabriel Almeida"
-GringoMexico = "Gringo do México" #nome real?
-Guisso = "Fernando Guisso"
-GustavoRibeiro = "GustavoRibeiro"
-Gutem = "Gutemberg Nunes"
-GutoMaia = "Gustavo Maia Neto"
-Helena = "Helena (amiga do Afonso)"
-IanF = "Ian Fernandez"
-Italo = "Italo" #nome completo?
-JAdriano = "João Adriano"
-JamesRaznor = "James Raznor"
-JamesSouza = "James Souza"
-Juca = "Felipe Correa da Silva Sanches"
-LaTeX = "Leandro Teixeira (LaTeX)"
-LAlcantara = "Lucas Alcântara"
-LuisLeao = "Luis Fernando de Oliveira Leão"
-Marcel = "Marcel" #nome?
-MarceloCampos = "Marcelo Campos"
-MarceloRodrigues = "Marcelo Rodrigues" # Lab de Garagem
-Mesel = "Vinicius Mesel"
-Mike = "Mike Howard"
-NelsonCanton = "Nelson Canton"
-NelsonBrito = "Nelson Brito"
-Oda = "Eduardo Oda"
-Pampolha = "Pampolha" #nome?
-Pitanga = "Rodrigo Rodrigues da Silva"
-RobertJr = "Robert Junior" # Guisso disse: "Ele é um cabeludinho, magrinho, com cara de nerd, que vem com o pai."
-RdosGatos = "Rodrigo dos Gatos" # nome real? Rodrigo Silveira talvez?
-RodrigoSilveira = "Rodrigo Silveira"
-Rubens = "Rubão" #verificar nome completo (Rubens Tadeu talvez?)
-RMunhoz = "Rogério Munhoz"
-Sandro = "Sandro Friedland"
-Sebastiao = "Sebastião" #nome completo? Seria esse o Sebastiao Barreto ?
-Subnet = "Luís Guilherme Pires Martins de Abreu"
-Tales = "Tales Cione"
-Taumaturgo = "Raphael Taumaturgo" # "o cara da cerveja"
-Thiago = "Thiago" # seria o irmao gemeo do Anderson?
-Thomas = "Thomas" # Francês
-Ulysses = "Ulysses Soldá Junior"
-VAlves = "Vitor Alves"
-Vitor = "Vitor Fernandes"
-Vido = "Lucas Vido"
-VJPixel = "VJ Pixel"
-Vrech = "Matheus Vral Vrech" # (São Carlos)
-Yumi = "Amanda Yumi Ambriola"
-Wesley = "Wesley Shaimon"
+#!/usr/bin/env python
+# coding: utf-8
+from garoa import Pessoa, ConselhoMandaChuva
+
+Abdo = Pessoa("Alexandre Abdo")
+Abreu = Pessoa("Abreu") #nome?
+Alexandra = Pessoa("Alexandra Percario")
+AllanTrindade = Pessoa("Allan Trindade") # (de São Vicente)
+Anchises = Pessoa("Anchises")
+Anderson = Pessoa("Anderson") # seria o irmao gemeo do Thiago?
+Andre = Pessoa("Andre") #nome completo? (seria esse o Hermann?)
+AndreHermann = Pessoa("André Hermann")
+Afonso = Pessoa("Afonso Coutinho")
+Agaelebe = Pessoa("Hugo Lima Borges")
+Aylons = Pessoa("Gustavo Bruno")
+BrunoBorges = Pessoa("Bruno Lima Borges") # (Irmão do Hugo)
+BrunoLP = Pessoa("Bruno Luiz de Paula")
+CSM = Pessoa("CSM") #nome? Seria esse o Carlos CM?
+CarlosCM = Pessoa("Carlos CM") # do time de CTF do Garoa
+Christian = Pessoa("Christian") # nome completo?
+Dandara = Pessoa("Dandara Jatobá")
+Dente = Pessoa("Dente") # nome?
+DQ = Pessoa("Daniel Quadros")
+Emerson = Pessoa("Emerson Monteiro Sobreiro") #padawan do Fabricio
+Erik = Pessoa("Erik Dataleak Ramos") #nome real?
+Erin = Pessoa("Erin") #nome completo?
+FabioH = Pessoa("Fabio Hirano")
+FabricioBiazzoto = Pessoa("Fabricio Biazzotto")
+Fellype = Pessoa("Fellype Cazorino")
+FMolina = Pessoa("Fernando Molina")
+FSouza = Pessoa("Felipe Souza")
+Gabi = Pessoa("Gabriela Fonseca")
+Gabrielzinho = Pessoa("Gabriel Almeida")
+GringoMexico = Pessoa("Gringo do México") #nome real?
+Guisso = Pessoa("Fernando Guisso")
+GustavoRibeiro = Pessoa("GustavoRibeiro")
+Gutem = Pessoa("Gutemberg Nunes")
+GutoMaia = Pessoa("Gustavo Maia Neto")
+Helena = Pessoa("Helena (amiga do Afonso)")
+IanF = Pessoa("Ian Fernandez")
+Italo = Pessoa("Italo") #nome completo?
+JAdriano = Pessoa("João Adriano")
+JamesRaznor = Pessoa("James Raznor")
+JamesSouza = Pessoa("James Souza")
+Juca = Pessoa("Felipe Correa da Silva Sanches")
+LaTeX = Pessoa("Leandro Teixeira (LaTeX)")
+LAlcantara = Pessoa("Lucas Alcântara")
+LuisLeao = Pessoa("Luis Fernando de Oliveira Leão")
+Marcel = Pessoa("Marcel") #nome?
+MarceloCampos = Pessoa("Marcelo Campos")
+MarceloRodrigues = Pessoa("Marcelo Rodrigues") # Lab de Garagem
+Mesel = Pessoa("Vinicius Mesel")
+Mike = Pessoa("Mike Howard")
+NelsonCanton = Pessoa("Nelson Canton")
+NelsonBrito = Pessoa("Nelson Brito")
+Oda = Pessoa("Eduardo Oda")
+Pampolha = Pessoa("Pampolha") #nome?
+Pitanga = Pessoa("Rodrigo Rodrigues da Silva")
+RobertJr = Pessoa("Robert Junior") # Guisso disse: "Ele é um cabeludinho, magrinho, com cara de nerd, que vem com o pai."
+RdosGatos = Pessoa("Rodrigo dos Gatos") # nome real? Rodrigo Silveira talvez?
+RodrigoSilveira = Pessoa("Rodrigo Silveira")
+Rubens = Pessoa("Rubão") #verificar nome completo (Rubens Tadeu talvez?)
+RogerioMunhoz = Pessoa("Rogério Munhoz")
+Sandro = Pessoa("Sandro Friedland")
+Sebastiao = Pessoa("Sebastião") #nome completo? Seria esse o Sebastiao Barreto ?
+Subnet = Pessoa("Luís Guilherme Pires Martins de Abreu")
+Tales = Pessoa("Tales Cione")
+Taumaturgo = Pessoa("Raphael Taumaturgo") # "o cara da cerveja"
+Thiago = Pessoa("Thiago") # seria o irmao gemeo do Anderson?
+Thomas = Pessoa("Thomas") # Francês
+Ulysses = Pessoa("Ulysses Soldá Junior")
+VAlves = Pessoa("Vitor Alves")
+Vitor = Pessoa("Vitor Fernandes")
+Vido = Pessoa("Lucas Vido")
+VJPixel = Pessoa("VJ Pixel")
+Vrech = Pessoa("Matheus Vral Vrech") # (São Carlos)
+Yumi = Pessoa("Amanda Yumi Ambriola")
+Wesley = Pessoa("Wesley Shaimon")
+
+# Os 'jedis' por enquanto são as raízes do grafo incompleto de associados.
+# Mas depois que toda a história estiver transcrita aqui,
+# esse será a lista dos associados co-fundadores:
+jedis = [
+  Afonso,
+  Juca,
+  Dente,
+  Vido,
+  Guisso,
+  Mike
+]
+
+CMC = ConselhoMandaChuva(jedis)
 
 # CMC de 18 de Julho de 2017:
 CMC.data("2017-07-18")
@@ -78,7 +98,7 @@ CMC.aprova_associado(Emerson, endosso=[Vido])
 
 # CMC de 15 de Agosto de 2017:
 CMC.data("2017-08-15")
-Dente.apresenta_padawan(Traumaturgo) # "o cara da cerveja"
+Dente.apresenta_padawan(Taumaturgo) # "o cara da cerveja"
 Juca.apresenta_padawan(GustavoRibeiro)
 CMC.aprova_associado(GustavoRibeiro, endosso=[Juca])
 CMC.observa_desligamento(GutoMaia, motivo="3 meses de atraso na mensalidade")
@@ -99,9 +119,9 @@ CMC.data("2017-10-17")
 CMC.data("2017-11-21")
 Guisso.apresenta_padawans([Gabi,
                            RobertJr])
-Afonse.apresenta_padawans([AllanTrindad,
+Afonso.apresenta_padawans([AllanTrindade,
                            JamesSouza,
-                           MateusVrech,
+                           Vrech,
                            CarlosCM])
 
 # CMC de 19 de Dezembro de 2017:
@@ -153,7 +173,7 @@ CMC.observa_desligamento(BrunoBorges)
 
 # CMC de 17 de Julho de 2018:
 CMC.data("2018-07-17")
-Afonso.apresenta_padawan(VRech)
+Afonso.apresenta_padawan(Vrech)
 CMC.aprova_associado(LAlcantara, endosso=[Juca])
 
 # CMC de 21 de Agosto de 2018:
@@ -163,3 +183,6 @@ Afonso.apresenta_padawans([Alexandra,
                            FSouza,
                            Wesley,
                            VAlves])
+
+print("Padawans órfãos:\n\t{}".format('\n\t'.join(map(lambda x: x.nome, CMC.padawans))))
+print("Associados:\n\t{}".format('\n\t'.join(map(lambda x: "{} ({})".format(x.nome, len(x.padawans)), CMC.associados))))
