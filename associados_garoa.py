@@ -3,6 +3,7 @@ Abreu = "Abreu" #nome?
 Alexandra = "Alexandra Percario"
 AllanTrindade = "Allan Trindade" # (de São Vicente)
 Anchises = "Anchises"
+Anderson = "Anderson" # seria o irmao gemeo do Thiago?
 Andre = "Andre" #nome completo? (seria esse o Hermann?)
 AndreHermann = "André Hermann"
 Afonso = "Afonso Coutinho"
@@ -15,7 +16,8 @@ CarlosCM = "Carlos CM" # do time de CTF do Garoa
 Dandara = "Dandara Jatobá"
 Dente = "Dente" # nome?
 DQ = "Daniel Quadros"
-Erik = "Erik Dataleak" #nome real?
+Erik = "Erik Dataleak Ramos" #nome real?
+Erin = "Erin" #nome completo?
 FabioH = "Fabio Hirano"
 FabricioBiazzoto = "Fabricio Biazzotto"
 Fellype = "Fellype Cazorino"
@@ -28,6 +30,7 @@ Gutem = "Gutemberg Nunes"
 GutoMaia = "Gustavo Maia Neto"
 Helena = "Helena (amiga do Afonso)"
 IanF = "Ian Fernandez"
+Italo = "Italo" #nome completo?
 JAdriano = "João Adriano"
 JamesRaznor = "James Raznor"
 JamesSouza = "James Souza"
@@ -51,8 +54,11 @@ RodrigoSilveira = "Rodrigo Silveira"
 Rubens = "Rubão" #verificar nome completo (Rubens Tadeu talvez?)
 RMunhoz = "Rogério Munhoz"
 Sandro = "Sandro Friedland"
+Sebastiao = "Sebastião" #nome completo? Seria esse o Sebastiao Barreto ?
 Subnet = "Luís Guilherme Pires Martins de Abreu"
 Tales = "Tales Cione"
+Taumaturgo = "Taumaturgo" #nome completo? Padawan do Dente
+Thiago = "Thiago" # seria o irmao gemeo do Anderson?
 Thomas = "Thomas" # Francês
 Ulysses = "Ulysses Soldá Junior"
 VAlves = "Vitor Alves"
@@ -62,6 +68,18 @@ VJPixel = "VJ Pixel"
 Vrech = "Matheus Vral Vrech" # (São Carlos)
 Yumi = "Amanda Yumi Ambriola"
 Wesley = "Wesley Shaimon"
+
+# CMC de 19 de Setembro de 2017:
+CMC.data("2017-09-19")
+Vido.apresenta_padawan(Sebastiao)
+CMC.aprova_associado(Sebastiao, endosso=[Vido])
+CMC.aprova_associado(Rubens, endosso=[Oda])
+CMC.observa_desligamento(Christian, motivo="3 meses de atraso na mensalidade")
+
+# CMC de 17 de Outubro de 2017:
+CMC.data("2017-10-17")
+# Nota: "Padawan do Dente (Taumaturgo) fugiu para a Espanha"
+# Não houve movimentações no quadro de associados / padawans
 
 # CMC de 21 de Novembro de 2017:
 CMC.data("2017-11-21")
