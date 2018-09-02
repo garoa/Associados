@@ -51,9 +51,11 @@ Helena = Pessoa("Helena (amiga do Afonso)")
 IanF = Pessoa("Ian Fernandez")
 Italo = Pessoa("Italo") #nome completo?
 Ivar = Pessoa("Ivar") #nome completo?
+Ismael = Pessoa("Ismael Lopes")
 JAdriano = Pessoa("João Adriano")
 JamesRaznor = Pessoa("James Raznor")
 JamesSouza = Pessoa("James Souza")
+Jonnes = Pessoa("Jonnes") #nome completo?
 Juca = Pessoa("Felipe Correa da Silva Sanches")
 Kemel = Pessoa("Kemel Zaidan")
 LaTeX = Pessoa("Leandro Teixeira (LaTeX)")
@@ -61,6 +63,7 @@ LAlcantara = Pessoa("Lucas Alcântara")
 Lechuga = Pessoa("Lechuga") #nome completo?
 LeonardoSantos = Pessoa("Leonardo Garcia Tales dos Santos")
 LuisLeao = Pessoa("Luis Fernando de Oliveira Leão")
+Luiz = Pessoa("Luiz") #nome completo?
 Marcel = Pessoa("Marcel") #nome?
 MarceloCampos = Pessoa("Marcelo Campos")
 MarceloRodrigues = Pessoa("Marcelo Rodrigues") # Lab de Garagem
@@ -105,16 +108,25 @@ Wesley = Pessoa("Wesley Shaimon")
 jedis = [
   Anchises,
   Agaelebe,
-  Juca,
-  Vido,
-  Mike,
-  Tiago,
-  Yumi,
+  FabioH,
   FabricioBiazzotto,
-  Ramalho
+  Juca,
+  Mike,
+  Ramalho,
+  Tiago,
+  Vido,
+  Yumi,
 ]
 
 CMC = ConselhoMandaChuva(jedis)
+
+# CMC de 16 de Agosto de 2016:
+CMC.data("2016-08-16")
+FabioH.apresenta_padawan(Luiz) # ata diz apenas "Fabio"
+Vido.apresenta_padawan(Ismael)
+CMC.readmite_associado(Jonnes) # DQ sugeriu. "Ele se afastou por algum tempo mas quer retornar."
+CMC.readmite_associado(Afonso) # "Afonso pede para reativar associação e entrar no Starving Hacker"
+CMC.observa_desligamento(Tales) # "Anchises informa que Tales Cione solicitou o seu desligamento"
 
 # CMC de 20 de Setembro de 2016:
 CMC.data("2016-09-20")
