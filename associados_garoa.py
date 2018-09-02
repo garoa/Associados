@@ -5,17 +5,19 @@ from garoa import Pessoa, ConselhoMandaChuva
 Abdo = Pessoa("Alexandre Abdo")
 Abreu = Pessoa("Abreu") #nome?
 Alexandra = Pessoa("Alexandra Percario")
-Aleph = Pessoa("Alberto Fabiano")
+Aleph = Pessoa("Alberto Fabiano Caires de Medeiros")
 Allan = Pessoa("Allan") #nome completo? Seria esse o Allan Moreira?
 AllanTrindade = Pessoa("Allan Trindade") # (de São Vicente)
-Anchises = Pessoa("Anchises")
+Anchises = Pessoa("Anchises Moraes Guimarães de Paula")
 Anderson = Pessoa("Anderson Queiroz") # irmao gemeo do Tiago
 Andre = Pessoa("Andre") #nome completo? (seria esse o Hermann? ou o Oliveira?)
 AndreOliveira = Pessoa("Andre de Oliveira")
 AndreHermann = Pessoa("André Hermann")
+AntonioSouza = Pessoa("Antonio Celso Cavalieri Lins de Souza") # co-fundador
 Afonso = Pessoa("Afonso Coutinho")
 Agaelebe = Pessoa("Hugo Lima Borges")
-Aylons = Pessoa("Gustavo Bruno")
+Aylons = Pessoa("Gustavo Barbosa Monteiro Bruno")
+Baraldi = Pessoa("Mauro Navarro Baraldi")
 Belasco = Pessoa("Pedro Belasco")
 BrunoBorges = Pessoa("Bruno Lima Borges") # (Irmão do Hugo)
 BrunoLP = Pessoa("Bruno Luiz de Paula")
@@ -27,7 +29,7 @@ Christian = Pessoa("Christian") # nome completo?
 Dandara = Pessoa("Dandara Jatobá")
 DanielaIwassa = Pessoa("Daniela Iwassa")
 Dente = Pessoa("Marcelo Araujo Dente")
-DQ = Pessoa("Daniel Quadros")
+DQ = Pessoa("Daniel Gerk de Azevedo Quadros")
 Emerson = Pessoa("Emerson Monteiro Sobreiro") #padawan do Fabricio
 ErickEmiliano = Pessoa("Erick Emiliano")
 ErikDataleak = Pessoa("Erik Dataleak Ramos") #nome real?
@@ -68,7 +70,7 @@ LuisLeao = Pessoa("Luis Fernando de Oliveira Leão")
 Luiz = Pessoa("Luiz") #nome completo?
 Marcel = Pessoa("Marcel") #nome?
 MarceloCampos = Pessoa("Marcelo Campos")
-MarceloRodrigues = Pessoa("Marcelo Rodrigues") # Lab de Garagem
+MarceloRodrigues = Pessoa("Marcelo Alatzatianov Rodrigues") # Lab de Garagem
 Mesel = Pessoa("Vinicius Mesel")
 Micael = Pessoa("Micael Vitor DJ")
 Mike = Pessoa("Mike Howard")
@@ -79,7 +81,7 @@ Oda = Pessoa("Eduardo Oda")
 Otto = Pessoa("Otto Heringer")
 Pampolha = Pessoa("Pampolha") #nome?
 Pitanga = Pessoa("Rodrigo Rodrigues da Silva")
-Ramalho = Pessoa("Luciano Ramalho")
+Ramalho = Pessoa("Luciano Gama de Souza Ramalho")
 RafaelML = Pessoa("Rafael M Lopes")
 RobertJr = Pessoa("Robert Junior") # Guisso disse: "Ele é um cabeludinho, magrinho, com cara de nerd, que vem com o pai."
 RodrigoSilveira = Pessoa("Rodrigo Gomes da Silveira") # "dos gatos"
@@ -106,22 +108,67 @@ Yumi = Pessoa("Amanda Yumi Ambriola")
 Yanava = Pessoa("Yanava") # nome?
 Wesley = Pessoa("Wesley Shaimon")
 
-# Os 'jedis' por enquanto são as raízes do grafo incompleto de associados.
-# Mas depois que toda a história estiver transcrita aqui,
-# esse será a lista dos associados co-fundadores:
-jedis = [
-  Anchises,
+#HACK:
+Alguem = Pessoa("Algum associado")
+
+cofundadores = [
   Agaelebe,
-  FabioH,
+  Aleph,
+  Anchises,
+  Aylons,
+  Baraldi,
+  DQ,
   Juca,
-  Mike,
+  MarceloRodrigues,
+  Oda,
+  Pitanga,
   Ramalho,
-  Tiago,
-  Vido,
-  Yumi,
+  Alguem
 ]
 
-CMC = ConselhoMandaChuva(jedis)
+CMC = ConselhoMandaChuva(cofundadores)
+
+# CMC de 22 de Fevereiro de 2011:
+CMC.data("2011-02-22")
+# são mencionados 12 fundadores e 4 membros, mas sem citar nomes...
+
+#HACK:
+Alguem.apresenta_padawans([
+  Christian,
+  Emerson,
+  ErikDataleak,
+  Guisso,
+  Sandro,
+  Rubens
+])
+
+#HACK:
+for a in [Allan,
+          AndreOliveira,
+          BrunoLP,
+          Eros,
+          FelipeMoreira,
+          FabioH,
+          Gabs,
+          GutoMaia,
+          Kemel,
+          LaTeX,
+          LeonardoSantos,
+          LuisLeao,
+          Mike,
+          NelsonCanton,
+          Otto,
+          RafaelML,
+          Roger,
+          Tales,
+          Tiago,
+          Tony,
+          Vido,
+          Yanava,
+          Yumi,
+]:
+  CMC.aprova_associado(a, hack=True)
+
 
 # CMC de 19 de Janeiro de 2016:
 CMC.data("2016-01-19")
@@ -190,7 +237,7 @@ CMC.observa_desligamento(Gabs, motivo="3 (ou mais) meses de atraso na mensalidad
 # CMC de 18 de Outubro de 2016:
 CMC.data("2016-10-18")
 CMC.aprova_associado(Sandro, endosso=[Mike])
-CMC.observa_desligamento(AndreOliveira, motivo="3 (ou mais) meses de atraso na mensalidade")
+# CMC.observa_desligamento(AndreOliveira, motivo="3 (ou mais) meses de atraso na mensalidade")
 CMC.observa_desligamento(LeonardoSantos, motivo="3 (ou mais) meses de atraso na mensalidade")
 
 # CMC de 15 de Novembro de 2016:
@@ -209,14 +256,14 @@ Ramalho.apresenta_padawan(Belasco)
 # Ata confusa. Esse dois foram desligados? Acho que não:
 #        Pitanga
 #        Allan
-CMC.observa_desligamento(LuisLeao,  motivo="3 (ou mais) meses de atraso na mensalidade")
-CMC.observa_desligamento(Tony,  motivo="3 (ou mais) meses de atraso na mensalidade")
-CMC.observa_desligamento(Tales, motivo="3 (ou mais) meses de atraso na mensalidade")
-CMC.observa_desligamento(Kemel, motivo="3 (ou mais) meses de atraso na mensalidade")
-CMC.observa_desligamento(Eros,          motivo="3 (ou mais) meses de atraso na mensalidade")
-CMC.observa_desligamento(FelipeMoreira, motivo="3 (ou mais) meses de atraso na mensalidade")
+# CMC.observa_desligamento(LuisLeao,  motivo="3 (ou mais) meses de atraso na mensalidade")
+# CMC.observa_desligamento(Tony,  motivo="3 (ou mais) meses de atraso na mensalidade")
+# CMC.observa_desligamento(Tales, motivo="3 (ou mais) meses de atraso na mensalidade")
+# CMC.observa_desligamento(Kemel, motivo="3 (ou mais) meses de atraso na mensalidade")
+# CMC.observa_desligamento(Eros,          motivo="3 (ou mais) meses de atraso na mensalidade")
+# CMC.observa_desligamento(FelipeMoreira, motivo="3 (ou mais) meses de atraso na mensalidade")
 CMC.observa_desligamento(Roger,         motivo="3 (ou mais) meses de atraso na mensalidade")
-CMC.observa_desligamento(AndreOliveira, motivo="3 (ou mais) meses de atraso na mensalidade")
+# CMC.observa_desligamento(AndreOliveira, motivo="3 (ou mais) meses de atraso na mensalidade")
 
 # CMC de 21 de Fevereiro de 2017:
 CMC.data("2017-02-21")
@@ -231,12 +278,12 @@ CMC.aprova_associado(ErikDataleak, endosso=[Anchises])
 # Ficou confuso na ata! aparentemente tem também um "Erick", suponho que seja o Emiliano:
 # "Anchises apresenta Erick como associado - quarentena"
 CMC.observa_desligamento(Allan, motivo="6 meses de atraso na mensalidade")
-CMC.observa_desligamento(Gabs, motivo="6 meses de atraso na mensalidade")
+# CMC.observa_desligamento(Gabs, motivo="6 meses de atraso na mensalidade")
 
 # CMC de 18 de Abril de 2017:
 CMC.data("2017-04-18")
 CMC.observa_desligamento(Yanava, motivo="3 meses de atraso na mensalidade")
-CMC.observa_desligamento(LaTeX, motivo="3 meses de atraso na mensalidade") # ata diz "Leandro" (é o LaTeX mesmo?)
+# CMC.observa_desligamento(LaTeX, motivo="3 meses de atraso na mensalidade") # ata diz "Leandro" (é o LaTeX mesmo?)
 CMC.observa_desligamento(DQ, motivo="requisitado")
 # NOTA: CMC aprova DQ como associado honorário.
 

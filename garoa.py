@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+PEDANTE = False
+
 class Pessoa():
   def __init__(self, nome):
     self.nome = nome
@@ -47,30 +49,33 @@ class ConselhoMandaChuva():
 
     pessoa.associacao.append([self.dia, None])
 
-  def aprova_associado(self, pessoa, endosso=None):
+  def aprova_associado(self, pessoa, endosso=None, hack=False):
     pessoa.cmc = self
     pessoa.associacao.append([self.dia, None])
 
     if pessoa in self.padawans:
       self.padawans.remove(pessoa)
     else:
-      print("ERRO: Aprovando associado '{}' que não é padawan de ninguém!".format(pessoa.nome))
+      if not hack:
+        print("ERRO: Aprovando associado '{}' que não é padawan de ninguém!".format(pessoa.nome))
     if pessoa not in self.associados:
       self.associados.append(pessoa)
 
   def observa_desligamento(self, pessoa, motivo=None):
     pessoa.cmc = None
-    try:
-      pessoa.associacao[-1][1] = self.dia
-    except:
-      print("ERRO: Desligando '{}' que nem era associado!".format(pessoa.nome))
-
 
     if pessoa not in self.ex_associados:
       self.ex_associados.append(pessoa)
 
     if pessoa in self.associados:
       self.associados.remove(pessoa)
+      try:
+        pessoa.associacao[-1][1] = self.dia
+      except:
+        if PEDANTE:
+          print("ERRO: nao achei registro de associacao para '{}'".format(pessoa.nome))
+    else:
+      print("ERRO: Desligando '{}' que nem era associado!".format(pessoa.nome))
 
   def print_padawans(self):
     print("Padawans órfãos:\n\t{}".format('\n\t'.join(map(lambda x: "{}: {}".format(x.apresentacao, x.nome), self.padawans))))
