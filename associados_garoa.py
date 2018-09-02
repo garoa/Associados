@@ -16,6 +16,7 @@ AndreHermann = Pessoa("André Hermann")
 AntonioSouza = Pessoa("Antonio Celso Cavalieri Lins de Souza") # co-fundador
 Afonso = Pessoa("Afonso Coutinho")
 Agaelebe = Pessoa("Hugo Lima Borges")
+Asa = Pessoa("Asa") #nome completo?
 Aylons = Pessoa("Gustavo Barbosa Monteiro Bruno")
 Baraldi = Pessoa("Mauro Navarro Baraldi")
 Belasco = Pessoa("Pedro Belasco")
@@ -28,6 +29,7 @@ Ceci = Pessoa("Cecilia Tanaka")
 Christian = Pessoa("Christian") # nome completo?
 Dandara = Pessoa("Dandara Jatobá")
 DanielaIwassa = Pessoa("Daniela Iwassa")
+DavidRobert = Pessoa("David Robert")
 Dente = Pessoa("Marcelo Araujo Dente")
 DQ = Pessoa("Daniel Gerk de Azevedo Quadros")
 Emerson = Pessoa("Emerson Monteiro Sobreiro") #padawan do Fabricio
@@ -61,11 +63,13 @@ JamesRaznor = Pessoa("James Raznor")
 JamesSouza = Pessoa("James Souza")
 Jonnes = Pessoa("Jonnes") #nome completo?
 Juca = Pessoa("Felipe Correa da Silva Sanches")
+Katia = Pessoa("Kátia Kitahara")
 Kemel = Pessoa("Kemel Zaidan")
 LaTeX = Pessoa("Leandro Teixeira (LaTeX)")
 LAlcantara = Pessoa("Lucas Alcântara")
 Lechuga = Pessoa("Lechuga") #nome completo?
 LeonardoSantos = Pessoa("Leonardo Garcia Tales dos Santos")
+Lint = Pessoa("Carlos Lint")
 LuisLeao = Pessoa("Luis Fernando de Oliveira Leão")
 Luiz = Pessoa("Luiz") #nome completo?
 Marcel = Pessoa("Marcel") #nome?
@@ -90,6 +94,7 @@ RogerioMunhoz = Pessoa("Rogério Munhoz")
 Rubens = Pessoa("Rubão") #verificar nome completo (Rubens Tadeu talvez?)
 Sandro = Pessoa("Sandro Friedland")
 Sebastiao = Pessoa("Sebastião") #nome completo? Seria esse o Sebastiao Barreto ?
+Spinola = Pessoa("Spinola") #nome completo?
 Subnet = Pessoa("Luís Guilherme Pires Martins de Abreu")
 Tales = Pessoa("Tales Cione")
 Taumaturgo = Pessoa("Raphael Taumaturgo") # "o cara da cerveja"
@@ -132,6 +137,21 @@ CMC = ConselhoMandaChuva(cofundadores)
 CMC.data("2011-02-22")
 # são mencionados 12 fundadores e 4 membros, mas sem citar nomes...
 
+# CMC de 15 de Março de 2011:
+CMC.data("2011-03-15")
+# Nessa reunião não se fala explicitamente de novos associados, apesar de constarem nomes de participantes na reunião que não assinaram os papéis da fundação.
+
+# CMC de 19 de Abril de 2011:
+CMC.data("2011-04-19")
+# Essas são as pessoas que não assinaram os papéis da fundação, mas mesmo assim foram citadas como fundadores nesta reunião do CMC:
+CMC.aprova_associado(Spinola, fundador=True)
+CMC.aprova_associado(DavidRobert, fundador=True)
+CMC.aprova_associado(Katia, fundador=True)
+CMC.aprova_associado(Asa, fundador=True)
+CMC.aprova_associado(VJPixel, fundador=True)
+CMC.aprova_associado(Lint, fundador=True)
+
+
 #HACK:
 Alguem.apresenta_padawans([
   Christian,
@@ -167,7 +187,8 @@ for a in [Allan,
           Yanava,
           Yumi,
 ]:
-  CMC.aprova_associado(a, hack=True)
+  # Essas pessoas não são co-fundadoras do clube. Isso aqui é só um hack temporario!
+  CMC.aprova_associado(a, fundador=True)
 
 
 # CMC de 19 de Janeiro de 2016:

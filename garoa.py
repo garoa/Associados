@@ -49,14 +49,14 @@ class ConselhoMandaChuva():
 
     pessoa.associacao.append([self.dia, None])
 
-  def aprova_associado(self, pessoa, endosso=None, hack=False):
+  def aprova_associado(self, pessoa, endosso=None, fundador=False):
     pessoa.cmc = self
     pessoa.associacao.append([self.dia, None])
 
     if pessoa in self.padawans:
       self.padawans.remove(pessoa)
     else:
-      if not hack:
+      if not fundador:
         print("ERRO: Aprovando associado '{}' que não é padawan de ninguém!".format(pessoa.nome))
     if pessoa not in self.associados:
       self.associados.append(pessoa)
