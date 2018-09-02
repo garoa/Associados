@@ -25,7 +25,7 @@ Dandara = Pessoa("Dandara Jatobá")
 Dente = Pessoa("Marcelo Araujo Dente")
 DQ = Pessoa("Daniel Quadros")
 Emerson = Pessoa("Emerson Monteiro Sobreiro") #padawan do Fabricio
-Erick = Pessoa("Erick") #nome completo? Ou seria o Dataleak abaixo?
+ErickEmiliano = Pessoa("Erick Emiliano")
 ErikDataleak = Pessoa("Erik Dataleak Ramos") #nome real?
 Erin = Pessoa("Erin") #nome completo?
 Eros = Pessoa("Eros") #nome completo?
@@ -68,9 +68,8 @@ Oda = Pessoa("Eduardo Oda")
 Pampolha = Pessoa("Pampolha") #nome?
 Pitanga = Pessoa("Rodrigo Rodrigues da Silva")
 Ramalho = Pessoa("Luciano Ramalho")
-RdosGatos = Pessoa("Rodrigo dos Gatos") # nome real? Rodrigo Silveira talvez?
 RobertJr = Pessoa("Robert Junior") # Guisso disse: "Ele é um cabeludinho, magrinho, com cara de nerd, que vem com o pai."
-RodrigoSilveira = Pessoa("Rodrigo Silveira")
+RodrigoSilveira = Pessoa("Rodrigo Gomes da Silveira") # "dos gatos"
 Roger = Pessoa("Roger") #nome completo?
 RogerioMunhoz = Pessoa("Rogério Munhoz")
 Rubens = Pessoa("Rubão") #verificar nome completo (Rubens Tadeu talvez?)
@@ -97,6 +96,7 @@ Wesley = Pessoa("Wesley Shaimon")
 # Mas depois que toda a história estiver transcrita aqui,
 # esse será a lista dos associados co-fundadores:
 jedis = [
+  Anchises,
   Juca,
   Vido,
   Guisso,
@@ -108,6 +108,12 @@ jedis = [
 ]
 
 CMC = ConselhoMandaChuva(jedis)
+
+# CMC de 20 de Dezembro de 2016:
+CMC.data("2016-12-20")
+Anchises.apresenta_padawan(ErickEmiliano)
+CMC.aprova_associado(Guisso, endosso=[Yumi])
+CMC.aprova_associado(RodrigoSilveira, endosso=[FabricioBiazzotto])
 
 # CMC de 17 de Janeiro de 2017:
 CMC.data("2017-01-17")
@@ -134,7 +140,7 @@ Yumi.apresenta_padawan(Mesel)
 FabricioBiazzotto.apresenta_padawan(Emerson)
 CMC.aprova_associado(Emerson, endosso=[FabricioBiazzotto])
 CMC.aprova_associado(ErikDataleak, endosso=[Anchises])
-# Ficou confuso na ata! aparentemente tem também um "Erick":
+# Ficou confuso na ata! aparentemente tem também um "Erick", suponho que seja o Emiliano:
 # "Anchises apresenta Erick como associado - quarentena"
 CMC.observa_desligamento(Allan, motivo="6 meses de atraso na mensalidade")
 CMC.observa_desligamento(Gabs, motivo="6 meses de atraso na mensalidade")
