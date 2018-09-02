@@ -24,6 +24,7 @@ BrunoBorges = Pessoa("Bruno Lima Borges") # (Irmão do Hugo)
 BrunoLP = Pessoa("Bruno Luiz de Paula")
 CSM = Pessoa("CSM") #nome? Seria esse o Carlos CM?
 CarlosCM = Pessoa("Carlos CM") # do time de CTF do Garoa
+Carine = Pessoa("Carine Roos")
 Carril = Pessoa("Fernando Carril")
 Ceci = Pessoa("Cecilia Tanaka")
 Christian = Pessoa("Christian") # nome completo?
@@ -32,7 +33,7 @@ Dandara = Pessoa("Dandara Jatobá")
 DanielaIwassa = Pessoa("Daniela Iwassa")
 DavidRobert = Pessoa("David Robert")
 Dente = Pessoa("Marcelo Araujo Dente")
-Diogines = Pessoa("Diógines") # nome completo?
+Diogenes = Pessoa("Diógenes") # nome completo?
 DQ = Pessoa("Daniel Gerk de Azevedo Quadros")
 Emerson = Pessoa("Emerson Monteiro Sobreiro") #padawan do Fabricio
 ErickEmiliano = Pessoa("Erick Emiliano")
@@ -49,6 +50,7 @@ FSouza = Pessoa("Felipe Souza")
 Gabi = Pessoa("Gabriela Fonseca")
 Gabrielzinho = Pessoa("Gabriel Almeida")
 Gabs = Pessoa("Gabriel 'Gabs'") #nome completo?
+GabrielAraujo = Pessoa("Gabriel Araújo")
 Giovanna = Pessoa("Giovanna")
 GringoMexico = Pessoa("Gringo do México") #nome real?
 Guisso = Pessoa("Fernando Guisso")
@@ -63,6 +65,7 @@ Ismael = Pessoa("Ismael Lopes")
 JAFreitas = Pessoa("João Adriano Freitas")
 JamesRaznor = Pessoa("James Raznor")
 JamesSouza = Pessoa("James Souza")
+JonDroid = Pessoa("JonDroid") #nome real?
 Jonnes = Pessoa("Jonnes") #nome completo?
 Juca = Pessoa("Felipe Correa da Silva Sanches")
 Katia = Pessoa("Kátia Kitahara")
@@ -72,8 +75,10 @@ LAlcantara = Pessoa("Lucas Alcântara")
 Lechuga = Pessoa("Lechuga") #nome completo?
 LeonardoSantos = Pessoa("Leonardo Garcia Tales dos Santos")
 Lint = Pessoa("Carlos Lint")
+LoganBr = Pessoa("Ricardo 'Logan'") #nome completo?
 LuisLeao = Pessoa("Luis Fernando de Oliveira Leão")
 Luiz = Pessoa("Luiz") #nome completo?
+LuizVieira = Pessoa("Luiz Vieira")
 Marcel = Pessoa("Marcel") #nome?
 MarceloCampos = Pessoa("Marcelo Campos")
 MarceloRodrigues = Pessoa("Marcelo Alatzatianov Rodrigues") # Lab de Garagem
@@ -100,11 +105,13 @@ Rubens = Pessoa("Rubão") #verificar nome completo (Rubens Tadeu talvez?)
 Samir = Pessoa("Sam Carecho")
 Sandro = Pessoa("Sandro Friedland")
 Sebastiao = Pessoa("Sebastião") #nome completo? Seria esse o Sebastiao Barreto ?
+Skavurzka = Pessoa("Skavurzka") #nome completo?
 Spinola = Pessoa("Spinola") #nome completo?
 Subnet = Pessoa("Luís Guilherme Pires Martins de Abreu")
 Tales = Pessoa("Tales Cione")
 Taumaturgo = Pessoa("Raphael Taumaturgo") # "o cara da cerveja"
 Tiago = Pessoa("Tiago Queiroz") # irmao gemeo do Anderson
+TiagoTadeu = Pessoa("Tiago Tadeu")
 Tony = Pessoa("Tony de Marco")
 Thomas = Pessoa("Thomas") # Francês
 Ulysses = Pessoa("Ulysses Soldá Junior")
@@ -199,9 +206,20 @@ CMC.observa_desligamento(RicardoAmaral, motivo="3 (ou mais) meses de atraso na m
 CMC.data("2011-08-16")
 CMC.aprova_associado(CleitonAlves) # "por quatro votos a favor e uma abstenção."
 Aylons.apresenta_padawans([Lechuga,
-                           Diogines])
+                           Diogenes])
 
-
+# CMC de 20 de Setembro de 2011:
+CMC.data("2011-09-20")
+CMC.aprova_associado(Miklos)
+CMC.aprova_associado(Lechuga)
+CMC.aprova_associado(Diogenes)
+Juca.apresenta_padawan(Carine)
+VJPixel.apresenta_padawans([TiagoTadeu,
+                            JonDroid,
+                            Skavurzka])
+Anchises.apresenta_padawans([GabrielAraujo,
+                             LuizVieira,
+                             LoganBr])
 
 #HACK:
 Alguem.apresenta_padawans([
