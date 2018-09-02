@@ -74,6 +74,7 @@ Moreno = Pessoa("Moreno Hassem")
 NelsonCanton = Pessoa("Nelson Canton")
 NelsonBrito = Pessoa("Nelson Brito")
 Oda = Pessoa("Eduardo Oda")
+Otto = Pessoa("Otto Heringer")
 Pampolha = Pessoa("Pampolha") #nome?
 Pitanga = Pessoa("Rodrigo Rodrigues da Silva")
 Ramalho = Pessoa("Luciano Ramalho")
@@ -119,6 +120,10 @@ jedis = [
 ]
 
 CMC = ConselhoMandaChuva(jedis)
+
+# CMC de 19 de Julho de 2016:
+CMC.data("2016-07-19")
+CMC.aprova_associado(FabricioBiazzotto, endosso=[Tiago]) # presume-se que seja o Tiago Queiroz, a ata diz apenas "Tiago"
 
 # CMC de 16 de Agosto de 2016:
 CMC.data("2016-08-16")
