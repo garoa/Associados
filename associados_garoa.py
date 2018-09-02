@@ -46,14 +46,14 @@ Giovanna = Pessoa("Giovanna")
 GringoMexico = Pessoa("Gringo do México") #nome real?
 Guisso = Pessoa("Fernando Guisso")
 GustavoRibeiro = Pessoa("GustavoRibeiro")
-Gutem = Pessoa("Gutemberg Nunes")
+Gutem = Pessoa("Gutemberg Nunes de Carvalho")
 GutoMaia = Pessoa("Gustavo Maia Neto")
 Helena = Pessoa("Helena (amiga do Afonso)")
 IanF = Pessoa("Ian Fernandez")
 Italo = Pessoa("Italo") #nome completo?
 Ivar = Pessoa("Ivar") #nome completo?
 Ismael = Pessoa("Ismael Lopes")
-JAdriano = Pessoa("João Adriano")
+JAFreitas = Pessoa("João Adriano Freitas")
 JamesRaznor = Pessoa("James Raznor")
 JamesSouza = Pessoa("James Souza")
 Jonnes = Pessoa("Jonnes") #nome completo?
@@ -121,6 +121,15 @@ jedis = [
 ]
 
 CMC = ConselhoMandaChuva(jedis)
+
+# CMC de 15 de Março de 2016:
+CMC.data("2016-03-15")
+Mike.apresenta_padawans([Gutem,
+                         JAFreitas])
+Agaelebe.apresenta_padawan(BrunoBorges)
+CMC.aprova_associado(Gutem, endosso=[Mike])
+CMC.aprova_associado(JAFreitas, endosso=[Mike])
+CMC.aprova_associado(BrunoBorges, endosso=[Agaelebe])
 
 # CMC de 19 de Abril de 2016:
 CMC.data("2016-04-19")
