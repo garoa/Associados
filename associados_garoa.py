@@ -50,6 +50,7 @@ GutoMaia = Pessoa("Gustavo Maia Neto")
 Helena = Pessoa("Helena (amiga do Afonso)")
 IanF = Pessoa("Ian Fernandez")
 Italo = Pessoa("Italo") #nome completo?
+Ivar = Pessoa("Ivar") #nome completo?
 JAdriano = Pessoa("João Adriano")
 JamesRaznor = Pessoa("James Raznor")
 JamesSouza = Pessoa("James Souza")
@@ -103,6 +104,7 @@ Wesley = Pessoa("Wesley Shaimon")
 # esse será a lista dos associados co-fundadores:
 jedis = [
   Anchises,
+  Agaelebe,
   Juca,
   Vido,
   Mike,
@@ -113,6 +115,13 @@ jedis = [
 ]
 
 CMC = ConselhoMandaChuva(jedis)
+
+# CMC de 20 de Setembro de 2016:
+CMC.data("2016-09-20")
+Agaelebe.apresenta_padawan(Ivar)
+CMC.observa_desligamento(Tony, motivo="3 (ou mais) meses de atraso na mensalidade")
+CMC.observa_desligamento(LaTeX, motivo="3 (ou mais) meses de atraso na mensalidade") #dúvida: ata diz "Leandro"
+CMC.observa_desligamento(Gabs, motivo="3 (ou mais) meses de atraso na mensalidade")
 
 # CMC de 18 de Outubro de 2016:
 CMC.data("2016-10-18")
