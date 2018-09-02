@@ -6,7 +6,7 @@ Abdo = Pessoa("Alexandre Abdo")
 Abreu = Pessoa("Abreu") #nome?
 Alexandra = Pessoa("Alexandra Percario")
 Aleph = Pessoa("Alberto Fabiano")
-Allan = Pessoa("Allan") #nome completo?
+Allan = Pessoa("Allan") #nome completo? Seria esse o Allan Moreira?
 AllanTrindade = Pessoa("Allan Trindade") # (de São Vicente)
 Anchises = Pessoa("Anchises")
 Anderson = Pessoa("Anderson Queiroz") # irmao gemeo do Tiago
@@ -22,6 +22,7 @@ BrunoLP = Pessoa("Bruno Luiz de Paula")
 CSM = Pessoa("CSM") #nome? Seria esse o Carlos CM?
 CarlosCM = Pessoa("Carlos CM") # do time de CTF do Garoa
 Carril = Pessoa("Fernando Carril")
+Ceci = Pessoa("Cecilia Tanaka")
 Christian = Pessoa("Christian") # nome completo?
 Dandara = Pessoa("Dandara Jatobá")
 Dente = Pessoa("Marcelo Araujo Dente")
@@ -120,6 +121,14 @@ jedis = [
 ]
 
 CMC = ConselhoMandaChuva(jedis)
+
+# CMC de 19 de Abril de 2016:
+CMC.data("2016-04-19")
+CMC.readmite_associado(Ceci) # "Se possível, Ceci solicita retomar a associação junto ao Garoa Hacker Clube, bem como retornar a ser membro do CMC e retomar a moderação das listas do Garoa, bem como de suas redes sociais. Saudadinhas, hehe...  ;)"
+
+# CMC de 17 de Maio de 2016:
+CMC.data("2016-05-17")
+# Não houve movimentação no quadro de associados/padawans
 
 # CMC de 21 de Junho de 2016:
 CMC.data("2016-06-21")
