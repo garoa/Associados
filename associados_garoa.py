@@ -2,7 +2,8 @@ Abdo = "Alexandre Abdo"
 Abreu = "Abreu" #nome?
 Alexandra = "Alexandra Percario"
 Anchises = "Anchises"
-Andre = "Andre" #nome completo?
+Andre = "Andre" #nome completo? (seria esse o Hermann?)
+AndreHermann = "André Hermann"
 Afonso = "Afonso Coutinho"
 Agaelebe = "Hugo Lima Borges"
 Aylons = "Gustavo Bruno"
@@ -12,28 +13,35 @@ CSM = "CSM" #nome?
 Dandara = "Dandara Jatobá"
 Dente = "Dente" # nome?
 DQ = "Daniel Quadros"
+FabioH = "FabioHirano"
+Fabricio = "Fabricio" #nome?
 Fellype = "Fellype Cazorino"
+FMolina = "Fernando Molina"
 FSouza = "Felipe Souza"
 Gabrielzinho = "Gabriel Almeida"
+GringoMexico = "Gringo do México" #nome real?
 Guisso = "Fernando Guisso"
 Gutem = "Gutemberg Nunes"
 GutoMaia = "Gustavo Maia Neto"
 IanF = "Ian Fernandez"
 JAdriano = "João Adriano"
+JamesRaznor = "James Raznor"
 Juca = "Felipe Correa da Silva Sanches"
+LaTeX = "LaTeX" #nome real?
 LAlcantara = "Lucas Alcântara"
 LuisLeao = "Luis Fernando de Oliveira Leão"
+Marcel = "Marcel" #nome?
 MarceloCampos = "Marcelo Campos"
 MarceloRodrigues = "Marcelo Rodrigues" # Lab de Garagem
 Mesel = "Vinicius Mesel"
 Mike = "Mike Howard"
-Nelson = "Nelson" #nome? (indicado padawan pelo Mesel)
 NelsonCanton = "Nelson Canton"
 NelsonBrito = "Nelson Brito"
 Oda = "Eduardo Oda"
 Pampolha = "Pampolha" #nome?
 Pitanga = "Rodrigo Rodrigues da Silva"
-RdosGatos = "Rodrigo dos Gatos" # nome real?
+RdosGatos = "Rodrigo dos Gatos" # nome real? Rodrigo Silveira talvez?
+RodrigoSilveira = "Rodrigo Silveira"
 Rubens = "Rubão" #verificar nome completo
 RMunhoz = "Rogério Munhoz"
 Sandro = "Sandro Friedland"
@@ -49,17 +57,27 @@ Vrech = "Matheus Vral Vrech"
 Yumi = "Amanda Yumi Ambriola"
 Wesley = "Wesley Shaimon"
 
+# CMC de 16 de Janeiro de 2018:
+CMC.data("2018-01-16")
+Afonso.apresenta_padawan(JamesRaznor)
+Mike.apresenta_padawan(Marcel) # faz cerveja, lava panela de feijoada e faz pizza.
+Mesel.apresenta_padawan(NelsonBrito)
+
+# CMC de 20 de Fevereiro de 2018:
+CMC.data("2018-02-20")
+Guisso.apresenta_padawan(AndreHermann)
+CMC.readmite_associado(Ulysses)
 
 # CMC de 20 de Março de 2018:
 CMC.data("2018-03-20")
 CMC.observa_desligamento(NelsonCanton) # solicitou
 CMC.observa_desligamento(Aylons) # solicitou
-CMC.aprova_associado(Nelson, endosso=[Mesel])
+CMC.aprova_associado(NelsonBrito, endosso=[Mesel])
 
 # CMC de 17 de Abril de 2018:
 CMC.data("2018-04-17")
 CMC.observa_desligamento(BrunoLP, motivo="3 meses de atraso")
-# Dúvida: Marcelo Rodrigues ainda é associado?
+CMC.pergunta("Dúvida: Marcelo Rodrigues ainda é associado?")
 
 # CMC de 15 de Maio de 2018:
 CMC.data("2018-05-15")
