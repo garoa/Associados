@@ -27,10 +27,12 @@ CarlosCM = Pessoa("Carlos CM") # do time de CTF do Garoa
 Carril = Pessoa("Fernando Carril")
 Ceci = Pessoa("Cecilia Tanaka")
 Christian = Pessoa("Christian") # nome completo?
+CleitonAlves = Pessoa("Cleiton Alves")
 Dandara = Pessoa("Dandara Jatobá")
 DanielaIwassa = Pessoa("Daniela Iwassa")
 DavidRobert = Pessoa("David Robert")
 Dente = Pessoa("Marcelo Araujo Dente")
+Diogines = Pessoa("Diógines") # nome completo?
 DQ = Pessoa("Daniel Gerk de Azevedo Quadros")
 Emerson = Pessoa("Emerson Monteiro Sobreiro") #padawan do Fabricio
 ErickEmiliano = Pessoa("Erick Emiliano")
@@ -75,9 +77,11 @@ Luiz = Pessoa("Luiz") #nome completo?
 Marcel = Pessoa("Marcel") #nome?
 MarceloCampos = Pessoa("Marcelo Campos")
 MarceloRodrigues = Pessoa("Marcelo Alatzatianov Rodrigues") # Lab de Garagem
+Markun = Pessoa("Pedro Markun")
 Mesel = Pessoa("Vinicius Mesel")
 Micael = Pessoa("Micael Vitor DJ")
 Mike = Pessoa("Mike Howard")
+Miklos = Pessoa("Cláudio Miklos")
 Moreno = Pessoa("Moreno Hassem")
 NelsonCanton = Pessoa("Nelson Canton")
 NelsonBrito = Pessoa("Nelson Brito")
@@ -87,11 +91,13 @@ Pampolha = Pessoa("Pampolha") #nome?
 Pitanga = Pessoa("Rodrigo Rodrigues da Silva")
 Ramalho = Pessoa("Luciano Gama de Souza Ramalho")
 RafaelML = Pessoa("Rafael M Lopes")
+RicardoAmaral = Pessoa("Ricardo Amaral")
 RobertJr = Pessoa("Robert Junior") # Guisso disse: "Ele é um cabeludinho, magrinho, com cara de nerd, que vem com o pai."
 RodrigoSilveira = Pessoa("Rodrigo Gomes da Silveira") # "dos gatos"
 Roger = Pessoa("Roger") #nome completo?
 RogerioMunhoz = Pessoa("Rogério Munhoz")
 Rubens = Pessoa("Rubão") #verificar nome completo (Rubens Tadeu talvez?)
+Samir = Pessoa("Sam Carecho")
 Sandro = Pessoa("Sandro Friedland")
 Sebastiao = Pessoa("Sebastião") #nome completo? Seria esse o Sebastiao Barreto ?
 Spinola = Pessoa("Spinola") #nome completo?
@@ -145,11 +151,56 @@ CMC.data("2011-03-15")
 CMC.data("2011-04-19")
 # Essas são as pessoas que não assinaram os papéis da fundação, mas mesmo assim foram citadas como fundadores nesta reunião do CMC:
 CMC.aprova_associado(Spinola, fundador=True)
-CMC.aprova_associado(DavidRobert, fundador=True)
 CMC.aprova_associado(Katia, fundador=True)
 CMC.aprova_associado(Asa, fundador=True)
 CMC.aprova_associado(VJPixel, fundador=True)
-CMC.aprova_associado(Lint, fundador=True)
+#
+# Nessa reunião foi mencionado pela primeira vez o termo "padawan".
+# Nota: O Markun foi adicionado sem passar pelo processo de padawan:
+CMC.aprova_associado(Markun, endosso="HACK")
+#
+# Nota:
+# CMC.aprova_associado(DavidRobert, fundador=True)
+# Há uma afirmação em https://garoa.net.br/wiki/Reuni%C3%A3o_de_24/05/2011 de que o David Robert optou por não ser sócio fundador.
+#
+# Nota:
+# CMC.aprova_associado(Lint, fundador=True) 
+# Em 24/05/2011, Lint comunicou que não quer ser mais membro nem fundador.
+# O CMC aprovou seu desligamento. Entregou as chaves, que foram repassadas para o Oda
+
+
+# CMC - reunião extraordinária de 11 de Maio de 2011:
+CMC.data("2011-05-11")
+# Não houve alteração no quadro de associados/padawans.
+
+# CMC de 24 de Maio de 2011:
+CMC.data("2011-05-24")
+# Consta na ata que Bruno Borges (irmão do Agaelebe) optou por não ser membro efetivo.
+# Meu entendimento é de que ele não chegou a se associar, nessa época.
+#
+# "Lint comunicou que não quer ser mais membro nem fundador":
+# CMC.observa_desligamento(Lint, motivo="Solicitou desligamento dos quadros do Garoa")
+
+# CMC de 21 de Junho de 2011:
+CMC.data("2011-06-21")
+Oda.apresenta_padawan(Samir)
+Anchises.apresenta_padawan(CleitonAlves)
+
+# CMC de 26 de Julho de 2011:
+CMC.data("2011-07-26")
+Aleph.apresenta_padawan(Miklos)
+#
+# Ricardo Amaral é um padawan perdido pois quando ele manifestou interesse por se associar ao Garoa ainda não havia essa de padawan e logo em seguida ele sumiu (após pagar uma mensalidade).
+# Hack só pra constar:
+CMC.aprova_associado(RicardoAmaral, endosso="HACK")
+CMC.observa_desligamento(RicardoAmaral, motivo="3 (ou mais) meses de atraso na mensalidade")
+
+# CMC de 16 de Agosto de 2011:
+CMC.data("2011-08-16")
+CMC.aprova_associado(CleitonAlves) # "por quatro votos a favor e uma abstenção."
+Aylons.apresenta_padawans([Lechuga,
+                           Diogines])
+
 
 
 #HACK:

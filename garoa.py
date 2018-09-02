@@ -56,7 +56,7 @@ class ConselhoMandaChuva():
     if pessoa in self.padawans:
       self.padawans.remove(pessoa)
     else:
-      if not fundador:
+      if not fundador and endosso != "HACK":
         print("ERRO: Aprovando associado '{}' que não é padawan de ninguém!".format(pessoa.nome))
     if pessoa not in self.associados:
       self.associados.append(pessoa)
