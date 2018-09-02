@@ -5,9 +5,10 @@ from garoa import Pessoa, ConselhoMandaChuva
 Abdo = Pessoa("Alexandre Abdo")
 Abreu = Pessoa("Abreu") #nome?
 Alexandra = Pessoa("Alexandra Percario")
+Allan = Pessoa("Allan") #nome completo?
 AllanTrindade = Pessoa("Allan Trindade") # (de São Vicente)
 Anchises = Pessoa("Anchises")
-Anderson = Pessoa("Anderson") # seria o irmao gemeo do Thiago?
+Anderson = Pessoa("Anderson Queiroz") # irmao gemeo do Tiago
 Andre = Pessoa("Andre") #nome completo? (seria esse o Hermann?)
 AndreHermann = Pessoa("André Hermann")
 Afonso = Pessoa("Afonso Coutinho")
@@ -19,18 +20,20 @@ CSM = Pessoa("CSM") #nome? Seria esse o Carlos CM?
 CarlosCM = Pessoa("Carlos CM") # do time de CTF do Garoa
 Christian = Pessoa("Christian") # nome completo?
 Dandara = Pessoa("Dandara Jatobá")
-Dente = Pessoa("Dente") # nome?
+Dente = Pessoa("Marcelo Araujo Dente")
 DQ = Pessoa("Daniel Quadros")
 Emerson = Pessoa("Emerson Monteiro Sobreiro") #padawan do Fabricio
-Erik = Pessoa("Erik Dataleak Ramos") #nome real?
+Erick = Pessoa("Erick") #nome completo? Ou seria o Dataleak abaixo?
+ErikDataleak = Pessoa("Erik Dataleak Ramos") #nome real?
 Erin = Pessoa("Erin") #nome completo?
 FabioH = Pessoa("Fabio Hirano")
-FabricioBiazzoto = Pessoa("Fabricio Biazzotto")
+FabricioBiazzotto = Pessoa("Fabricio Biazzotto")
 Fellype = Pessoa("Fellype Cazorino")
 FMolina = Pessoa("Fernando Molina")
 FSouza = Pessoa("Felipe Souza")
 Gabi = Pessoa("Gabriela Fonseca")
 Gabrielzinho = Pessoa("Gabriel Almeida")
+Gabs = Pessoa("Gabriel 'Gabs'") #nome completo?
 GringoMexico = Pessoa("Gringo do México") #nome real?
 Guisso = Pessoa("Fernando Guisso")
 GustavoRibeiro = Pessoa("GustavoRibeiro")
@@ -50,6 +53,7 @@ Marcel = Pessoa("Marcel") #nome?
 MarceloCampos = Pessoa("Marcelo Campos")
 MarceloRodrigues = Pessoa("Marcelo Rodrigues") # Lab de Garagem
 Mesel = Pessoa("Vinicius Mesel")
+Micael = Pessoa("Micael Vitor DJ")
 Mike = Pessoa("Mike Howard")
 NelsonCanton = Pessoa("Nelson Canton")
 NelsonBrito = Pessoa("Nelson Brito")
@@ -66,7 +70,7 @@ Sebastiao = Pessoa("Sebastião") #nome completo? Seria esse o Sebastiao Barreto 
 Subnet = Pessoa("Luís Guilherme Pires Martins de Abreu")
 Tales = Pessoa("Tales Cione")
 Taumaturgo = Pessoa("Raphael Taumaturgo") # "o cara da cerveja"
-Thiago = Pessoa("Thiago") # seria o irmao gemeo do Anderson?
+Tiago = Pessoa("Tiago Queiroz") # irmao gemeo do Anderson
 Thomas = Pessoa("Thomas") # Francês
 Ulysses = Pessoa("Ulysses Soldá Junior")
 VAlves = Pessoa("Vitor Alves")
@@ -75,21 +79,57 @@ Vido = Pessoa("Lucas Vido")
 VJPixel = Pessoa("VJ Pixel")
 Vrech = Pessoa("Matheus Vral Vrech") # (São Carlos)
 Yumi = Pessoa("Amanda Yumi Ambriola")
+Yanava = Pessoa("Yanava") # nome?
 Wesley = Pessoa("Wesley Shaimon")
 
 # Os 'jedis' por enquanto são as raízes do grafo incompleto de associados.
 # Mas depois que toda a história estiver transcrita aqui,
 # esse será a lista dos associados co-fundadores:
 jedis = [
-  Afonso,
   Juca,
-  Dente,
   Vido,
   Guisso,
-  Mike
+  Mike,
+  Tiago,
+  Yumi,
+  FabricioBiazzotto
 ]
 
 CMC = ConselhoMandaChuva(jedis)
+
+# CMC de 21 de Março de 2017:
+CMC.data("2017-03-21")
+Yumi.apresenta_padawan(Mesel)
+FabricioBiazzotto.apresenta_padawan(Emerson)
+CMC.aprova_associado(Emerson, endosso=[FabricioBiazzotto])
+CMC.aprova_associado(ErikDataleak, endosso=[Anchises])
+# Ficou confuso na ata! aparentemente tem também um "Erick":
+# "Anchises apresenta Erick como associado - quarentena"
+CMC.observa_desligamento(Allan, motivo="6 meses de atraso na mensalidade")
+CMC.observa_desligamento(Gabs, motivo="6 meses de atraso na mensalidade")
+
+# CMC de 18 de Abril de 2017:
+CMC.data("2017-04-18")
+CMC.observa_desligamento(Yanava, motivo="3 meses de atraso na mensalidade")
+CMC.observa_desligamento(LaTeX, motivo="3 meses de atraso na mensalidade") # ata diz "Leandro" (é o LaTeX mesmo?)
+CMC.observa_desligamento(DQ, motivo="requisitado")
+# NOTA: CMC aprova DQ como associado honorário.
+
+# CMC de 16 de Maio de 2017:
+CMC.data("2017-05-16")
+CMC.readmite_associado(Afonso)
+Afonso.apresenta_padawan(Micael)
+Tiago.apresenta_padawan(Anderson) # "como seu padawan recursivo"
+Mike.apresenta_padawans([Dente,
+                         Thomas])
+CMC.aprova_associado(Christian, endosso=[Oda])
+
+# CMC de 20 de Junho de 2017:
+CMC.data("2017-06-20")
+CMC.aprova_associado(Dente)
+CMC.aprova_associado(Anderson)
+CMC.aprova_associado(Thomas)
+# a ata diz: "Total de associados do Garoa no final de Abril: 40 (?)"
 
 # CMC de 18 de Julho de 2017:
 CMC.data("2017-07-18")
