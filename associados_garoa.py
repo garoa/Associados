@@ -184,5 +184,5 @@ Afonso.apresenta_padawans([Alexandra,
                            Wesley,
                            VAlves])
 
-print("Padawans órfãos:\n\t{}".format('\n\t'.join(map(lambda x: x.nome, CMC.padawans))))
-print("Associados:\n\t{}".format('\n\t'.join(map(lambda x: "{} ({})".format(x.nome, len(x.padawans)), CMC.associados))))
+CMC.print_padawans()
+#CMC.print_associados()

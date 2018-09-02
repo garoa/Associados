@@ -16,6 +16,7 @@ class Pessoa():
       self.apresenta_padawan(p)
 
   def apresenta_padawan(self, pessoa):
+    pessoa.apresentacao = self.cmc.dia
     self.padawans.append(pessoa)
     self.cmc.padawans.append(pessoa)
 
@@ -70,4 +71,10 @@ class ConselhoMandaChuva():
 
     if pessoa in self.associados:
       self.associados.remove(pessoa)
+
+  def print_padawans(self):
+    print("Padawans órfãos:\n\t{}".format('\n\t'.join(map(lambda x: "{}: {}".format(x.apresentacao, x.nome), self.padawans))))
+
+  def print_associados(self):
+    print("Associados:\n\t{}".format('\n\t'.join(map(lambda x: "{} ({})".format(x.nome, len(x.padawans)), self.associados))))
 
