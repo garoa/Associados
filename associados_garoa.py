@@ -56,7 +56,7 @@ GabrielAraujo = Pessoa("Gabriel Araújo")
 Gafanhoto = Pessoa("Mateus Zitelli", wiki="MateusZitelli")
 Giovanna = Pessoa("Giovanna")
 GringoMexico = Pessoa("Gringo do México") #nome real?
-Gola = Pessoa("Bruno Gola")
+Gola = Pessoa("Bruno Gola", wiki="Brunogola")
 Guisso = Pessoa("Fernando Guisso")
 GustavoRibeiro = Pessoa("GustavoRibeiro")
 Gutem = Pessoa("Gutemberg Nunes de Carvalho")
@@ -78,6 +78,7 @@ Katia = Pessoa("Kátia Kitahara")
 Kemel = Pessoa("Kemel Zaidan")
 LaTeX = Pessoa("Leandro Teixeira (LaTeX)")
 LAlcantara = Pessoa("Lucas Alcântara")
+Laura = Pessoa("Laura Sobenes")
 LeandroSilva = Pessoa("Leandro Luciano da Silva", wiki="Leandrolsilva")
 Leandro = Pessoa("Leandro") # nome completo? Não é o Silva!
 Lechuga = Pessoa("Lechuga") #nome completo?
@@ -85,7 +86,7 @@ LeonardoSantos = Pessoa("Leonardo Garcia Tales dos Santos")
 Lint = Pessoa("Carlos Lint")
 LoganBr = Pessoa("Ricardo 'Logan'") #nome completo?
 Luca = Pessoa("Luca Toledo")
-LuisLeao = Pessoa("Luis Fernando de Oliveira Leão")
+LuisLeao = Pessoa("Luis Fernando de Oliveira Leão", wiki="Luis.leao")
 Luiz = Pessoa("Luiz") #nome completo?
 LuizVieira = Pessoa("Luiz Vieira")
 Marcel = Pessoa("Marcel") #nome?
@@ -107,6 +108,7 @@ Pitanga = Pessoa("Rodrigo Rodrigues da Silva")
 Ramalho = Pessoa("Luciano Gama de Souza Ramalho")
 RafaelML = Pessoa("Rafael M Lopes")
 RicardoAmaral = Pessoa("Ricardo Amaral")
+RicardoCastro = Pessoa("Ricardo Castro")
 RobertJr = Pessoa("Robert Junior") # Guisso disse: "Ele é um cabeludinho, magrinho, com cara de nerd, que vem com o pai."
 RodrigoSilveira = Pessoa("Rodrigo Gomes da Silveira") # "dos gatos"
 Roger = Pessoa("Roger") #nome completo?
@@ -138,7 +140,6 @@ Yanava = Pessoa("Yanava") # nome?
 WagnerSartori = Pessoa("Wagner Sartori")
 Wesley = Pessoa("Wesley Shaimon")
 Zanst = Pessoa("Zanst") 
-
 
 #HACK:
 Alguem = Pessoa("Algum associado")
@@ -272,6 +273,14 @@ WagnerSartori.apresenta_padawans([Leandro,
 Aylons.apresenta_padawan(Gafanhoto)
 DQ.apresenta_padawan(Ulysses)
 
+# CMC de 28 de Fevereiro de 2012:
+CMC.data("2012-02-28")
+Tony.apresenta_padawans([Gola,
+                         Laura])
+Anchises.apresenta_padawan(RicardoCastro)
+CMC.aprova_associado(LuisLeao, endosso=[Lechuga])
+CMC.aprova_associado(Gafanhoto, endosso=[Aylons])
+CMC.aprova_associado(Luca, endosso=[Oda])
 
 #HACK:
 Alguem.apresenta_padawans([
@@ -295,7 +304,6 @@ for a in [Allan,
           Kemel,
           LaTeX,
           LeonardoSantos,
-          LuisLeao,
           Mike,
           NelsonCanton,
           Otto,
