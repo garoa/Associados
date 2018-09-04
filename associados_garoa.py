@@ -53,6 +53,7 @@ Gabi = Pessoa("Gabriela Fonseca")
 Gabrielzinho = Pessoa("Gabriel Almeida")
 Gabs = Pessoa("Gabriel 'Gabs'") #nome completo?
 GabrielAraujo = Pessoa("Gabriel Araújo")
+Gafanhoto = Pessoa("Gafanhoto") # nome real?
 Giovanna = Pessoa("Giovanna")
 GringoMexico = Pessoa("Gringo do México") #nome real?
 Gola = Pessoa("Bruno Gola")
@@ -61,6 +62,7 @@ GustavoRibeiro = Pessoa("GustavoRibeiro")
 Gutem = Pessoa("Gutemberg Nunes de Carvalho")
 GutoMaia = Pessoa("Gustavo Maia Neto")
 Helena = Pessoa("Helena (amiga do Afonso)")
+Hugo = Pessoa("Hugo") # nome completo? Não é o Agaelebe!
 IanF = Pessoa("Ian Fernandez")
 Italo = Pessoa("Italo") #nome completo?
 Ivar = Pessoa("Ivar") #nome completo?
@@ -76,6 +78,8 @@ Katia = Pessoa("Kátia Kitahara")
 Kemel = Pessoa("Kemel Zaidan")
 LaTeX = Pessoa("Leandro Teixeira (LaTeX)")
 LAlcantara = Pessoa("Lucas Alcântara")
+LeandroSilva = Pessoa("Leandro Silva")
+Leandro = Pessoa("Leandro") # nome completo? Não é o Silva!
 Lechuga = Pessoa("Lechuga") #nome completo?
 LeonardoSantos = Pessoa("Leonardo Garcia Tales dos Santos")
 Lint = Pessoa("Carlos Lint")
@@ -133,6 +137,8 @@ Yumi = Pessoa("Amanda Yumi Ambriola")
 Yanava = Pessoa("Yanava") # nome?
 WagnerSartori = Pessoa("Wagner Sartori")
 Wesley = Pessoa("Wesley Shaimon")
+Zanst = Pessoa("Zanst") 
+
 
 #HACK:
 Alguem = Pessoa("Algum associado")
@@ -256,6 +262,15 @@ CMC.aprova_associado(VictorScattone)
 CMC.aprova_associado(LoganBr)
 CMC.aprova_associado(Nessa)
 CMC.aprova_associado(Coruja)
+
+# CMC de 17 de Janeiro de 2012:
+CMC.data("2012-01-17")
+Agaelebe.apresenta_padawan(Zanst)
+Miklos.apresenta_padawan(LeandroSilva)
+WagnerSartori.apresenta_padawans([Leandro,
+                                  Hugo])
+Aylons.apresenta_padawan(Gafanhoto)
+DQ.apresenta_padawan(Ulysses)
 
 
 #HACK:
