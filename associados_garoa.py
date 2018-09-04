@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-from garoa import Pessoa, ConselhoMandaChuva
+from clube import Pessoa, ConselhoMandaChuva
 
 Abdo = Pessoa("Alexandre Abdo")
 Abreu = Pessoa("Abreu") #nome?
