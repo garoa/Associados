@@ -4,8 +4,9 @@
 PEDANTE = False
 
 class Pessoa():
-  def __init__(self, nome):
+  def __init__(self, nome, wiki=None):
     self.nome = nome
+    self.wiki = wiki
     self.cmc = None
     self.associacao = []
     self.padawans = []

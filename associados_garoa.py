@@ -5,7 +5,7 @@ from clube import Pessoa, ConselhoMandaChuva
 Abdo = Pessoa("Alexandre Abdo")
 Abreu = Pessoa("Abreu") #nome?
 Alexandra = Pessoa("Alexandra Percario")
-Aleph = Pessoa("Alberto Fabiano Caires de Medeiros")
+Aleph = Pessoa("Alberto Fabiano Caires de Medeiros", wiki="Aleph")
 AlexPorto = Pessoa("Alex Porto")
 Allan = Pessoa("Allan") #nome completo? Seria esse o Allan Moreira?
 AllanTrindade = Pessoa("Allan Trindade") # (de São Vicente)
@@ -53,7 +53,7 @@ Gabi = Pessoa("Gabriela Fonseca")
 Gabrielzinho = Pessoa("Gabriel Almeida")
 Gabs = Pessoa("Gabriel 'Gabs'") #nome completo?
 GabrielAraujo = Pessoa("Gabriel Araújo")
-Gafanhoto = Pessoa("Gafanhoto") # nome real?
+Gafanhoto = Pessoa("Mateus Zitelli", wiki="MateusZitelli")
 Giovanna = Pessoa("Giovanna")
 GringoMexico = Pessoa("Gringo do México") #nome real?
 Gola = Pessoa("Bruno Gola")
@@ -78,7 +78,7 @@ Katia = Pessoa("Kátia Kitahara")
 Kemel = Pessoa("Kemel Zaidan")
 LaTeX = Pessoa("Leandro Teixeira (LaTeX)")
 LAlcantara = Pessoa("Lucas Alcântara")
-LeandroSilva = Pessoa("Leandro Silva")
+LeandroSilva = Pessoa("Leandro Luciano da Silva", wiki="Leandrolsilva")
 Leandro = Pessoa("Leandro") # nome completo? Não é o Silva!
 Lechuga = Pessoa("Lechuga") #nome completo?
 LeonardoSantos = Pessoa("Leonardo Garcia Tales dos Santos")
