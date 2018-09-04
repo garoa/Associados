@@ -98,6 +98,7 @@ Micael = Pessoa("Micael Vitor DJ")
 Mike = Pessoa("Mike Howard")
 Miklos = Pessoa("Cláudio Miklos")
 Moreno = Pessoa("Moreno Hassem")
+Murilo = Pessoa("Murilo Prestes")
 NelsonCanton = Pessoa("Nelson Canton")
 NelsonBrito = Pessoa("Nelson Brito")
 Nessa = Pessoa("Vanessa Guedes")
@@ -281,6 +282,10 @@ Anchises.apresenta_padawan(RicardoCastro)
 CMC.aprova_associado(LuisLeao, endosso=[Lechuga])
 CMC.aprova_associado(Gafanhoto, endosso=[Aylons])
 CMC.aprova_associado(Luca, endosso=[Oda])
+
+# CMC de 20 de Março de 2012:
+CMC.data("2012-03-20")
+Aleph.apresenta_padawan(Murilo)
 
 #HACK:
 Alguem.apresenta_padawans([
