@@ -37,6 +37,7 @@ DavidRobert = Pessoa("David Robert")
 Dente = Pessoa("Marcelo Araujo Dente")
 Diogenes = Pessoa("Diógenes") # nome completo?
 DQ = Pessoa("Daniel Gerk de Azevedo Quadros")
+Eden = Pessoa("Eden Cardim")
 Emerson = Pessoa("Emerson Monteiro Sobreiro") #padawan do Fabricio
 ErickEmiliano = Pessoa("Erick Emiliano")
 ErikDataleak = Pessoa("Erik Dataleak Ramos") #nome real?
@@ -53,6 +54,7 @@ Gabi = Pessoa("Gabriela Fonseca")
 Gabrielzinho = Pessoa("Gabriel Almeida")
 Gabs = Pessoa("Gabriel 'Gabs'") #nome completo?
 GabrielAraujo = Pessoa("Gabriel Araújo")
+GabrielRomano = Pessoa("Gabriel Romano")
 Gafanhoto = Pessoa("Mateus Zitelli", wiki="MateusZitelli")
 Giovanna = Pessoa("Giovanna")
 GringoMexico = Pessoa("Gringo do México") #nome real?
@@ -87,6 +89,7 @@ Lina = Pessoa("Lina Lopes")
 Lint = Pessoa("Carlos Lint")
 LoganBr = Pessoa("Ricardo 'Logan'") #nome completo?
 Luca = Pessoa("Luca Toledo")
+Lucas = Pessoa("Lucas") #nome completo?
 LuisLeao = Pessoa("Luis Fernando de Oliveira Leão", wiki="Luis.leao")
 Luiz = Pessoa("Luiz") #nome completo?
 LuizVieira = Pessoa("Luiz Vieira")
@@ -104,6 +107,7 @@ Murilo = Pessoa("Murilo Prestes")
 NelsonCanton = Pessoa("Nelson Canton")
 NelsonBrito = Pessoa("Nelson Brito")
 Nessa = Pessoa("Vanessa Guedes")
+Novelli = Pessoa("Novelli") #nome? André Novelli?
 Oda = Pessoa("Eduardo Oda")
 Otto = Pessoa("Otto Heringer")
 Pampolha = Pessoa("Pampolha") #nome?
@@ -122,6 +126,7 @@ Rubens = Pessoa("Rubão") #verificar nome completo (Rubens Tadeu talvez?)
 Samir = Pessoa("Sam Carecho")
 SamuelDamasceno = Pessoa("Samuel Damasceno")
 Sandro = Pessoa("Sandro Friedland")
+Santagada = Pessoa("Leonardo Santagada")
 Sebastiao = Pessoa("Sebastião") #nome completo? Seria esse o Sebastiao Barreto ?
 Skavurzka = Pessoa("Skavurzka") #nome completo?
 Spinola = Pessoa("Spinola") #nome completo?
@@ -131,6 +136,7 @@ Taumaturgo = Pessoa("Raphael Taumaturgo") # "o cara da cerveja"
 Tiago = Pessoa("Tiago Queiroz") # irmao gemeo do Anderson
 TiagoTadeu = Pessoa("Tiago Tadeu")
 ThiagoMassa = Pessoa("Thiago Massa")
+ThiagoRondon = Pessoa("Thiago Rondon")
 Tony = Pessoa("Tony de Marco")
 Thomas = Pessoa("Thomas") # Francês
 Ulysses = Pessoa("Ulysses Soldá Junior")
@@ -346,6 +352,33 @@ Oda.apresenta_padawan(Subnet)
 CMC.aprova_associado(Jonnes, endosso=[Aleph])
 CMC.aprova_associado(GutoMaia, endosso=[Ramalho])
 
+# CMC de 18 de Dezembro de 2012:
+CMC.data("2012-12-18")
+# Não houve alteração do quadro de associados/padawans
+
+# CMC de 15 de Janeiro de 2013:
+CMC.data("2013-01-15")
+CMC.aprova_associado(Subnet)
+
+# CMC de 19 de Fevereiro de 2013:
+CMC.data("2013-02-19")
+Ramalho.apresenta_padawan(Novelli)
+CMC.aprova_associado(Gola, endosso=[Tony])
+
+# CMC de 19 de Março de 2013:
+CMC.data("2013-03-19")
+Ramalho.apresenta_padawans([Santagada,
+                            Lucas])
+Tony.apresenta_padawan(Eden)
+Agaelebe.apresenta_padawan(Mike)
+CMC.aprova_associado(Santagada, endosso=[Ramalho])
+CMC.aprova_associado(Novelli, endosso=[Ramalho])
+CMC.aprova_associado(Lucas, endosso=[Ramalho])
+CMC.aprova_associado(Eden, endosso=[Tony])
+CMC.aprova_associado(Mike, endosso=[Agaelebe])
+VictorScattone.apresenta_padawan(GabrielRomano)
+Juca.apresenta_padawan(ThiagoRondon)
+
 #HACK:
 Alguem.apresenta_padawans([
   Christian,
@@ -367,7 +400,6 @@ for a in [Allan,
           Kemel,
           LaTeX,
           LeonardoSantos,
-          Mike,
           NelsonCanton,
           Otto,
           RafaelML,
