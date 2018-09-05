@@ -83,6 +83,7 @@ LeandroSilva = Pessoa("Leandro Luciano da Silva", wiki="Leandrolsilva")
 Leandro = Pessoa("Leandro") # nome completo? Não é o Silva!
 Lechuga = Pessoa("Lechuga") #nome completo?
 LeonardoSantos = Pessoa("Leonardo Garcia Tales dos Santos")
+Lina = Pessoa("Lina Lopes")
 Lint = Pessoa("Carlos Lint")
 LoganBr = Pessoa("Ricardo 'Logan'") #nome completo?
 Luca = Pessoa("Luca Toledo")
@@ -291,6 +292,14 @@ Aleph.apresenta_padawan(Murilo)
 CMC.data("2012-04-17")
 Lechuga.apresenta_padawan(Vitor)
 CMC.aprova_associado(Ulysses, endosso=[DQ])
+
+# CMC de 22 de Maio de 2012:
+CMC.data("2012-05-22")
+Aylons.apresenta_padawans([Tales, # seria esse o Tales Cirone ?
+                           Lina])
+Gafanhoto.apresenta_padawan(Belasco)
+CMC.aprova_associado(Vitor, endosso=[Lechuga,
+                                     LuisLeao])
 
 #HACK:
 Alguem.apresenta_padawans([
