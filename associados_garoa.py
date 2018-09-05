@@ -6,6 +6,7 @@ Abayomi = Pessoa("Abayomi") #nome completo?
 Abdo = Pessoa("Alexandre Abdo")
 Abreu = Pessoa("Abreu") #nome?
 Alexandra = Pessoa("Alexandra Percario")
+AleSouza = Pessoa("Alexandre Souza", wiki="Alexandre_Souza")
 Aleph = Pessoa("Alberto Fabiano Caires de Medeiros", wiki="Aleph")
 AlexPorto = Pessoa("Alex Porto")
 Allan = Pessoa("Allan") #nome completo? Seria esse o Allan Moreira?
@@ -59,6 +60,7 @@ GabrielAraujo = Pessoa("Gabriel Araújo")
 Gafanhoto = Pessoa("Mateus Zitelli", wiki="MateusZitelli")
 Giovanna = Pessoa("Giovanna")
 GringoMexico = Pessoa("Gringo do México") #nome real?
+Grigolato = Pessoa("Samuel Grigolato", wiki="Samuel.grigolato")
 Gola = Pessoa("Bruno Gola", wiki="Brunogola")
 Guisso = Pessoa("Fernando Guisso")
 GustavoRibeiro = Pessoa("GustavoRibeiro")
@@ -428,6 +430,15 @@ CMC.data("2013-10-15")
 CMC.data("2013-11-19")
 CMC.aprova_associado(Kinoshita, endosso=[Juca])
 Oda.apresenta_padawan(Abdo)
+
+# CMC de 17 de Dezembro de 2013:
+CMC.data("2013-12-17")
+Ramalho.apresenta_padawan(Grigolato)
+Ulysses.apresenta_padawan(AleSouza)
+CMC.aprova_associado(Abdo, endosso=[Oda])
+CMC.aprova_associado(Grigolato, endosso=[Ramalho])
+CMC.aprova_associado(AleSouza, endosso=[Ulysses])
+CMC.observa_desligamento(VictorScattone, motivo="temporariamente a pedido do mesmo")
 
 #HACK:
 Alguem.apresenta_padawans([
