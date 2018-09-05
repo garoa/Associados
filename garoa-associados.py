@@ -12,7 +12,7 @@ AlexPorto = Pessoa("Alex Porto")
 Allan = Pessoa("Allan") #nome completo? Seria esse o Allan Moreira?
 AllanTrindade = Pessoa("Allan Trindade") # (de São Vicente)
 Anchises = Pessoa("Anchises Moraes Guimarães de Paula", wiki="Anchisesbr")
-Anderson = Pessoa("Anderson Queiroz") # irmao gemeo do Tiago
+Anderson = Pessoa("Anderson Queiroz") # irmao gemeo do Tiago Queiroz
 Andre = Pessoa("Andre") #nome completo? (seria esse o Hermann? ou o Oliveira?)
 AndreOliveira = Pessoa("Andre de Oliveira")
 AndreHermann = Pessoa("André Hermann")
@@ -99,6 +99,7 @@ Lucas = Pessoa("Lucas") #nome completo? Talvez seja: https://garoa.net.br/wiki/U
 LuisLeao = Pessoa("Luis Fernando de Oliveira Leão", wiki="Luis.leao")
 Luiz = Pessoa("Luiz") #nome completo?
 LuizVieira = Pessoa("Luiz Vieira")
+ManoelLemos = Pessoa("Manoel Lemos")
 Marcel = Pessoa("Marcel") #nome?
 MarceloCampos = Pessoa("Marcelo Campos")
 MarceloRodrigues = Pessoa("Marcelo Alatzatianov Rodrigues") # Lab de Garagem
@@ -139,7 +140,8 @@ Spinola = Pessoa("Spinola") #nome completo?
 Subnet = Pessoa("Luís Guilherme Pires Martins de Abreu", wiki="Subnet252")
 Tales = Pessoa("Tales Cione")
 Taumaturgo = Pessoa("Raphael Taumaturgo") # "o cara da cerveja"
-Tiago = Pessoa("Tiago Queiroz") # irmao gemeo do Anderson
+TiagoQueiroz = Pessoa("Tiago Queiroz") # irmao gemeo do Anderson
+TiagoAnjo = Pessoa("Tiago Anjo Santana", wiki="Tiagoasantana")
 TiagoTadeu = Pessoa("Tiago Tadeu")
 ThiagoMassa = Pessoa("Thiago Massa")
 ThiagoRondon = Pessoa("Thiago Rondon")
@@ -440,6 +442,19 @@ CMC.aprova_associado(Grigolato, endosso=[Ramalho])
 CMC.aprova_associado(AleSouza, endosso=[Ulysses])
 CMC.observa_desligamento(VictorScattone, motivo="temporariamente a pedido do mesmo")
 
+# CMC de 21 de Janeiro de 2014:
+CMC.data("2014-01-21")
+Anchises.apresenta_padawan(TiagoAnjo)
+LuisLeao.apresenta_padawan(ManoelLemos)
+CMC.aprova_associado(TiagoAnjo)
+CMC.observa_desligamento(LoganBr, motivo=("Está com pouco tempo para frequentar,"
+                                          " comunica pelo Vitor seu pedido de desligamento."))
+
+MOTIVO="Sócios com mais de três meses de atraso na contribuição, automaticamente desligados."
+CMC.observa_desligamento(Juca, motivo=MOTIVO)
+CMC.observa_desligamento(Nessa, motivo=MOTIVO)
+CMC.observa_desligamento(Carine, motivo=MOTIVO)
+
 #HACK:
 Alguem.apresenta_padawans([
   Christian,
@@ -457,13 +472,14 @@ for a in [Allan,
           Eros,
           FelipeMoreira,
           FabioH,
+          Juca,
           Kemel,
           LaTeX,
           LeonardoSantos,
           NelsonCanton,
           Otto,
           Roger,
-          Tiago,
+          TiagoQueiroz,
           Vido,
           Yanava,
           Yumi,
@@ -509,7 +525,7 @@ CMC.data("2016-05-17")
 
 # CMC de 21 de Junho de 2016:
 CMC.data("2016-06-21")
-Tiago.apresenta_padawan(FabricioBiazzotto)
+TiagoQueiroz.apresenta_padawan(FabricioBiazzotto)
 # A ata tem uma piada que pode gerar confusão: "Quem é Tiago Queiroz? O Fabrício apresenta o Tiago como associado do Garoa"
 CMC.observa_desligamento(LuisLeao,      motivo="3 (ou mais) meses de atraso na mensalidade")
 CMC.observa_desligamento(RafaelML,      motivo="3 (ou mais) meses de atraso na mensalidade")
@@ -522,7 +538,7 @@ CMC.observa_desligamento(AndreOliveira, motivo="3 (ou mais) meses de atraso na m
 
 # CMC de 19 de Julho de 2016:
 CMC.data("2016-07-19")
-CMC.aprova_associado(FabricioBiazzotto, endosso=[Tiago])
+CMC.aprova_associado(FabricioBiazzotto, endosso=[TiagoQueiroz])
 
 # CMC de 16 de Agosto de 2016:
 CMC.data("2016-08-16")
@@ -596,7 +612,7 @@ CMC.observa_desligamento(DQ, motivo="requisitado")
 CMC.data("2017-05-16")
 CMC.readmite_associado(Afonso)
 Afonso.apresenta_padawan(Micael)
-Tiago.apresenta_padawan(Anderson) # "como seu padawan recursivo"
+TiagoQueiroz.apresenta_padawan(Anderson) # "como seu padawan recursivo"
 Mike.apresenta_padawans([Dente,
                          Thomas])
 CMC.aprova_associado(Christian, endosso=[Oda])
