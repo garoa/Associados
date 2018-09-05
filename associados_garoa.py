@@ -53,7 +53,7 @@ FMolina = Pessoa("Fernando Molina")
 FSouza = Pessoa("Felipe Souza")
 Gabi = Pessoa("Gabriela Fonseca")
 Gabrielzinho = Pessoa("Gabriel Almeida")
-G4b1s = Pessoa("Gabriel Romano Mascarenhas")
+G4b1s = Pessoa("Gabriel Romano Mascarenhas", wiki="G4b1s")
 GabrielAraujo = Pessoa("Gabriel Araújo")
 Gafanhoto = Pessoa("Mateus Zitelli", wiki="MateusZitelli")
 Giovanna = Pessoa("Giovanna")
@@ -78,6 +78,7 @@ Jonnes = Pessoa("Jonnes Tahara")
 Juca = Pessoa("Felipe Correa da Silva Sanches")
 Katia = Pessoa("Kátia Kitahara")
 Kemel = Pessoa("Kemel Zaidan")
+Kinoshita = Pessoa("Bruno Kinoshita")
 LaTeX = Pessoa("Leandro Teixeira (LaTeX)")
 LAlcantara = Pessoa("Lucas Alcântara")
 Laura = Pessoa("Laura Sobenes")
@@ -89,7 +90,7 @@ Lina = Pessoa("Lina Lopes")
 Lint = Pessoa("Carlos Lint")
 LoganBr = Pessoa("Ricardo 'Logan'") #nome completo?
 Luca = Pessoa("Luca Toledo")
-Lucas = Pessoa("Lucas") #nome completo?
+Lucas = Pessoa("Lucas") #nome completo? Talvez seja: https://garoa.net.br/wiki/Usu%C3%A1rio:Lucascfk
 LuisLeao = Pessoa("Luis Fernando de Oliveira Leão", wiki="Luis.leao")
 Luiz = Pessoa("Luiz") #nome completo?
 LuizVieira = Pessoa("Luiz Vieira")
@@ -385,6 +386,13 @@ Tony.apresenta_padawan(Caique)
 Vitor.apresenta_padawan(Ceci)
 CMC.aprova_associado(G4b1s, endosso=[VictorScattone])
 
+# CMC de 21 de Maio de 2013:
+CMC.data("2013-05-21")
+Juca.apresenta_padawan(Kinoshita)
+Aylons.apresenta_padawan(Moreno)
+CMC.aprova_associado(ThiagoRondon, endosso=[Juca])
+CMC.aprova_associado(Moreno, endosso=[Aylons])
+
 #HACK:
 Alguem.apresenta_padawans([
   Christian,
@@ -415,7 +423,10 @@ for a in [Allan,
           Yumi,
 ]:
   # Essas pessoas não são co-fundadoras do clube. Isso aqui é só um hack temporario!
-  CMC.aprova_associado(a, fundador=True)
+  if a in CMC.associados:
+    print("ERROR! Tire {} do HACK".format(a))
+  else:
+    CMC.aprova_associado(a, fundador=True)
 
 
 # CMC de 19 de Janeiro de 2016:
