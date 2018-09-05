@@ -112,7 +112,7 @@ Ramalho = Pessoa("Luciano Gama de Souza Ramalho")
 RafaelML = Pessoa("Rafael M Lopes")
 RicardoAmaral = Pessoa("Ricardo Amaral")
 RenatoCandido = Pessoa("Renato Candido")
-Ricardo = Pessoa("Ricardo") # seria esse o Castro?
+RicardoOliveira = Pessoa("Ricardo Oliveira")
 RicardoCastro = Pessoa("Ricardo Castro")
 RobertJr = Pessoa("Robert Junior") # Guisso disse: "Ele é um cabeludinho, magrinho, com cara de nerd, que vem com o pai."
 RodrigoSilveira = Pessoa("Rodrigo Gomes da Silveira") # "dos gatos"
@@ -130,6 +130,7 @@ Tales = Pessoa("Tales Cione")
 Taumaturgo = Pessoa("Raphael Taumaturgo") # "o cara da cerveja"
 Tiago = Pessoa("Tiago Queiroz") # irmao gemeo do Anderson
 TiagoTadeu = Pessoa("Tiago Tadeu")
+ThiagoMassa = Pessoa("Thiago Massa")
 Tony = Pessoa("Tony de Marco")
 Thomas = Pessoa("Thomas") # Francês
 Ulysses = Pessoa("Ulysses Soldá Junior")
@@ -316,10 +317,25 @@ Aleph.apresenta_padawans([MauroAlex,
                           SamuelDamasceno,
                           Jonnes])
 Ulysses.apresenta_padawans([RenatoCandido,
-                            Ricardo])
+                            RicardoOliveira])
 #FIXME:  Leandro agora é Padawan do Aylons
 CMC.aprova_associado(Tales, endosso=Aylons)
 CMC.observa_desligamento(Miklos, motivo="a pedido próprio em 4/julho/12")
+
+# CMC de 21 de Agosto de 2012:
+CMC.data("2012-08-21")
+Ramalho.apresenta_padawan(GutoMaia)
+Aylons.apresenta_padawan(ThiagoMassa)
+CMC.aprova_associado(LeandroSilva)
+
+# CMC de 18 de Setembro de 2012:
+CMC.data("2012-09-18")
+CMC.aprova_associado(RenatoCandido)
+CMC.aprova_associado(RicardoOliveira)
+#FIXME: Desligamentos:
+# A ata diz: "2 pessoas não se manifestaram sobre resolver a situação e serão desligadas."
+# Quem são?!
+
 
 #HACK:
 Alguem.apresenta_padawans([
@@ -348,7 +364,6 @@ for a in [Allan,
           Otto,
           RafaelML,
           Roger,
-          Tales,
           Tiago,
           Vido,
           Yanava,
