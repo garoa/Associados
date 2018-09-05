@@ -420,6 +420,15 @@ CMC.aprova_associado(RafaelML, endosso=[Ramalho])
 CMC.observa_desligamento(Novelli, motivo="a pedido do próprio")
 CMC.observa_desligamento(Eden, motivo="por não ter pago nenhuma mensalidade")
 
+# CMC de 15 de Outubro de 2013:
+CMC.data("2013-10-15")
+# Não houve alteração do quadro de associados/padawans
+
+# CMC de 19 de Novembro de 2013:
+CMC.data("2013-11-19")
+CMC.aprova_associado(Kinoshita, endosso=[Juca])
+Oda.apresenta_padawan(Abdo)
+
 #HACK:
 Alguem.apresenta_padawans([
   Christian,
