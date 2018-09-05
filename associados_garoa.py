@@ -53,9 +53,8 @@ FMolina = Pessoa("Fernando Molina")
 FSouza = Pessoa("Felipe Souza")
 Gabi = Pessoa("Gabriela Fonseca")
 Gabrielzinho = Pessoa("Gabriel Almeida")
-Gabs = Pessoa("Gabriel 'Gabs'") #nome completo?
+G4b1s = Pessoa("Gabriel Romano Mascarenhas")
 GabrielAraujo = Pessoa("Gabriel Araújo")
-GabrielRomano = Pessoa("Gabriel Romano")
 Gafanhoto = Pessoa("Mateus Zitelli", wiki="MateusZitelli")
 Giovanna = Pessoa("Giovanna")
 GringoMexico = Pessoa("Gringo do México") #nome real?
@@ -377,14 +376,14 @@ CMC.aprova_associado(Novelli, endosso=[Ramalho])
 CMC.aprova_associado(Lucas, endosso=[Ramalho])
 CMC.aprova_associado(Eden, endosso=[Tony])
 CMC.aprova_associado(Mike, endosso=[Agaelebe])
-VictorScattone.apresenta_padawan(GabrielRomano)
+VictorScattone.apresenta_padawan(G4b1s) #Gabriel Romano
 Juca.apresenta_padawan(ThiagoRondon)
 
 # CMC de 16 de Abril de 2013:
 CMC.data("2013-04-16")
 Tony.apresenta_padawan(Caique)
 Vitor.apresenta_padawan(Ceci)
-CMC.aprova_associado(GabrielRomano, endosso=[VictorScattone])
+CMC.aprova_associado(G4b1s, endosso=[VictorScattone])
 
 #HACK:
 Alguem.apresenta_padawans([
@@ -403,7 +402,6 @@ for a in [Allan,
           Eros,
           FelipeMoreira,
           FabioH,
-          Gabs,
           Kemel,
           LaTeX,
           LeonardoSantos,
@@ -482,7 +480,7 @@ CMC.data("2016-09-20")
 Agaelebe.apresenta_padawan(Ivar)
 CMC.observa_desligamento(Tony, motivo="3 (ou mais) meses de atraso na mensalidade")
 CMC.observa_desligamento(LaTeX, motivo="3 (ou mais) meses de atraso na mensalidade") #dúvida: ata diz "Leandro"
-CMC.observa_desligamento(Gabs, motivo="3 (ou mais) meses de atraso na mensalidade")
+CMC.observa_desligamento(G4b1s, motivo="3 (ou mais) meses de atraso na mensalidade")
 
 # CMC de 18 de Outubro de 2016:
 CMC.data("2016-10-18")
@@ -528,7 +526,7 @@ CMC.aprova_associado(ErikDataleak, endosso=[Anchises])
 # Ficou confuso na ata! aparentemente tem também um "Erick", suponho que seja o Emiliano:
 # "Anchises apresenta Erick como associado - quarentena"
 CMC.observa_desligamento(Allan, motivo="6 meses de atraso na mensalidade")
-# CMC.observa_desligamento(Gabs, motivo="6 meses de atraso na mensalidade")
+# CMC.observa_desligamento(G4b1s, motivo="6 meses de atraso na mensalidade")
 
 # CMC de 18 de Abril de 2017:
 CMC.data("2017-04-18")
