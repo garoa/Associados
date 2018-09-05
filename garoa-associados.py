@@ -89,6 +89,7 @@ LeandroSilva = Pessoa("Leandro Luciano da Silva", wiki="Leandrolsilva")
 Leandro = Pessoa("Leandro") # nome completo? Não é o Silva!
 Lechuga = Pessoa("Lechuga") #nome completo?
 LeonardoSantos = Pessoa("Leonardo Garcia Tales dos Santos")
+LeonardoTelles = Pessoa("Leonardo Telles", wiki="Lgtelles")
 Liane = Pessoa("Liane Lira")
 Lina = Pessoa("Lina Lopes")
 Lint = Pessoa("Carlos Lint")
@@ -455,6 +456,16 @@ CMC.observa_desligamento(Juca, motivo=MOTIVO)
 CMC.observa_desligamento(Nessa, motivo=MOTIVO)
 CMC.observa_desligamento(Carine, motivo=MOTIVO)
 
+# CMC de 18 de Fevereiro de 2014:
+CMC.data("2014-02-18")
+CMC.readmite_associado(Juca) # Na verdade isso só aconteceu no mês seguinte,
+                             # mas o Juca deu uma 'roubadinha' e apresentou 2 padawans nessa reunião :-P
+Juca.apresenta_padawans([Kemel,
+                         LeonardoTelles])
+Vitor.apresenta_padawans([AndreOliveira,
+                          Afonso])
+CMC.aprova_associado(Afonso, endosso=Vitor)
+
 #HACK:
 Alguem.apresenta_padawans([
   Christian,
@@ -472,7 +483,6 @@ for a in [Allan,
           Eros,
           FelipeMoreira,
           FabioH,
-          Juca,
           Kemel,
           LaTeX,
           LeonardoSantos,
