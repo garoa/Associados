@@ -25,6 +25,7 @@ BrunoBorges = Pessoa("Bruno Lima Borges") # (Irmão do Hugo)
 BrunoLP = Pessoa("Bruno Luiz de Paula")
 CSM = Pessoa("CSM") #nome? Seria esse o Carlos CM?
 CarlosCM = Pessoa("Carlos CM") # do time de CTF do Garoa
+Caique = Pessoa("Caique Severo")
 Carine = Pessoa("Carine Roos")
 Carril = Pessoa("Fernando Carril")
 Ceci = Pessoa("Cecilia Tanaka")
@@ -378,6 +379,12 @@ CMC.aprova_associado(Eden, endosso=[Tony])
 CMC.aprova_associado(Mike, endosso=[Agaelebe])
 VictorScattone.apresenta_padawan(GabrielRomano)
 Juca.apresenta_padawan(ThiagoRondon)
+
+# CMC de 16 de Abril de 2013:
+CMC.data("2013-04-16")
+Tony.apresenta_padawan(Caique)
+Vitor.apresenta_padawan(Ceci)
+CMC.aprova_associado(GabrielRomano, endosso=[VictorScattone])
 
 #HACK:
 Alguem.apresenta_padawans([
