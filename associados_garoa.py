@@ -287,6 +287,11 @@ CMC.aprova_associado(Luca, endosso=[Oda])
 CMC.data("2012-03-20")
 Aleph.apresenta_padawan(Murilo)
 
+# CMC de 17 de Abril de 2012:
+CMC.data("2012-04-17")
+Lechuga.apresenta_padawan(Vitor)
+CMC.aprova_associado(Ulysses, endosso=[DQ])
+
 #HACK:
 Alguem.apresenta_padawans([
   Christian,
