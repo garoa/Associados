@@ -72,7 +72,7 @@ JamesRaznor = Pessoa("James Raznor")
 JamesSouza = Pessoa("James Souza")
 JeanPaul = Pessoa("Jean Paul")
 JonDroid = Pessoa("JonDroid") #nome real?
-Jonnes = Pessoa("Jonnes") #nome completo?
+Jonnes = Pessoa("Jonnes Tahara")
 Juca = Pessoa("Felipe Correa da Silva Sanches")
 Katia = Pessoa("Kátia Kitahara")
 Kemel = Pessoa("Kemel Zaidan")
@@ -94,6 +94,7 @@ Marcel = Pessoa("Marcel") #nome?
 MarceloCampos = Pessoa("Marcelo Campos")
 MarceloRodrigues = Pessoa("Marcelo Alatzatianov Rodrigues") # Lab de Garagem
 Markun = Pessoa("Pedro Markun")
+MauroAlex = Pessoa("Mauro Alexandrowitsch")
 Mesel = Pessoa("Vinicius Mesel")
 Micael = Pessoa("Micael Vitor DJ")
 Mike = Pessoa("Mike Howard")
@@ -110,6 +111,8 @@ Pitanga = Pessoa("Rodrigo Rodrigues da Silva")
 Ramalho = Pessoa("Luciano Gama de Souza Ramalho")
 RafaelML = Pessoa("Rafael M Lopes")
 RicardoAmaral = Pessoa("Ricardo Amaral")
+RenatoCandido = Pessoa("Renato Candido")
+Ricardo = Pessoa("Ricardo") # seria esse o Castro?
 RicardoCastro = Pessoa("Ricardo Castro")
 RobertJr = Pessoa("Robert Junior") # Guisso disse: "Ele é um cabeludinho, magrinho, com cara de nerd, que vem com o pai."
 RodrigoSilveira = Pessoa("Rodrigo Gomes da Silveira") # "dos gatos"
@@ -117,6 +120,7 @@ Roger = Pessoa("Roger") #nome completo?
 RogerioMunhoz = Pessoa("Rogério Munhoz")
 Rubens = Pessoa("Rubão") #verificar nome completo (Rubens Tadeu talvez?)
 Samir = Pessoa("Sam Carecho")
+SamuelDamasceno = Pessoa("Samuel Damasceno")
 Sandro = Pessoa("Sandro Friedland")
 Sebastiao = Pessoa("Sebastião") #nome completo? Seria esse o Sebastiao Barreto ?
 Skavurzka = Pessoa("Skavurzka") #nome completo?
@@ -141,7 +145,7 @@ Yumi = Pessoa("Amanda Yumi Ambriola")
 Yanava = Pessoa("Yanava") # nome?
 WagnerSartori = Pessoa("Wagner Sartori")
 Wesley = Pessoa("Wesley Shaimon")
-Zanst = Pessoa("Zanst") 
+Zanst = Pessoa("Zanst")
 
 #HACK:
 Alguem = Pessoa("Algum associado")
@@ -300,6 +304,22 @@ Aylons.apresenta_padawans([Tales, # seria esse o Tales Cirone ?
 Gafanhoto.apresenta_padawan(Belasco)
 CMC.aprova_associado(Vitor, endosso=[Lechuga,
                                      LuisLeao])
+
+# CMC de 19 de Junho de 2012:
+CMC.data("2012-06-19")
+# Não houve alteração no quadro de associados/padawans
+# Há referencia a 2 páginas de listagem de padawans e de associados, porem as páginas não existem mais.
+
+# CMC de 17 de Julho de 2012:
+CMC.data("2012-07-17")
+Aleph.apresenta_padawans([MauroAlex,
+                          SamuelDamasceno,
+                          Jonnes])
+Ulysses.apresenta_padawans([RenatoCandido,
+                            Ricardo])
+#FIXME:  Leandro agora é Padawan do Aylons
+CMC.aprova_associado(Tales, endosso=Aylons)
+CMC.observa_desligamento(Miklos, motivo="a pedido próprio em 4/julho/12")
 
 #HACK:
 Alguem.apresenta_padawans([
