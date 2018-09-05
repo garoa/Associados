@@ -2,6 +2,7 @@
 # coding: utf-8
 from clube import Pessoa, ConselhoMandaChuva
 
+Abayomi = Pessoa("Abayomi") #nome completo?
 Abdo = Pessoa("Alexandre Abdo")
 Abreu = Pessoa("Abreu") #nome?
 Alexandra = Pessoa("Alexandra Percario")
@@ -405,6 +406,20 @@ Vitor.apresenta_padawan(Ceci)
 LuisLeao.apresenta_padawan(Livia)
 Tony.apresenta_padawan(Liane)
 
+# CMC de 20 de Agosto de 2013:
+CMC.data("2013-08-20")
+Ramalho.apresenta_padawan(RafaelML)
+Ulysses.apresenta_padawan(Abayomi)
+CMC.aprova_associado(Ceci)
+
+# CMC de 17 de Setembro de 2013:
+CMC.data("2013-09-17")
+Diogenes.apresenta_padawan(Murilo)
+CMC.aprova_associado(Livia, endosso=[LuisLeao])
+CMC.aprova_associado(RafaelML, endosso=[Ramalho])
+CMC.observa_desligamento(Novelli, motivo="a pedido do próprio")
+CMC.observa_desligamento(Eden, motivo="por não ter pago nenhuma mensalidade")
+
 #HACK:
 Alguem.apresenta_padawans([
   Christian,
@@ -427,7 +442,6 @@ for a in [Allan,
           LeonardoSantos,
           NelsonCanton,
           Otto,
-          RafaelML,
           Roger,
           Tiago,
           Vido,
