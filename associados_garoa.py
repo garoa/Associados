@@ -125,7 +125,7 @@ Sandro = Pessoa("Sandro Friedland")
 Sebastiao = Pessoa("Sebastião") #nome completo? Seria esse o Sebastiao Barreto ?
 Skavurzka = Pessoa("Skavurzka") #nome completo?
 Spinola = Pessoa("Spinola") #nome completo?
-Subnet = Pessoa("Luís Guilherme Pires Martins de Abreu")
+Subnet = Pessoa("Luís Guilherme Pires Martins de Abreu", wiki="Subnet252")
 Tales = Pessoa("Tales Cione")
 Taumaturgo = Pessoa("Raphael Taumaturgo") # "o cara da cerveja"
 Tiago = Pessoa("Tiago Queiroz") # irmao gemeo do Anderson
@@ -336,6 +336,15 @@ CMC.aprova_associado(RicardoOliveira)
 # A ata diz: "2 pessoas não se manifestaram sobre resolver a situação e serão desligadas."
 # Quem são?!
 
+# CMC de 16 de Outubro de 2012:
+CMC.data("2012-10-16")
+# Não houve alteração do quadro de associados/padawans
+
+# CMC de 27 de Novembro de 2012:
+CMC.data("2012-11-27")
+Oda.apresenta_padawan(Subnet)
+CMC.aprova_associado(Jonnes, endosso=[Aleph])
+CMC.aprova_associado(GutoMaia, endosso=[Ramalho])
 
 #HACK:
 Alguem.apresenta_padawans([
@@ -355,7 +364,6 @@ for a in [Allan,
           FelipeMoreira,
           FabioH,
           Gabs,
-          GutoMaia,
           Kemel,
           LaTeX,
           LeonardoSantos,
