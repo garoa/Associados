@@ -11,7 +11,7 @@ Aleph = Pessoa("Alberto Fabiano Caires de Medeiros", wiki="Aleph")
 AlexPorto = Pessoa("Alex Porto")
 Allan = Pessoa("Allan") #nome completo? Seria esse o Allan Moreira?
 AllanTrindade = Pessoa("Allan Trindade") # (de São Vicente)
-Anchises = Pessoa("Anchises Moraes Guimarães de Paula")
+Anchises = Pessoa("Anchises Moraes Guimarães de Paula", wiki="Anchisesbr")
 Anderson = Pessoa("Anderson Queiroz") # irmao gemeo do Tiago
 Andre = Pessoa("Andre") #nome completo? (seria esse o Hermann? ou o Oliveira?)
 AndreOliveira = Pessoa("Andre de Oliveira")
@@ -20,7 +20,7 @@ AntonioSouza = Pessoa("Antonio Celso Cavalieri Lins de Souza") # co-fundador
 Afonso = Pessoa("Afonso Coutinho")
 Agaelebe = Pessoa("Hugo Lima Borges")
 Asa = Pessoa("Asa") #nome completo?
-Aylons = Pessoa("Gustavo Barbosa Monteiro Bruno")
+Aylons = Pessoa("Gustavo Barbosa Monteiro Bruno", wiki="Aylons")
 Baraldi = Pessoa("Mauro Navarro Baraldi")
 Belasco = Pessoa("Pedro Belasco")
 BrunoBorges = Pessoa("Bruno Lima Borges") # (Irmão do Hugo)
@@ -38,7 +38,7 @@ Dandara = Pessoa("Dandara Jatobá")
 DanielaIwassa = Pessoa("Daniela Iwassa")
 DavidRobert = Pessoa("David Robert")
 Dente = Pessoa("Marcelo Araujo Dente")
-Diogenes = Pessoa("Diógenes") # nome completo?
+Diogenes = Pessoa("Diógenes Rossi", wiki="Diógenes")
 DQ = Pessoa("Daniel Gerk de Azevedo Quadros")
 Eden = Pessoa("Eden Cardim")
 Emerson = Pessoa("Emerson Monteiro Sobreiro") #padawan do Fabricio
