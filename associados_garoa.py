@@ -86,8 +86,10 @@ LeandroSilva = Pessoa("Leandro Luciano da Silva", wiki="Leandrolsilva")
 Leandro = Pessoa("Leandro") # nome completo? Não é o Silva!
 Lechuga = Pessoa("Lechuga") #nome completo?
 LeonardoSantos = Pessoa("Leonardo Garcia Tales dos Santos")
+Liane = Pessoa("Liane Lira")
 Lina = Pessoa("Lina Lopes")
 Lint = Pessoa("Carlos Lint")
+Livia = Pessoa("Livia Ascava")
 LoganBr = Pessoa("Ricardo 'Logan'") #nome completo?
 Luca = Pessoa("Luca Toledo")
 Lucas = Pessoa("Lucas") #nome completo? Talvez seja: https://garoa.net.br/wiki/Usu%C3%A1rio:Lucascfk
@@ -392,6 +394,16 @@ Juca.apresenta_padawan(Kinoshita)
 Aylons.apresenta_padawan(Moreno)
 CMC.aprova_associado(ThiagoRondon, endosso=[Juca])
 CMC.aprova_associado(Moreno, endosso=[Aylons])
+
+# CMC de 25 de Junho de 2013:
+CMC.data("2013-06-25")
+# Não houve alteração do quadro de associados/padawans
+
+# CMC de 16 de Julho de 2013:
+CMC.data("2013-07-16")
+Vitor.apresenta_padawan(Ceci)
+LuisLeao.apresenta_padawan(Livia)
+Tony.apresenta_padawan(Liane)
 
 #HACK:
 Alguem.apresenta_padawans([
