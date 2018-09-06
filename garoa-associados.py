@@ -103,6 +103,7 @@ Luca = Pessoa("Luca Toledo")
 Lucas = Pessoa("Lucas") #nome completo? Talvez seja: https://garoa.net.br/wiki/Usu%C3%A1rio:Lucascfk
 LuisLeao = Pessoa("Luis Fernando de Oliveira Leão", wiki="Luis.leao")
 Luiz = Pessoa("Luiz") #nome completo?
+LuisSouza = Pessoa("Luis Souza")
 LuizVieira = Pessoa("Luiz Vieira")
 ManoelLemos = Pessoa("Manoel Lemos")
 Marcel = Pessoa("Marcel") #nome?
@@ -135,6 +136,8 @@ RobertJr = Pessoa("Robert Junior") # Guisso disse: "Ele é um cabeludinho, magri
 RodrigoSilveira = Pessoa("Rodrigo Gomes da Silveira") # "dos gatos"
 Roger = Pessoa("Roger") #nome completo?
 RogerioMunhoz = Pessoa("Rogério Munhoz")
+Romulo = Pessoa("Romulo Nascimento")
+RonaldoRussel = Pessoa("Ronaldo Russel")
 Rubens = Pessoa("Rubão") #verificar nome completo (Rubens Tadeu talvez?)
 Samir = Pessoa("Sam Carecho")
 SamuelDamasceno = Pessoa("Samuel Damasceno")
@@ -503,6 +506,13 @@ Vitor.apresenta_padawan(Juan)
 CMC.aprova_associado(Juan, endosso=Vitor)
 CMC.observa_desligamento(AleSouza, motivo=("a pedido do próprio por mudança de casa,"
                                            " trabalho e algumas atividades."))
+
+# CMC de 15 de Julho de 2014:
+CMC.data("2014-07-15")
+Vitor.apresenta_padawans([LuisSouza,
+                          RonaldoRussel])
+Afonso.apresenta_padawan(Romulo)
+CMC.aprova_associado(Romulo, endosso=Afonso)
 
 #HACK:
 Alguem.apresenta_padawans([
