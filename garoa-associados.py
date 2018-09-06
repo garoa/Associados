@@ -25,6 +25,7 @@ Baraldi = Pessoa("Mauro Navarro Baraldi")
 Belasco = Pessoa("Pedro Belasco")
 BrunoBorges = Pessoa("Bruno Lima Borges") # (Irmão do Hugo)
 BrunoLP = Pessoa("Bruno Luiz de Paula")
+Buzz = Pessoa("Buzz") #nome?
 CSM = Pessoa("CSM") #nome? Seria esse o Carlos CM?
 CarlosCM = Pessoa("Carlos CM") # do time de CTF do Garoa
 Caique = Pessoa("Caique Severo")
@@ -70,6 +71,7 @@ Haoji = Pessoa("Haoji") #nome?
 Helena = Pessoa("Helena (amiga do Afonso)")
 Hugo = Pessoa("Hugo") # nome completo? Não é o Agaelebe!
 IanF = Pessoa("Ian Fernandez")
+Igor = Pessoa("Igor") #nome?
 Italo = Pessoa("Italo") #nome completo?
 Ivar = Pessoa("Ivar") #nome completo?
 Ismael = Pessoa("Ismael Lopes")
@@ -488,6 +490,12 @@ CMC.observa_desligamento(WagnerSartori, motivo=ATRASO)
 CMC.observa_desligamento(GutoMaia, motivo=ATRASO)
 CMC.observa_desligamento(Gola, motivo=ATRASO)
 
+# CMC de 20 de Maio de 2014:
+CMC.data("2014-05-20")
+Afonso.apresenta_padawans([Buzz,
+                           Igor])
+CMC.readmite_associado(GutoMaia)
+
 #HACK:
 Alguem.apresenta_padawans([
   Christian,
@@ -504,7 +512,6 @@ for a in [Allan,
           Eros,
           FelipeMoreira,
           FabioH,
-          GutoMaia,
           LaTeX,
           LeonardoSantos,
           NelsonCanton,
