@@ -728,4 +728,5 @@ Afonso.apresenta_padawans([Alexandra,
                            VAlves])
 
 CMC.print_padawans()
+CMC.output_graph()
 #CMC.print_associados()

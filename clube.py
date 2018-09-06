@@ -25,6 +25,7 @@ class Pessoa():
 
 class ConselhoMandaChuva():
   def __init__(self, fundadores=[]):
+    self.num_fundadores = len(fundadores)
     self.associados = fundadores
     self.padawans = []
     self.ex_associados = []
@@ -84,3 +85,28 @@ class ConselhoMandaChuva():
   def print_associados(self):
     print("Associados:\n\t{}".format('\n\t'.join(map(lambda x: "{} ({})".format(x.nome, len(x.padawans)), self.associados))))
 
+  def output_graph(self):
+    pessoas = self.associados + self.padawans + self.ex_associados
+    fundadores = "fundadores [label=\"Sócios Fundadores do Garoa Hacker Clube\"];\n\n"
+    fundadores += "\n".join(["fundadores -> Pessoa_{};".format(n) for n in range(self.num_fundadores)])
+
+    padawans = "\n#padawans\n"
+    for p in pessoas:
+      for padawan in p.padawans:
+        padawans += "Pessoa_{} -> Pessoa_{};\n".format(pessoas.index(p),
+                                                       pessoas.index(padawan))
+
+    pessoas_str = "\n#pessoas\n"
+    for p in pessoas:
+      pessoas_str += "Pessoa_{} [label=\"{}\"];\n".format(pessoas.index(p),
+                                                          p.nome)
+
+    output = """\
+digraph G {
+  node [shape=box,
+        labelloc=c,
+        fontsize=8,
+        fontcolor="#005500"];
+""" + str(fundadores) + "\n" + str(padawans) + "\n" + str(pessoas_str) + "\n}"
+
+    open("garoa-associados.gv", "w").write(output)
