@@ -98,8 +98,15 @@ class ConselhoMandaChuva():
 
     pessoas_str = "\n#pessoas\n"
     for p in pessoas:
-      pessoas_str += "Pessoa_{} [label=\"{}\"];\n".format(pessoas.index(p),
-                                                          '\n'.join(p.nome.split(" ")))
+      color_str = "color=\"#559955\";"
+      if pessoas.index(p) < self.num_fundadores:
+        color_str = "color=\"black\";"
+      elif p in self.ex_associados:
+        color_str = "color=\"darkgray\";"
+
+      pessoas_str += "Pessoa_{} [label=\"{}\";{}];\n".format(pessoas.index(p),
+                                                             '\\n'.join(p.nome.split(" ")),
+                                                             color_str)
 
     output = """\
 digraph G {
@@ -107,8 +114,7 @@ digraph G {
         labelloc=c,
         fontsize=5,
         style=filled,
-        fontcolor="#eeffee"
-        color="#559955"];
+        fontcolor="#eeffee"];
 """ + str(fundadores) + "\n" + str(padawans) + "\n" + str(pessoas_str) + "\n}"
 
     open("garoa-associados.gv", "w").write(output)
