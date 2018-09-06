@@ -478,6 +478,16 @@ CMC.aprova_associado(Kemel, endosso=[Ramalho,
                                      Juca,
                                      Haoji])
 
+# CMC de 15 de Abril de 2014:
+CMC.data("2014-04-15")
+CMC.aprova_associado(LeonardoTelles, endosso=Juca)
+CMC.aprova_associado(ManoelLemos, endosso=LuisLeao)
+ATRASO="Sócios com mais de três meses de atraso na contribuição, automaticamente desligados."
+CMC.observa_desligamento(WagnerSartori, motivo=ATRASO)
+# CMC.observa_desligamento(Nessa, motivo=ATRASO) #Já havia sido desligada em Janeiro.
+CMC.observa_desligamento(GutoMaia, motivo=ATRASO)
+CMC.observa_desligamento(Gola, motivo=ATRASO)
+
 #HACK:
 Alguem.apresenta_padawans([
   Christian,
@@ -494,6 +504,7 @@ for a in [Allan,
           Eros,
           FelipeMoreira,
           FabioH,
+          GutoMaia,
           LaTeX,
           LeonardoSantos,
           NelsonCanton,
