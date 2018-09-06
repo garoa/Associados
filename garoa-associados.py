@@ -81,6 +81,7 @@ JamesSouza = Pessoa("James Souza")
 JeanPaul = Pessoa("Jean Paul")
 JonDroid = Pessoa("JonDroid") #nome real?
 Jonnes = Pessoa("Jonnes Tahara")
+Juan = Pessoa("Juan") #nome?
 Juca = Pessoa("Felipe Correa da Silva Sanches")
 Katia = Pessoa("Kátia Kitahara")
 Kemel = Pessoa("Kemel Zaidan")
@@ -495,6 +496,13 @@ CMC.data("2014-05-20")
 Afonso.apresenta_padawans([Buzz,
                            Igor])
 CMC.readmite_associado(GutoMaia)
+
+# CMC de 18 de Junho de 2014:
+CMC.data("2014-06-18")
+Vitor.apresenta_padawan(Juan)
+CMC.aprova_associado(Juan, endosso=Vitor)
+CMC.observa_desligamento(AleSouza, motivo=("a pedido do próprio por mudança de casa,"
+                                           " trabalho e algumas atividades."))
 
 #HACK:
 Alguem.apresenta_padawans([
