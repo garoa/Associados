@@ -122,10 +122,11 @@ Pampolha = Pessoa("Pampolha") #nome?
 Pitanga = Pessoa("Rodrigo Rodrigues da Silva")
 Ramalho = Pessoa("Luciano Gama de Souza Ramalho")
 RafaelML = Pessoa("Rafael M Lopes")
-RicardoAmaral = Pessoa("Ricardo Amaral")
 RenatoCandido = Pessoa("Renato Candido")
+RicardoAmaral = Pessoa("Ricardo Amaral")
 RicardoOliveira = Pessoa("Ricardo Oliveira")
 RicardoCastro = Pessoa("Ricardo Castro")
+RMartinelli = Pessoa("Ricardo Martinelli") #verificar
 RobertJr = Pessoa("Robert Junior") # Guisso disse: "Ele é um cabeludinho, magrinho, com cara de nerd, que vem com o pai."
 RodrigoSilveira = Pessoa("Rodrigo Gomes da Silveira") # "dos gatos"
 Roger = Pessoa("Roger") #nome completo?
@@ -465,6 +466,11 @@ Juca.apresenta_padawans([Kemel,
 Vitor.apresenta_padawans([AndreOliveira,
                           Afonso])
 CMC.aprova_associado(Afonso, endosso=Vitor)
+
+# CMC de 18 de Março de 2014:
+CMC.data("2014-03-18")
+Mike.apresenta_padawan(RMartinelli)
+#... FIXME: completar descrição dessa ata
 
 #HACK:
 Alguem.apresenta_padawans([
