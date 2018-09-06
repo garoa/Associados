@@ -452,14 +452,14 @@ CMC.observa_desligamento(LoganBr, motivo=("Está com pouco tempo para frequentar
                                           " comunica pelo Vitor seu pedido de desligamento."))
 
 MOTIVO="Sócios com mais de três meses de atraso na contribuição, automaticamente desligados."
-CMC.observa_desligamento(Juca, motivo=MOTIVO)
+#CMC.observa_desligamento(Juca, motivo=MOTIVO)
 CMC.observa_desligamento(Nessa, motivo=MOTIVO)
 CMC.observa_desligamento(Carine, motivo=MOTIVO)
 
 # CMC de 18 de Fevereiro de 2014:
 CMC.data("2014-02-18")
-CMC.readmite_associado(Juca) # Na verdade isso só aconteceu no mês seguinte,
-                             # mas o Juca deu uma 'roubadinha' e apresentou 2 padawans nessa reunião :-P
+#CMC.readmite_associado(Juca) # Na verdade isso só aconteceu no mês seguinte,
+#                             # mas o Juca deu uma 'roubadinha' e apresentou 2 padawans nessa reunião :-P
 Juca.apresenta_padawans([Kemel,
                          LeonardoTelles])
 Vitor.apresenta_padawans([AndreOliveira,
