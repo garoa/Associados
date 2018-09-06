@@ -66,6 +66,7 @@ Guisso = Pessoa("Fernando Guisso")
 GustavoRibeiro = Pessoa("GustavoRibeiro")
 Gutem = Pessoa("Gutemberg Nunes de Carvalho")
 GutoMaia = Pessoa("Gustavo Maia Neto")
+Haoji = Pessoa("Haoji") #nome?
 Helena = Pessoa("Helena (amiga do Afonso)")
 Hugo = Pessoa("Hugo") # nome completo? Não é o Agaelebe!
 IanF = Pessoa("Ian Fernandez")
@@ -126,7 +127,7 @@ RenatoCandido = Pessoa("Renato Candido")
 RicardoAmaral = Pessoa("Ricardo Amaral")
 RicardoOliveira = Pessoa("Ricardo Oliveira")
 RicardoCastro = Pessoa("Ricardo Castro")
-RMartinelli = Pessoa("Ricardo Martinelli") #verificar
+RMartinelli = Pessoa("Ricardo Martinelli Oliveira")
 RobertJr = Pessoa("Robert Junior") # Guisso disse: "Ele é um cabeludinho, magrinho, com cara de nerd, que vem com o pai."
 RodrigoSilveira = Pessoa("Rodrigo Gomes da Silveira") # "dos gatos"
 Roger = Pessoa("Roger") #nome completo?
@@ -470,7 +471,12 @@ CMC.aprova_associado(Afonso, endosso=Vitor)
 # CMC de 18 de Março de 2014:
 CMC.data("2014-03-18")
 Mike.apresenta_padawan(RMartinelli)
-#... FIXME: completar descrição dessa ata
+Vitor.apresenta_padawan(AndreOliveira) # andremo1975@gmail.com
+CMC.aprova_associado(AndreOliveira, endosso=[Vitor])
+CMC.aprova_associado(RMartinelli, endosso=[Mike])
+CMC.aprova_associado(Kemel, endosso=[Ramalho,
+                                     Juca,
+                                     Haoji])
 
 #HACK:
 Alguem.apresenta_padawans([
@@ -484,12 +490,10 @@ Alguem.apresenta_padawans([
 
 #HACK:
 for a in [Allan,
-          AndreOliveira,
           BrunoLP,
           Eros,
           FelipeMoreira,
           FabioH,
-          Kemel,
           LaTeX,
           LeonardoSantos,
           NelsonCanton,
