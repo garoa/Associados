@@ -103,6 +103,8 @@ class ConselhoMandaChuva():
         color_str = "color=\"black\";"
       elif p in self.ex_associados:
         color_str = "color=\"darkgray\";"
+      elif p.associacao == []:
+        color_str = "color=\"#888800\";"
 
       pessoas_str += "Pessoa_{} [label=\"{}\";{}];\n".format(pessoas.index(p),
                                                              '\\n'.join(p.nome.split(" ")),
