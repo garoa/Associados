@@ -99,14 +99,16 @@ class ConselhoMandaChuva():
     pessoas_str = "\n#pessoas\n"
     for p in pessoas:
       pessoas_str += "Pessoa_{} [label=\"{}\"];\n".format(pessoas.index(p),
-                                                          p.nome)
+                                                          '\n'.join(p.nome.split(" ")))
 
     output = """\
 digraph G {
-  node [shape=box,
+  node [shape=egg,
         labelloc=c,
-        fontsize=8,
-        fontcolor="#005500"];
+        fontsize=5,
+        style=filled,
+        fontcolor="#eeffee"
+        color="#559955"];
 """ + str(fundadores) + "\n" + str(padawans) + "\n" + str(pessoas_str) + "\n}"
 
     open("garoa-associados.gv", "w").write(output)
