@@ -63,6 +63,7 @@ Giovanna = Pessoa("Giovanna")
 GringoMexico = Pessoa("Gringo do México") #nome real?
 Grigolato = Pessoa("Samuel Grigolato", wiki="Samuel.grigolato")
 Gola = Pessoa("Bruno Gola", wiki="Brunogola")
+Guima = Pessoa("Guima") #nome completo?
 Guisso = Pessoa("Fernando Guisso")
 GustavoRibeiro = Pessoa("GustavoRibeiro")
 Gutem = Pessoa("Gutemberg Nunes de Carvalho")
@@ -86,8 +87,9 @@ Juca = Pessoa("Felipe Correa da Silva Sanches")
 Katia = Pessoa("Kátia Kitahara")
 Kemel = Pessoa("Kemel Zaidan")
 Kinoshita = Pessoa("Bruno Kinoshita")
-LaTeX = Pessoa("Leandro Teixeira (LaTeX)")
 LAlcantara = Pessoa("Lucas Alcântara")
+Larios = Pessoa("Marcelo Lários") # a.k.a.: "Truman"
+LaTeX = Pessoa("Leandro Teixeira (LaTeX)")
 Laura = Pessoa("Laura Sobenes")
 LeandroSilva = Pessoa("Leandro Luciano da Silva", wiki="Leandrolsilva")
 Leandro = Pessoa("Leandro") # nome completo? Não é o Silva!
@@ -101,9 +103,10 @@ Livia = Pessoa("Livia Ascava")
 LoganBr = Pessoa("Ricardo 'Logan'") #nome completo?
 Luca = Pessoa("Luca Toledo")
 Lucas = Pessoa("Lucas") #nome completo? Talvez seja: https://garoa.net.br/wiki/Usu%C3%A1rio:Lucascfk
+Luciano = Pessoa("Luciano") #nome completo?
 LuisLeao = Pessoa("Luis Fernando de Oliveira Leão", wiki="Luis.leao")
 Luiz = Pessoa("Luiz") #nome completo?
-LuisSouza = Pessoa("Luis Souza")
+LuisSouza = Pessoa("Luis Souza", wiki="Luissouza")
 LuizVieira = Pessoa("Luiz Vieira")
 ManoelLemos = Pessoa("Manoel Lemos")
 Marcel = Pessoa("Marcel") #nome?
@@ -134,10 +137,10 @@ RicardoCastro = Pessoa("Ricardo Castro")
 RMartinelli = Pessoa("Ricardo Martinelli Oliveira")
 RobertJr = Pessoa("Robert Junior") # Guisso disse: "Ele é um cabeludinho, magrinho, com cara de nerd, que vem com o pai."
 RodrigoSilveira = Pessoa("Rodrigo Gomes da Silveira") # "dos gatos"
-Roger = Pessoa("Roger") #nome completo?
+RogerRussel = Pessoa("Roger Russel")
 RogerioMunhoz = Pessoa("Rogério Munhoz")
 Romulo = Pessoa("Romulo Nascimento")
-RonaldoRussel = Pessoa("Ronaldo Russel")
+RonaldoRussel = Pessoa("Ronaldo Russel", wiki="Ronas")
 Rubens = Pessoa("Rubão") #verificar nome completo (Rubens Tadeu talvez?)
 Samir = Pessoa("Sam Carecho")
 SamuelDamasceno = Pessoa("Samuel Damasceno")
@@ -158,7 +161,7 @@ Tony = Pessoa("Tony de Marco")
 Thomas = Pessoa("Thomas") # Francês
 Ulysses = Pessoa("Ulysses Soldá Junior")
 VAlves = Pessoa("Vitor Alves")
-Vecchio = Pessoa("Vecchio") #nome completo?
+Vecchio = Pessoa("Alexandre Vecchio Passerini", wiki="Alevecchio")
 VictorScattone = Pessoa("Victor Scattone")
 Vitor = Pessoa("Vitor Fernandes")
 Vido = Pessoa("Lucas Vido")
@@ -514,6 +517,25 @@ Vitor.apresenta_padawans([LuisSouza,
 Afonso.apresenta_padawan(Romulo)
 CMC.aprova_associado(Romulo, endosso=Afonso)
 
+
+# CMC de 19 de Agosto de 2014:
+CMC.data("2014-08-19")
+Juca.apresenta_padawan(Larios) # NOTA: A apresentação supostamente ocorreu em algum
+                               # momento do passado, mas faltam registros exatos. 
+Mike.apresenta_padawans([NelsonCanton, # a ata só diz "Nelson", mas infere-se que se trata do Canton com base nas atas seguintes.
+                         Otto])
+Vitor.apresenta_padawan(Vecchio)
+VJPixel.apresenta_padawan(Guima)
+
+CMC.aprova_associado(Larios, endosso=[Oda, DQ, Ceci, Luciano]) # FIX-ME! Quem é o Luciano que aparece múltiplas vezes nessa ata?!
+CMC.aprova_associado(Guima, endosso=[VJPixel, Luciano])
+CMC.aprova_associado(RonaldoRussel, endosso=[Vitor, Ceci])
+CMC.aprova_associado(LuisSouza, endosso=[Vitor, Ceci])
+CMC.aprova_associado(Vecchio, endosso=Vitor)
+
+RonaldoRussel.apresenta_padawan(RogerRussel) # Ceci também "apresentou", mas não a ata diz que é "padawan do Ronaldo".
+
+
 #HACK:
 Alguem.apresenta_padawans([
   Christian,
@@ -534,7 +556,7 @@ for a in [Allan,
           LeonardoSantos,
           NelsonCanton,
           Otto,
-          Roger,
+          RogerRussel,
           TiagoQueiroz,
           Vido,
           Yanava,
@@ -639,7 +661,7 @@ Ramalho.apresenta_padawan(Belasco)
 # CMC.observa_desligamento(Kemel, motivo="3 (ou mais) meses de atraso na mensalidade")
 # CMC.observa_desligamento(Eros,          motivo="3 (ou mais) meses de atraso na mensalidade")
 # CMC.observa_desligamento(FelipeMoreira, motivo="3 (ou mais) meses de atraso na mensalidade")
-CMC.observa_desligamento(Roger,         motivo="3 (ou mais) meses de atraso na mensalidade")
+CMC.observa_desligamento(RogerRussel,     motivo="3 (ou mais) meses de atraso na mensalidade")
 # CMC.observa_desligamento(AndreOliveira, motivo="3 (ou mais) meses de atraso na mensalidade")
 
 # CMC de 21 de Fevereiro de 2017:
