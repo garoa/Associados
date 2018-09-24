@@ -25,6 +25,7 @@ Bilo = Pessoa("Ricardo Bilo", wiki="Ricardobilo")
 Baraldi = Pessoa("Mauro Navarro Baraldi")
 Belasco = Pessoa("Pedro Belasco")
 BrunoBorges = Pessoa("Bruno Lima Borges") # (Irmão do Hugo)
+BrunoDJ = Pessoa("Bruno 'DJ'") # seria o mesmo que BrunoLP talvez?!
 BrunoLP = Pessoa("Bruno Luiz de Paula")
 Buzz = Pessoa("Buzz") #nome?
 CSM = Pessoa("CSM") #nome? Seria esse o Carlos CM?
@@ -631,7 +632,13 @@ Otto.apresenta_padawan(DaniloZampronio)
 
 # CMC de 21 de Julho de 2015:
 CMC.data("2015-07-21")
-CMC.pergunta("Erico propõe Danilo como novo associado (não aprovamos, 5 abstensões x 3 a favor)")
+CMC.pergunta("Erico propõe Danilo (Zampronio) como novo associado (não aprovamos, 5 abstensões x 3 a favor)")
+
+
+# CMC de 18 de Agosto de 2015:
+CMC.data("2015-08-18")
+Anchises.apresenta_padawan(BrunoDJ)
+CMC.aprova_associado(BrunoDJ, endosso=Anchises)
 
 
 #HACK:
