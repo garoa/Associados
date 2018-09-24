@@ -38,6 +38,7 @@ CleitonAlves = Pessoa("Cleiton Alves")
 Coruja = Pessoa("Gustavo Lima")
 Dandara = Pessoa("Dandara Jatobá")
 DanielaIwassa = Pessoa("Daniela Iwassa")
+DaniloZampronio = Pessoa("Danilo Zampronio")
 DavidRobert = Pessoa("David Robert")
 Dente = Pessoa("Marcelo Araujo Dente")
 Diogenes = Pessoa("Diógenes Rossi", wiki="Diógenes")
@@ -133,6 +134,7 @@ Novelli = Pessoa("Novelli") #nome? André Novelli?
 Oda = Pessoa("Eduardo Oda")
 Otto = Pessoa("Otto Heringer")
 Pampolha = Pessoa("Pampolha") #nome?
+PauloBiohack = Pessoa("Paulo (do Biohacking)") #nome completo?
 Pitanga = Pessoa("Rodrigo Rodrigues da Silva")
 Ramalho = Pessoa("Luciano Gama de Souza Ramalho")
 RafaelML = Pessoa("Rafael M Lopes")
@@ -614,8 +616,17 @@ Otto.apresenta_padawan(Erico)
 
 # CMC de 19 de Maio de 2015:
 CMC.data("2015-05-19")
-CMC.pergunta("Anchises propõe Érico (padawan do Otto e frequente participante do Biohacking) como novo associado - Postergado.")
 CMC.pergunta("Gabriel, regularizei e arrumei o agendamento (18/05) - Quem é 'Gabriel' ?")
+
+
+# CMC de 16 de Junho de 2015:
+CMC.data("2015-06-16")
+CMC.aprova_associado(Erico, endosso=Otto)
+Mike.apresenta_padawans([Yumi, FabioH]) #implicitamente
+CMC.aprova_associado(Yumi, endosso=Mike)
+CMC.aprova_associado(FabioH, endosso=Mike)
+Erico.apresenta_padawan(PauloBiohack)
+Otto.apresenta_padawan(DaniloZampronio)
 
 
 #HACK:
@@ -631,13 +642,11 @@ Alguem.apresenta_padawans([
 #HACK:
 for a in [Allan,
           BrunoLP,
-          FabioH,
           LaTeX,
           LeonardoSantos,
           RogerRussel,
           TiagoQueiroz,
           Yanava,
-          Yumi,
 ]:
   # Essas pessoas não são co-fundadoras do clube. Isso aqui é só um hack temporario!
   if a in CMC.associados:
