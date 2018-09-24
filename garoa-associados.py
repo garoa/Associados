@@ -21,9 +21,9 @@ Afonso = Pessoa("Afonso Coutinho")
 Agaelebe = Pessoa("Hugo Lima Borges")
 Asa = Pessoa("Asa") #nome completo?
 Aylons = Pessoa("Gustavo Barbosa Monteiro Bruno", wiki="Aylons")
+Bilo = Pessoa("Ricardo Bilo", wiki="Ricardobilo")
 Baraldi = Pessoa("Mauro Navarro Baraldi")
 Belasco = Pessoa("Pedro Belasco")
-Bruna = Pessoa("Bruna") #nome completo? Padawan do Oda em 2014-11-18
 BrunoBorges = Pessoa("Bruno Lima Borges") # (Irmão do Hugo)
 BrunoLP = Pessoa("Bruno Luiz de Paula")
 Buzz = Pessoa("Buzz") #nome?
@@ -47,8 +47,8 @@ EmersonMonteiro = Pessoa("Emerson Monteiro Sobreiro") #padawan do Fabricio
 EmersonMarques = Pessoa("Emersos Marques Pedro")
 ErickEmiliano = Pessoa("Erick Emiliano")
 ErikDataleak = Pessoa("Erik Dataleak Ramos") #nome real?
-Erin = Pessoa("Erin") #nome completo?
-Eros = Pessoa("Eros") #nome completo?
+Erin = Pessoa("Erin Pinheiro Manal", wiki="Erin")
+Eros = Pessoa("Eros", wiki="Brunakalil") # Padawan 'Bruna' do Oda em 2014-11-18 (Nome anterior: "Bruna Kalil")
 FabioH = Pessoa("Fabio Hirano")
 FabricioBiazzotto = Pessoa("Fabricio Biazzotto")
 Fellype = Pessoa("Fellype Cazorino")
@@ -169,7 +169,7 @@ VAlves = Pessoa("Vitor Alves")
 Vecchio = Pessoa("Alexandre Vecchio Passerini", wiki="Alevecchio")
 VictorScattone = Pessoa("Victor Scattone")
 Vitor = Pessoa("Vitor Fernandes")
-Vido = Pessoa("Lucas Vido")
+Vido = Pessoa("Lucas Vido", wiki="Vido")
 Villares = Pessoa("Alexandre Villares")
 VJPixel = Pessoa("VJ Pixel")
 Vrech = Pessoa("Matheus Vral Vrech") # (São Carlos)
@@ -564,9 +564,19 @@ CMC.observa_desligamento(ManoelLemos, motivo=ATRASO)
 
 # CMC de 18 de Novembro de 2014:
 CMC.data("2014-11-18")
-Oda.apresenta_padawan(Bruna)
+Oda.apresenta_padawan(Eros) # Bruna Kalil trocou de nome alguns anos mais tarde.
 Anchises.apresenta_padawan(Erin)
 CMC.pergunta("Lechuga apresenta uma nova padawan.")
+
+
+# CMC de 16 de Dezembro de 2014:
+CMC.data("2014-12-16")
+Ramalho.apresenta_padawan(Vido) #implicitamente
+Oda.apresenta_padawan(Bilo) #implicitamente
+CMC.aprova_associado(Erin, endosso=DQ)
+CMC.aprova_associado(Eros, endosso=DQ)
+CMC.aprova_associado(Vido, endosso=Ramalho)
+CMC.aprova_associado(Bilo, endosso=Oda)
 
 
 #HACK:
@@ -582,13 +592,11 @@ Alguem.apresenta_padawans([
 #HACK:
 for a in [Allan,
           BrunoLP,
-          Eros,
           FelipeMoreira,
           FabioH,
           LaTeX,
           LeonardoSantos,
           TiagoQueiroz,
-          Vido,
           Yanava,
           Yumi,
 ]:
