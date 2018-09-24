@@ -23,6 +23,7 @@ Asa = Pessoa("Asa") #nome completo?
 Aylons = Pessoa("Gustavo Barbosa Monteiro Bruno", wiki="Aylons")
 Baraldi = Pessoa("Mauro Navarro Baraldi")
 Belasco = Pessoa("Pedro Belasco")
+Bruna = Pessoa("Bruna") #nome completo? Padawan do Oda em 2014-11-18
 BrunoBorges = Pessoa("Bruno Lima Borges") # (Irmão do Hugo)
 BrunoLP = Pessoa("Bruno Luiz de Paula")
 Buzz = Pessoa("Buzz") #nome?
@@ -559,6 +560,13 @@ CMC.aprova_associado(Ferno, endosso=Mike)
 CMC.aprova_associado(NelsonCanton, endosso=Mike)
 CMC.observa_desligamento(Kinoshita, motivo=ATRASO)
 CMC.observa_desligamento(ManoelLemos, motivo=ATRASO)
+
+
+# CMC de 18 de Novembro de 2014:
+CMC.data("2014-11-18")
+Oda.apresenta_padawan(Bruna)
+Anchises.apresenta_padawan(Erin)
+CMC.pergunta("Lechuga apresenta uma nova padawan.")
 
 
 #HACK:
