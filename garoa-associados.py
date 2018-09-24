@@ -185,9 +185,6 @@ WagnerSartori = Pessoa("Wagner Sartori")
 Wesley = Pessoa("Wesley Shaimon")
 Zanst = Pessoa("Zanst")
 
-#HACK:
-Alguem = Pessoa("Algum associado")
-
 cofundadores = [
   Agaelebe,
   Aleph,
@@ -199,8 +196,7 @@ cofundadores = [
   MarceloRodrigues,
   Oda,
   Pitanga,
-  Ramalho,
-  Alguem
+  Ramalho
 ]
 
 CMC = ConselhoMandaChuva(cofundadores)
@@ -699,10 +695,6 @@ CMC.observa_desligamento(Bilo,    motivo=ATRASO)
 # CMC.observa_desligamento(Erico,    motivo=ATRASO)
 # CMC.readmite_associado(Gabrielzinho) #regularizou (Gabrielzinho? a ata diz apenas 'Gabriel' e não consta nenhum Gabriel com pendencias em atas anteriores...)
 
-#HACK:
-Alguem.apresenta_padawans([
-  Rubens
-])
 
 #HACK:
 for a in [Allan,
@@ -872,6 +864,7 @@ CMC.observa_desligamento(GutoMaia, motivo="3 meses de atraso na mensalidade")
 CMC.data("2017-09-19")
 Vido.apresenta_padawan(Sebastiao)
 CMC.aprova_associado(Sebastiao, endosso=[Vido])
+Oda.apresenta_padawan(Rubens) # implicitamente
 CMC.aprova_associado(Rubens, endosso=[Oda])
 CMC.observa_desligamento(Christian, motivo="3 meses de atraso na mensalidade")
 
