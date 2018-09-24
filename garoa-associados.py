@@ -579,6 +579,21 @@ CMC.aprova_associado(Vido, endosso=Ramalho)
 CMC.aprova_associado(Bilo, endosso=Oda)
 
 
+# CMC de 20 de Janeiro de 2015:
+CMC.data("2015-01-20")
+# Nenhuma alteração no quadro de associados e padawans
+
+# CMC de 10 de Fevereiro de 2015:
+CMC.data("2015-02-10")
+CMC.pergunta("'DQ propõem Alexandre como sócio - Aprovado': Esse é o Villares?")
+DQ.apresenta_padawan(Villares) #implicitamente
+CMC.aprova_associado(Villares, endosso=DQ)
+CMC.observa_desligamento(Otto,      motivo=ATRASO)
+CMC.observa_desligamento(LuisSouza, motivo=ATRASO)
+CMC.observa_desligamento(Romulo,    motivo=ATRASO)
+CMC.observa_desligamento(Juan) # motivo não especificado na ata
+
+
 #HACK:
 Alguem.apresenta_padawans([
   Christian,
@@ -596,6 +611,7 @@ for a in [Allan,
           FabioH,
           LaTeX,
           LeonardoSantos,
+          Otto,
           TiagoQueiroz,
           Yanava,
           Yumi,
