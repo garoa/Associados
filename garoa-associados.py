@@ -701,7 +701,6 @@ CMC.observa_desligamento(Bilo,    motivo=ATRASO)
 
 #HACK:
 Alguem.apresenta_padawans([
-  ErikDataleak,
   Guisso,
   Sandro,
   Rubens
@@ -825,6 +824,7 @@ CMC.data("2017-03-21")
 Yumi.apresenta_padawan(Mesel)
 FabricioBiazzotto.apresenta_padawan(EmersonMonteiro)
 CMC.aprova_associado(EmersonMonteiro, endosso=[FabricioBiazzotto])
+Anchises.apresenta_padawan(ErikDataleak) # implicitamente
 CMC.aprova_associado(ErikDataleak, endosso=[Anchises])
 # Ficou confuso na ata! aparentemente tem também um "Erick", suponho que seja o Emiliano:
 # "Anchises apresenta Erick como associado - quarentena"
