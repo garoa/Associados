@@ -114,7 +114,7 @@ class ConselhoMandaChuva():
 digraph G {
   node [shape=egg,
         labelloc=c,
-        fontsize=5,
+        fontsize=4,
         style=filled,
         fontcolor="#eeffee"];
 """ + str(fundadores) + "\n" + str(padawans) + "\n" + str(pessoas_str) + "\n}"
