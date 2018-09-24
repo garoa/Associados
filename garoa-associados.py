@@ -50,6 +50,7 @@ EmersonMarques = Pessoa("Emersos Marques Pedro")
 ErickEmiliano = Pessoa("Erick Emiliano")
 ErikDataleak = Pessoa("Erik Dataleak Ramos") #nome real?
 Erico = Pessoa("Erico") #nome completo? Padawan do Otto em 2015-04-21
+Erika = Pessoa("Erika") #nome completo? Padawan da Luca em 2015-09-15
 Erin = Pessoa("Erin Pinheiro Manal", wiki="Erin")
 Eros = Pessoa("Eros", wiki="Brunakalil") # Padawan 'Bruna' do Oda em 2014-11-18 (Nome anterior: "Bruna Kalil")
 FabioH = Pessoa("Fabio Hirano")
@@ -639,6 +640,12 @@ CMC.pergunta("Erico propõe Danilo (Zampronio) como novo associado (não aprovam
 CMC.data("2015-08-18")
 Anchises.apresenta_padawan(BrunoDJ)
 CMC.aprova_associado(BrunoDJ, endosso=Anchises)
+
+
+# CMC de 15 de Setembro de 2015:
+CMC.data("2015-09-15")
+Juca.apresenta_padawan(Gabrielzinho)
+Luca.apresenta_padawan(Erika)
 
 
 #HACK:
