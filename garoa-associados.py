@@ -697,9 +697,7 @@ CMC.observa_desligamento(Bilo,    motivo=ATRASO)
 
 
 #HACK:
-for a in [Allan,
-          BrunoLP,
-          LeonardoSantos,
+for a in [BrunoLP,
 ]:
   # Essas pessoas não são co-fundadoras do clube. Isso aqui é só um hack temporario!
   if a in CMC.associados:
@@ -777,7 +775,9 @@ CMC.data("2016-10-18")
 Mike.apresenta_padawan(Sandro) # implicitamente
 CMC.aprova_associado(Sandro, endosso=[Mike]) # Sandro Friedland
 # CMC.observa_desligamento(AndreOliveira, motivo="3 (ou mais) meses de atraso na mensalidade")
-CMC.observa_desligamento(LeonardoSantos, motivo="3 (ou mais) meses de atraso na mensalidade")
+# CMC.observa_desligamento(LeonardoSantos, motivo="3 (ou mais) meses de atraso na mensalidade")
+CMC.pergunta("LeonardoSantos foi desligado nessa ata, mas não consta em atas passadas quando foi que ele originalmente se tornou associado.")
+
 
 # CMC de 15 de Novembro de 2016:
 CMC.data("2016-11-15")
@@ -818,7 +818,8 @@ Anchises.apresenta_padawan(ErikDataleak) # implicitamente
 CMC.aprova_associado(ErikDataleak, endosso=[Anchises])
 # Ficou confuso na ata! aparentemente tem também um "Erick", suponho que seja o Emiliano:
 # "Anchises apresenta Erick como associado - quarentena"
-CMC.observa_desligamento(Allan, motivo="6 meses de atraso na mensalidade")
+CMC.pergunta("A ata menciona desligamento de 'Alan'. Seria o Alan Moreira? Ou alguma outra pessoa?")
+# CMC.observa_desligamento(Allan, motivo="6 meses de atraso na mensalidade")
 # CMC.observa_desligamento(G4b1s, motivo="6 meses de atraso na mensalidade")
 
 # CMC de 18 de Abril de 2017:
