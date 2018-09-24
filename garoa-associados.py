@@ -1008,4 +1008,4 @@ Afonso.apresenta_padawans([Alexandra,
 
 CMC.print_padawans()
 CMC.output_graph()
-#CMC.print_associados()
+CMC.print_associados()

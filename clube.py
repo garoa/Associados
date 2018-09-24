@@ -22,9 +22,18 @@ class Pessoa():
       self.apresenta_padawan(p)
 
   def apresenta_padawan(self, pessoa):
-    pessoa.apresentacao = self.cmc.dia
-    self.padawans.append(pessoa)
-    self.cmc.padawans.append(pessoa)
+
+    if pessoa in self.cmc.padawans:
+      if self not in pessoa.jedi:
+        pessoa.jedi.append(self)
+      print(("{} já havia sido apresentado"
+             " como padawan no dia {}!").format(pessoa.nome,
+                                                pessoa.apresentacao))
+    else:
+      pessoa.jedi = [self]
+      pessoa.apresentacao = self.cmc.dia
+      self.padawans.append(pessoa)
+      self.cmc.padawans.append(pessoa)
 
 class ConselhoMandaChuva():
   def __init__(self, fundadores=[]):
@@ -82,10 +91,15 @@ class ConselhoMandaChuva():
     else:
       print("ERRO: Desligando '{}' que nem era associado!".format(pessoa.nome))
 
+
   def print_padawans(self):
-    print("Padawans órfãos:\n\t{}".format('\n\t'.join(map(lambda x: "{}: {}".format(x.apresentacao, x.nome), self.padawans))))
+    def jedis_str(x):
+      return ', '.join(map(lambda m: m.nome, x.jedi))
+
+    print("Padawans órfãos:\n\t{}".format('\n\t'.join(map(lambda x: "{}: {}\t\t(indicação: {})".format(x.apresentacao, x.nome, jedis_str(x)), self.padawans))))
 
   def print_associados(self):
+    self.associados = sorted(self.associados, key=lambda x: len(x.padawans), reverse=True)
     print("Associados:\n\t{}".format('\n\t'.join(map(lambda x: "{} ({})".format(x.nome, len(x.padawans)), self.associados))))
 
   def output_graph(self):
