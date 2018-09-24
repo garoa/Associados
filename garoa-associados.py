@@ -10,6 +10,7 @@ AleSouza = Pessoa("Alexandre Souza", wiki="Alexandre_Souza")
 Aleph = Pessoa("Alberto Fabiano Caires de Medeiros", wiki="Aleph")
 AlexPorto = Pessoa("Alex Porto")
 Allan = Pessoa("Allan") #nome completo? Seria esse o Allan Moreira?
+AllanMoreira = Pessoa("Allan Moreira")
 AllanTrindade = Pessoa("Allan Trindade") # (de São Vicente)
 Anchises = Pessoa("Anchises Moraes Guimarães de Paula", wiki="Anchisesbr")
 Anderson = Pessoa("Anderson Queiroz") # irmao gemeo do Tiago Queiroz
@@ -608,6 +609,7 @@ CMC.aprova_associado(FelipeMoreira, endosso=Vitor)
 # CMC.observa_desligamento(Otto,      motivo=ATRASO)  # "Vai regularizar"
 CMC.observa_desligamento(RogerRussel, motivo=ATRASO)
 
+
 # CMC de 21 de Abril de 2015:
 CMC.data("2015-04-21")
 CMC.readmite_associado(Otto) #regularizou
@@ -648,6 +650,28 @@ Juca.apresenta_padawan(Gabrielzinho)
 Luca.apresenta_padawan(Erika)
 
 
+# CMC de 20 de Outubro de 2015:
+CMC.data("2015-10-20")
+Mike.apresenta_padawans([TiagoQueiroz, AllanMoreira]) #implicitamente
+CMC.aprova_associado(TiagoQueiroz, endosso=Mike)
+CMC.aprova_associado(AllanMoreira, endosso=Mike)
+CMC.aprova_associado(Gabrielzinho, endosso=Juca)
+CMC.observa_desligamento(Asa,    motivo=ATRASO)
+CMC.observa_desligamento(VJPixel,    motivo=ATRASO)
+CMC.observa_desligamento(Carine,    motivo=ATRASO)
+CMC.observa_desligamento(Ulysses,    motivo=ATRASO)
+CMC.observa_desligamento(Santagada,    motivo=ATRASO)
+CMC.observa_desligamento(TiagoAnjo,    motivo=ATRASO) # Tiago Santana
+CMC.observa_desligamento(Afonso,    motivo=ATRASO)
+# CMC.observa_desligamento(ManoelLemos,    motivo=ATRASO)
+# CMC.observa_desligamento(Romulo,    motivo=ATRASO) # Romulo Nascimento
+# CMC.observa_desligamento(RicardoGuimaraes,    motivo=ATRASO)
+CMC.pergunta("Quem era 'Ricardo Guimarães' que foi desligado nessa data?")
+# CMC.observa_desligamento(LuisSouza,    motivo=ATRASO)
+CMC.observa_desligamento(RonaldoRussel,    motivo=ATRASO)
+# CMC.observa_desligamento(RogerRussel,    motivo=ATRASO)
+
+
 #HACK:
 Alguem.apresenta_padawans([
   Christian,
@@ -664,7 +688,6 @@ for a in [Allan,
           LaTeX,
           LeonardoSantos,
           RogerRussel,
-          TiagoQueiroz,
           Yanava,
 ]:
   # Essas pessoas não são co-fundadoras do clube. Isso aqui é só um hack temporario!
