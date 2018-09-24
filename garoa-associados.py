@@ -701,7 +701,6 @@ CMC.observa_desligamento(Bilo,    motivo=ATRASO)
 
 #HACK:
 Alguem.apresenta_padawans([
-  Guisso,
   Sandro,
   Rubens
 ])
@@ -797,6 +796,7 @@ FabricioBiazzotto.apresenta_padawan(RodrigoSilveira)
 # CMC de 20 de Dezembro de 2016:
 CMC.data("2016-12-20")
 Anchises.apresenta_padawan(ErickEmiliano)
+Yumi.apresenta_padawan(Guisso) # implicitamente
 CMC.aprova_associado(Guisso, endosso=[Yumi])
 CMC.aprova_associado(RodrigoSilveira, endosso=[FabricioBiazzotto])
 
