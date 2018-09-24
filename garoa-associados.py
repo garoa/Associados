@@ -629,6 +629,11 @@ Erico.apresenta_padawan(PauloBiohack)
 Otto.apresenta_padawan(DaniloZampronio)
 
 
+# CMC de 21 de Julho de 2015:
+CMC.data("2015-07-21")
+CMC.pergunta("Erico propõe Danilo como novo associado (não aprovamos, 5 abstensões x 3 a favor)")
+
+
 #HACK:
 Alguem.apresenta_padawans([
   Christian,
