@@ -672,6 +672,14 @@ CMC.observa_desligamento(RonaldoRussel,    motivo=ATRASO)
 # CMC.observa_desligamento(RogerRussel,    motivo=ATRASO)
 
 
+# CMC de 17 de Novembro de 2015:
+CMC.data("2015-11-17")
+CMC.observa_desligamento(Jonnes,    motivo=ATRASO)
+CMC.readmite_associado(VJPixel) #regularizou
+CMC.observa_desligamento(Erico)
+CMC.pergunta("A ata diz 'segue desligado' apesar de nunca ter constado desligamento do Érico em atas anteriores...")
+
+
 #HACK:
 Alguem.apresenta_padawans([
   Christian,
