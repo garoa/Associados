@@ -594,6 +594,16 @@ CMC.observa_desligamento(Romulo,    motivo=ATRASO)
 CMC.observa_desligamento(Juan) # motivo não especificado na ata
 
 
+# CMC de 17 de Março de 2015:
+CMC.data("2015-03-17")
+Vitor.apresenta_padawan(FelipeMoreira) #implicitamente
+CMC.aprova_associado(FelipeMoreira, endosso=Vitor)
+# CMC.observa_desligamento(Romulo,    motivo=ATRASO)
+# CMC.observa_desligamento(LuisSouza, motivo=ATRASO)
+# CMC.observa_desligamento(Otto,      motivo=ATRASO)  # "Vai regularizar"
+CMC.observa_desligamento(RogerRussel, motivo=ATRASO)
+
+
 #HACK:
 Alguem.apresenta_padawans([
   Christian,
@@ -607,11 +617,11 @@ Alguem.apresenta_padawans([
 #HACK:
 for a in [Allan,
           BrunoLP,
-          FelipeMoreira,
           FabioH,
           LaTeX,
           LeonardoSantos,
           Otto,
+          RogerRussel,
           TiagoQueiroz,
           Yanava,
           Yumi,
