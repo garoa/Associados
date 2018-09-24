@@ -42,7 +42,8 @@ Dente = Pessoa("Marcelo Araujo Dente")
 Diogenes = Pessoa("Diógenes Rossi", wiki="Diógenes")
 DQ = Pessoa("Daniel Gerk de Azevedo Quadros")
 Eden = Pessoa("Eden Cardim")
-Emerson = Pessoa("Emerson Monteiro Sobreiro") #padawan do Fabricio
+EmersonMonteiro = Pessoa("Emerson Monteiro Sobreiro") #padawan do Fabricio
+EmersonMarques = Pessoa("Emersos Marques Pedro")
 ErickEmiliano = Pessoa("Erick Emiliano")
 ErikDataleak = Pessoa("Erik Dataleak Ramos") #nome real?
 Erin = Pessoa("Erin") #nome completo?
@@ -52,6 +53,7 @@ FabricioBiazzotto = Pessoa("Fabricio Biazzotto")
 Fellype = Pessoa("Fellype Cazorino")
 FelipeMoreira = Pessoa("Felipe Moreira")
 Fernanda = Pessoa("Fernanda") # do Lab de Garagem #nome completo?
+Ferno = Pessoa("Fernando", wiki="Ferno") # nome completo?
 FMolina = Pessoa("Fernando Molina")
 FSouza = Pessoa("Felipe Souza")
 Gabi = Pessoa("Gabriela Fonseca")
@@ -547,10 +549,22 @@ CMC.aprova_associado(JeanPaul, endosso=Juca)
 CMC.aprova_associado(Otto, endosso=Mike)
 CMC.aprova_associado(RogerRussel)
 
+# CMC de 21 de Outubro de 2014:
+CMC.data("2014-10-21")
+Juca.apresenta_padawan(EmersonMarques)
+Mike.apresenta_padawan(Ferno) #implicito
+CMC.pergunta("Oda apresenta dois novos padawans.")
+CMC.aprova_associado(JeanTomceac, endosso=Mike)
+CMC.aprova_associado(Ferno, endosso=Mike)
+CMC.aprova_associado(NelsonCanton, endosso=Mike)
+CMC.observa_desligamento(Kinoshita, motivo=ATRASO)
+CMC.observa_desligamento(ManoelLemos, motivo=ATRASO)
+
+
 #HACK:
 Alguem.apresenta_padawans([
   Christian,
-  Emerson,
+  EmersonMonteiro,
   ErikDataleak,
   Guisso,
   Sandro,
@@ -565,7 +579,6 @@ for a in [Allan,
           FabioH,
           LaTeX,
           LeonardoSantos,
-          NelsonCanton,
           TiagoQueiroz,
           Vido,
           Yanava,
@@ -680,8 +693,8 @@ CMC.data("2017-02-21")
 # CMC de 21 de Março de 2017:
 CMC.data("2017-03-21")
 Yumi.apresenta_padawan(Mesel)
-FabricioBiazzotto.apresenta_padawan(Emerson)
-CMC.aprova_associado(Emerson, endosso=[FabricioBiazzotto])
+FabricioBiazzotto.apresenta_padawan(EmersonMonteiro)
+CMC.aprova_associado(EmersonMonteiro, endosso=[FabricioBiazzotto])
 CMC.aprova_associado(ErikDataleak, endosso=[Anchises])
 # Ficou confuso na ata! aparentemente tem também um "Erick", suponho que seja o Emiliano:
 # "Anchises apresenta Erick como associado - quarentena"
@@ -714,7 +727,7 @@ CMC.aprova_associado(Thomas)
 # CMC de 18 de Julho de 2017:
 CMC.data("2017-07-18")
 CMC.readmite_associado(DQ)
-CMC.aprova_associado(Emerson, endosso=[Vido])
+CMC.aprova_associado(EmersonMonteiro, endosso=[Vido])
 
 # CMC de 15 de Agosto de 2017:
 CMC.data("2017-08-15")
