@@ -47,6 +47,7 @@ EmersonMonteiro = Pessoa("Emerson Monteiro Sobreiro") #padawan do Fabricio
 EmersonMarques = Pessoa("Emersos Marques Pedro")
 ErickEmiliano = Pessoa("Erick Emiliano")
 ErikDataleak = Pessoa("Erik Dataleak Ramos") #nome real?
+Erico = Pessoa("Erico") #nome completo? Padawan do Otto em 2015-04-21
 Erin = Pessoa("Erin Pinheiro Manal", wiki="Erin")
 Eros = Pessoa("Eros", wiki="Brunakalil") # Padawan 'Bruna' do Oda em 2014-11-18 (Nome anterior: "Bruna Kalil")
 FabioH = Pessoa("Fabio Hirano")
@@ -603,6 +604,13 @@ CMC.aprova_associado(FelipeMoreira, endosso=Vitor)
 # CMC.observa_desligamento(Otto,      motivo=ATRASO)  # "Vai regularizar"
 CMC.observa_desligamento(RogerRussel, motivo=ATRASO)
 
+# CMC de 21 de Abril de 2015:
+CMC.data("2015-04-21")
+CMC.readmite_associado(Otto) #regularizou
+CMC.readmite_associado(Carine) #regularizou
+CMC.readmite_associado(Moreno) #regularizou
+Otto.apresenta_padawan(Erico)
+
 
 #HACK:
 Alguem.apresenta_padawans([
@@ -620,7 +628,6 @@ for a in [Allan,
           FabioH,
           LaTeX,
           LeonardoSantos,
-          Otto,
           RogerRussel,
           TiagoQueiroz,
           Yanava,
