@@ -680,6 +680,25 @@ CMC.observa_desligamento(Erico)
 CMC.pergunta("A ata diz 'segue desligado' apesar de nunca ter constado desligamento do Érico em atas anteriores...")
 
 
+# CMC de 15 de Dezembro de 2015:
+CMC.data("2015-12-15")
+Mike.apresenta_padawan(DanielaIwassa)
+# CMC.observa_desligamento(Carine,    motivo=ATRASO)
+# CMC.observa_desligamento(Ulysses,    motivo=ATRASO)
+# CMC.observa_desligamento(Jonnes,    motivo=ATRASO)
+# CMC.observa_desligamento(Santagada,    motivo=ATRASO)
+# CMC.observa_desligamento(TiagoAnjo,    motivo=ATRASO)
+# CMC.observa_desligamento(Afonso,    motivo=ATRASO)
+CMC.observa_desligamento(RMartinelli,    motivo=ATRASO)
+# CMC.observa_desligamento(ManoelLemos,    motivo=ATRASO)
+# CMC.observa_desligamento(Romulo,    motivo=ATRASO)
+# CMC.observa_desligamento(RicardoGuimaraes,    motivo=ATRASO) # Quem era esse cara?!
+# CMC.observa_desligamento(RonaldoRussel,    motivo=ATRASO)
+# CMC.observa_desligamento(RogerRussel,    motivo=ATRASO)
+CMC.observa_desligamento(Bilo,    motivo=ATRASO)
+# CMC.observa_desligamento(Erico,    motivo=ATRASO)
+# CMC.readmite_associado(Gabrielzinho) #regularizou (Gabrielzinho? a ata diz apenas 'Gabriel' e não consta nenhum Gabriel com pendencias em atas anteriores...)
+
 #HACK:
 Alguem.apresenta_padawans([
   Christian,
@@ -707,8 +726,7 @@ for a in [Allan,
 
 # CMC de 19 de Janeiro de 2016:
 CMC.data("2016-01-19")
-Mike.apresenta_padawans([DanielaIwassa,
-                         Carril])
+Mike.apresenta_padawan(Carril)
 CMC.aprova_associado(DanielaIwassa, endosso=[Mike])
 CMC.aprova_associado(Carril, endosso=[Mike])
 
