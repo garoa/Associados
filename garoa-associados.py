@@ -35,7 +35,7 @@ Caique = Pessoa("Caique Severo")
 Carine = Pessoa("Carine Roos")
 Carril = Pessoa("Fernando Carril")
 Ceci = Pessoa("Cecilia Tanaka")
-Christian = Pessoa("Christian") # nome completo?
+Christian = Pessoa("Christian Oliveira")
 CleitonAlves = Pessoa("Cleiton Alves")
 Coruja = Pessoa("Gustavo Lima")
 Dandara = Pessoa("Dandara Jatobá")
@@ -701,7 +701,6 @@ CMC.observa_desligamento(Bilo,    motivo=ATRASO)
 
 #HACK:
 Alguem.apresenta_padawans([
-  Christian,
   ErikDataleak,
   Guisso,
   Sandro,
@@ -846,6 +845,7 @@ Afonso.apresenta_padawan(Micael)
 TiagoQueiroz.apresenta_padawan(Anderson) # "como seu padawan recursivo"
 Mike.apresenta_padawans([Dente,
                          Thomas])
+Oda.apresenta_padawan(Christian) # implicitamente
 CMC.aprova_associado(Christian, endosso=[Oda])
 
 # CMC de 20 de Junho de 2017:
