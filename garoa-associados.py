@@ -80,6 +80,7 @@ JAFreitas = Pessoa("João Adriano Freitas")
 JamesRaznor = Pessoa("James Raznor")
 JamesSouza = Pessoa("James Souza")
 JeanPaul = Pessoa("Jean Paul")
+JeanTomceac = Pessoa("Jean Tomceac")
 JonDroid = Pessoa("JonDroid") #nome real?
 Jonnes = Pessoa("Jonnes Tahara")
 Juan = Pessoa("Juan") #nome?
@@ -103,7 +104,8 @@ Livia = Pessoa("Livia Ascava")
 LoganBr = Pessoa("Ricardo 'Logan'") #nome completo?
 Luca = Pessoa("Luca Toledo")
 Lucas = Pessoa("Lucas") #nome completo? Talvez seja: https://garoa.net.br/wiki/Usu%C3%A1rio:Lucascfk
-Luciano = Pessoa("Luciano") #nome completo?
+Luciano = Pessoa("Luciano") #nome completo? (Não é o Luciano Batista! Ver: 2014-08-19)
+LucianoBatista = Pessoa("Luciano Batista de Souza")
 LuisLeao = Pessoa("Luis Fernando de Oliveira Leão", wiki="Luis.leao")
 Luiz = Pessoa("Luiz") #nome completo?
 LuisSouza = Pessoa("Luis Souza", wiki="Luissouza")
@@ -536,6 +538,15 @@ CMC.aprova_associado(Vecchio, endosso=Vitor)
 RonaldoRussel.apresenta_padawan(RogerRussel) # Ceci também "apresentou", mas não a ata diz que é "padawan do Ronaldo".
 
 
+# CMC de 16 de Setembro de 2014:
+CMC.data("2014-09-16")
+Afonso.apresenta_padawan(LucianoBatista)
+Ceci.apresenta_padawan(JeanTomceac)
+
+CMC.aprova_associado(JeanPaul, endosso=Juca)
+CMC.aprova_associado(Otto, endosso=Mike)
+CMC.aprova_associado(RogerRussel)
+
 #HACK:
 Alguem.apresenta_padawans([
   Christian,
@@ -555,8 +566,6 @@ for a in [Allan,
           LaTeX,
           LeonardoSantos,
           NelsonCanton,
-          Otto,
-          RogerRussel,
           TiagoQueiroz,
           Vido,
           Yanava,
