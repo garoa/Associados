@@ -702,7 +702,6 @@ CMC.observa_desligamento(Bilo,    motivo=ATRASO)
 #HACK:
 Alguem.apresenta_padawans([
   Christian,
-  EmersonMonteiro,
   ErikDataleak,
   Guisso,
   Sandro,
@@ -859,7 +858,8 @@ CMC.aprova_associado(Thomas)
 # CMC de 18 de Julho de 2017:
 CMC.data("2017-07-18")
 CMC.readmite_associado(DQ)
-CMC.aprova_associado(EmersonMonteiro, endosso=[Vido])
+# CMC.aprova_associado(EmersonMonteiro, endosso=[Vido])
+CMC.pergunta("Porque o Vido propôs aprovar o Emerson Monteiro, que já tinha sido aprovado em Março de 2017?")
 
 # CMC de 15 de Agosto de 2017:
 CMC.data("2017-08-15")
