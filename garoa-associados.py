@@ -612,6 +612,12 @@ CMC.readmite_associado(Moreno) #regularizou
 Otto.apresenta_padawan(Erico)
 
 
+# CMC de 19 de Maio de 2015:
+CMC.data("2015-05-19")
+CMC.pergunta("Anchises propõe Érico (padawan do Otto e frequente participante do Biohacking) como novo associado - Postergado.")
+CMC.pergunta("Gabriel, regularizei e arrumei o agendamento (18/05) - Quem é 'Gabriel' ?")
+
+
 #HACK:
 Alguem.apresenta_padawans([
   Christian,
