@@ -110,7 +110,7 @@ LeonardoSantos = Pessoa("Leonardo Garcia Tales dos Santos")
 LeonardoTelles = Pessoa("Leonardo Telles", wiki="Lgtelles")
 Liane = Pessoa("Liane Lira")
 Lina = Pessoa("Lina Lopes")
-Lint = Pessoa("Carlos Lint")
+# Lint = Pessoa("Carlos Lint")
 Livia = Pessoa("Livia Ascava")
 LoganBr = Pessoa("Ricardo 'Logan'") #nome completo?
 Luca = Pessoa("Luca Toledo")
@@ -156,7 +156,7 @@ RogerioMunhoz = Pessoa("Rogério Munhoz")
 Romulo = Pessoa("Romulo Nascimento")
 RonaldoRussel = Pessoa("Ronaldo Russel", wiki="Ronas")
 Rubens = Pessoa("Rubão") #verificar nome completo (Rubens Tadeu talvez?)
-Samir = Pessoa("Sam Carecho")
+# Samir = Pessoa("Sam Carecho")
 SamuelDamasceno = Pessoa("Samuel Damasceno")
 Sandro = Pessoa("Sandro Friedland")
 Santagada = Pessoa("Leonardo Santagada")
@@ -252,7 +252,9 @@ CMC.data("2011-05-24")
 
 # CMC de 21 de Junho de 2011:
 CMC.data("2011-06-21")
-Oda.apresenta_padawan(Samir)
+# Oda.apresenta_padawan(Samir)
+# No dia 24 de ago de 2011 o Sam Carecho enviou email para a lista pública do clube dizendo:
+# "Solicito o cancelamento da proposta de associação feita em meu nome pelo associado Oda."
 Anchises.apresenta_padawan(CleitonAlves)
 # Em alguma data o Tony se associou (sem passar por padawanice?). Precisamos verificar.
 # Por enquanto vai constar aqui, pois é a primeira ata em que o nome dele é citado:
