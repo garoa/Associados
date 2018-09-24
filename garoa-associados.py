@@ -699,10 +699,7 @@ CMC.observa_desligamento(Bilo,    motivo=ATRASO)
 #HACK:
 for a in [Allan,
           BrunoLP,
-          LaTeX,
           LeonardoSantos,
-          RogerRussel,
-          Yanava,
 ]:
   # Essas pessoas não são co-fundadoras do clube. Isso aqui é só um hack temporario!
   if a in CMC.associados:
@@ -771,7 +768,8 @@ CMC.observa_desligamento(Tales) # "Anchises informa que Tales Cione solicitou o 
 CMC.data("2016-09-20")
 Agaelebe.apresenta_padawan(Ivar)
 CMC.observa_desligamento(Tony, motivo="3 (ou mais) meses de atraso na mensalidade")
-CMC.observa_desligamento(LaTeX, motivo="3 (ou mais) meses de atraso na mensalidade") #dúvida: ata diz "Leandro"
+CMC.pergunta("LaTeX foi desligado nessa ata, mas não consta em atas passadas quando foi que ele originalmente se tornou associado.")
+# CMC.observa_desligamento(LaTeX, motivo="3 (ou mais) meses de atraso na mensalidade") #dúvida: ata diz "Leandro"
 CMC.observa_desligamento(G4b1s, motivo="3 (ou mais) meses de atraso na mensalidade")
 
 # CMC de 18 de Outubro de 2016:
@@ -804,7 +802,7 @@ Ramalho.apresenta_padawan(Belasco)
 # CMC.observa_desligamento(Kemel, motivo="3 (ou mais) meses de atraso na mensalidade")
 # CMC.observa_desligamento(Eros,          motivo="3 (ou mais) meses de atraso na mensalidade")
 # CMC.observa_desligamento(FelipeMoreira, motivo="3 (ou mais) meses de atraso na mensalidade")
-CMC.observa_desligamento(RogerRussel,     motivo="3 (ou mais) meses de atraso na mensalidade")
+# CMC.observa_desligamento(RogerRussel,     motivo="3 (ou mais) meses de atraso na mensalidade")
 # CMC.observa_desligamento(AndreOliveira, motivo="3 (ou mais) meses de atraso na mensalidade")
 
 # CMC de 21 de Fevereiro de 2017:
@@ -825,7 +823,8 @@ CMC.observa_desligamento(Allan, motivo="6 meses de atraso na mensalidade")
 
 # CMC de 18 de Abril de 2017:
 CMC.data("2017-04-18")
-CMC.observa_desligamento(Yanava, motivo="3 meses de atraso na mensalidade")
+CMC.pergunta("Uma pessoa com o nome (apelido?) 'Yanava' foi desligada nessa ata, mas não consta em atas passadas quando foi que originalmente se tornou associado(a).")
+#CMC.observa_desligamento(Yanava, motivo="3 meses de atraso na mensalidade")
 # CMC.observa_desligamento(LaTeX, motivo="3 meses de atraso na mensalidade") # ata diz "Leandro" (é o LaTeX mesmo?)
 CMC.observa_desligamento(DQ, motivo="requisitado")
 # NOTA: CMC aprova DQ como associado honorário.
