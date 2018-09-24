@@ -1,0 +1,2 @@
+(c) 2018 Felipe Correa da Silva Sanches <juca@members.fsf.org>
+Licensed under the terms of the GNU General Public License, version 2 (or later)

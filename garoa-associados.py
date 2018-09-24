@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
+#
+# (c) 2018 Felipe Correa da Silva Sanches <juca@members.fsf.org>
+# Licensed under the terms of the GNU General Public License, version 2 (or later)
 from clube import Pessoa, ConselhoMandaChuva
 
 Abayomi = Pessoa("Abayomi") #nome completo?
