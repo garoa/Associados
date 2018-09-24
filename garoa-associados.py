@@ -701,7 +701,6 @@ CMC.observa_desligamento(Bilo,    motivo=ATRASO)
 
 #HACK:
 Alguem.apresenta_padawans([
-  Sandro,
   Rubens
 ])
 
@@ -785,7 +784,8 @@ CMC.observa_desligamento(G4b1s, motivo="3 (ou mais) meses de atraso na mensalida
 
 # CMC de 18 de Outubro de 2016:
 CMC.data("2016-10-18")
-CMC.aprova_associado(Sandro, endosso=[Mike])
+Mike.apresenta_padawan(Sandro) # implicitamente
+CMC.aprova_associado(Sandro, endosso=[Mike]) # Sandro Friedland
 # CMC.observa_desligamento(AndreOliveira, motivo="3 (ou mais) meses de atraso na mensalidade")
 CMC.observa_desligamento(LeonardoSantos, motivo="3 (ou mais) meses de atraso na mensalidade")
 
