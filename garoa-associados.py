@@ -696,16 +696,6 @@ CMC.observa_desligamento(Bilo,    motivo=ATRASO)
 # CMC.readmite_associado(Gabrielzinho) #regularizou (Gabrielzinho? a ata diz apenas 'Gabriel' e não consta nenhum Gabriel com pendencias em atas anteriores...)
 
 
-#HACK:
-for a in [BrunoLP,
-]:
-  # Essas pessoas não são co-fundadoras do clube. Isso aqui é só um hack temporario!
-  if a in CMC.associados:
-    print("ERROR! Tire {} do HACK".format(a))
-  else:
-    CMC.aprova_associado(a, fundador=True)
-
-
 # CMC de 19 de Janeiro de 2016:
 CMC.data("2016-01-19")
 Mike.apresenta_padawan(Carril)
@@ -909,7 +899,8 @@ CMC.aprova_associado(NelsonBrito, endosso=[Mesel])
 
 # CMC de 17 de Abril de 2018:
 CMC.data("2018-04-17")
-CMC.observa_desligamento(BrunoLP, motivo="3 meses de atraso")
+CMC.pergunta("'BrunoLP' foi desligado nesse CMC, mas não constava quando se tornou associado originalmente. Seriam 'BrunoLP' e 'BrunoDJ' a mesma pessoa?")
+# CMC.observa_desligamento(BrunoLP, motivo="3 meses de atraso")
 CMC.pergunta("Dúvida: Marcelo Rodrigues ainda é associado?")
 
 # CMC de 15 de Maio de 2018:
