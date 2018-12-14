@@ -15,6 +15,7 @@ AlexPorto = Pessoa("Alex Porto")
 Allan = Pessoa("Allan") #nome completo? Seria esse o Allan Moreira?
 AllanMoreira = Pessoa("Allan Moreira")
 AllanTrindade = Pessoa("Allan Trindade") # (de São Vicente)
+AnaBastos = Pessoa("Ana Bastos")
 Anchises = Pessoa("Anchises Moraes Guimarães de Paula", wiki="Anchisesbr")
 Anderson = Pessoa("Anderson Queiroz") # irmao gemeo do Tiago Queiroz
 Andre = Pessoa("Andre") #nome completo? (seria esse o Hermann? ou o Oliveira?)
@@ -43,6 +44,8 @@ CleitonAlves = Pessoa("Cleiton Alves")
 Coruja = Pessoa("Gustavo Lima")
 Dandara = Pessoa("Dandara Jatobá")
 DanielaIwassa = Pessoa("Daniela Iwassa")
+DanielSeda = Pessoa("Daniel Seda")
+DaniloVerde = Pessoa("Danilo Verde")
 DaniloZampronio = Pessoa("Danilo Zampronio")
 DavidRobert = Pessoa("David Robert")
 Dente = Pessoa("Marcelo Araujo Dente")
@@ -65,7 +68,7 @@ Fernanda = Pessoa("Fernanda") # do Lab de Garagem #nome completo?
 Ferno = Pessoa("Fernando", wiki="Ferno") # nome completo?
 FMolina = Pessoa("Fernando Molina")
 FSouza = Pessoa("Felipe Souza")
-Gabi = Pessoa("Gabriela Fonseca")
+Gab = Pessoa("Gabriela Fonseca")
 Gabrielzinho = Pessoa("Gabriel Almeida")
 G4b1s = Pessoa("Gabriel Romano Mascarenhas", wiki="G4b1s")
 GabrielAraujo = Pessoa("Gabriel Araújo")
@@ -142,6 +145,7 @@ Otto = Pessoa("Otto Heringer")
 Pampolha = Pessoa("Pampolha") #nome?
 PauloBiohack = Pessoa("Paulo (do Biohacking)") #nome completo?
 Pitanga = Pessoa("Rodrigo Rodrigues da Silva")
+Priscila = Pessoa("Priscila Gutierres")
 Ramalho = Pessoa("Luciano Gama de Souza Ramalho")
 RafaelML = Pessoa("Rafael M Lopes")
 RenatoCandido = Pessoa("Renato Candido")
@@ -931,7 +935,7 @@ CMC.data("2017-10-17")
 
 # CMC de 21 de Novembro de 2017:
 CMC.data("2017-11-21")
-Guisso.apresenta_padawans([Gabi,
+Guisso.apresenta_padawans([Gab,
                            RobertJr])
 Afonso.apresenta_padawans([AllanTrindade,
                            JamesSouza,
@@ -1007,6 +1011,30 @@ Afonso.apresenta_padawans([Alexandra,
                            FSouza,
                            Wesley,
                            VAlves])
+
+
+# CMC de 21 de Setembro de 2018:
+# CANCELADA por falta de quórum
+
+
+# CMC de 16 de Outubro de 2018:
+CMC.data("2018-10-16")
+Villares.apresenta_padawans([DanielSeda,
+                             Priscila])
+CMC.aprova_associado(DanielSeda, endosso=[Villares])
+CMC.aprova_associado(Priscila, endosso=[Villares])
+CMC.aprova_associado(Vrech, endosso=[Afonso])
+CMC.aprova_associado(FSouza, endosso=[Afonso])
+CMC.aprova_associado(Alexandra, endosso=[Afonso])
+CMC.aprova_associado(Wesley, endosso=[Afonso])
+
+
+# CMC de 20 de Novembro de 2018:
+CMC.data("2018-11-20")
+IanF.apresenta_padawans([DaniloVerde,
+                         AnaBastos])
+CMC.aprova_associado(Gab, endosso=[Afonso])
+
 
 CMC.print_padawans()
 CMC.output_graph()
