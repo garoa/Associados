@@ -24,7 +24,7 @@ AndreHermann = Pessoa("André Hermann")
 AntonioSouza = Pessoa("Antonio Celso Cavalieri Lins de Souza") # co-fundador
 Afonso = Pessoa("Afonso Coutinho")
 Agaelebe = Pessoa("Hugo Lima Borges")
-Asa = Pessoa("Asa") #nome completo?
+Asa = Pessoa("Luis Henrique Fagundes")
 Aylons = Pessoa("Gustavo Barbosa Monteiro Bruno", wiki="Aylons")
 Bilo = Pessoa("Ricardo Bilo", wiki="Ricardobilo")
 Baraldi = Pessoa("Mauro Navarro Baraldi")
@@ -175,8 +175,8 @@ TiagoAnjo = Pessoa("Tiago Anjo Santana", wiki="Tiagoasantana")
 TiagoTadeu = Pessoa("Tiago Tadeu")
 ThiagoMassa = Pessoa("Thiago Massa")
 ThiagoRondon = Pessoa("Thiago Rondon")
-Tony = Pessoa("Tony de Marco")
-Thomas = Pessoa("Thomas") # Francês
+Tony = Pessoa("Tony de Marco e Silva")
+Thomas = Pessoa("Thomas Martin") # Francês
 Ulysses = Pessoa("Ulysses Soldá Junior")
 VAlves = Pessoa("Vitor Alves")
 Vecchio = Pessoa("Alexandre Vecchio Passerini", wiki="Alevecchio")
@@ -262,7 +262,7 @@ CMC.data("2011-06-21")
 Anchises.apresenta_padawan(CleitonAlves)
 # Em alguma data o Tony se associou (sem passar por padawanice?). Precisamos verificar.
 # Por enquanto vai constar aqui, pois é a primeira ata em que o nome dele é citado:
-CMC.aprova_associado(Tony, endosso="HACK")
+CMC.aprova_associado(Tony, endosso="HACK") # Nota: na planilha de associados consta "admissão: 20/02/2011" junto com outros fundadores.
 
 
 # CMC de 26 de Julho de 2011:
@@ -445,6 +445,7 @@ CMC.data("2013-04-16")
 Tony.apresenta_padawan(Caique)
 Vitor.apresenta_padawan(Ceci)
 CMC.aprova_associado(G4b1s, endosso=[VictorScattone])
+CMC.observa_desligamento(Aleph, motivo="Falecimento")
 
 
 # CMC de 21 de Maio de 2013:
@@ -941,6 +942,7 @@ Afonso.apresenta_padawans([AllanTrindade,
                            JamesSouza,
                            Vrech,
                            CarlosCM])
+CMC.observa_desligamento(Erin, motivo="Consta na planilha de associados: 'desligamento em 01/11/2017'.")
 
 
 # CMC de 19 de Dezembro de 2017:
