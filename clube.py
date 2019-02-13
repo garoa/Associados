@@ -48,6 +48,7 @@ def menos_de_6_meses(data):
 
 class ConselhoMandaChuva():
   def __init__(self, fundadores=[]):
+    self.data = "????-??-??"
     self.num_fundadores = len(fundadores)
     self.associados = fundadores
     self.padawans = []
@@ -58,10 +59,10 @@ class ConselhoMandaChuva():
       f.cofundador = True
 
   def pergunta(self, p):
-    print("Pergunta: '{}'".format(p))
+    print("[{}] Pergunta: '{}'".format(self.data, p))
 
   def data(self, d):
-    self.dia = d
+    self.data = d
     print("CMC de {}:".format(d))
 
   def readmite_associado(self, pessoa):
@@ -73,14 +74,14 @@ class ConselhoMandaChuva():
     if pessoa not in self.associados:
       self.associados.append(pessoa)
 
-    pessoa.associacao.append([self.dia, None])
+    pessoa.associacao.append([self.data, None])
 
   def aprova_associado_honorario(self, pessoa):
     """FIXME: Implementar esse método."""
 
   def aprova_associado(self, pessoa, endosso=None, fundador=False):
     pessoa.cmc = self
-    pessoa.associacao.append([self.dia, None])
+    pessoa.associacao.append([self.data, None])
     pessoa.endosso = endosso
 
     if pessoa in self.padawans:
@@ -108,7 +109,7 @@ class ConselhoMandaChuva():
     if pessoa in self.associados:
       self.associados.remove(pessoa)
       try:
-        pessoa.associacao[-1][1] = self.dia
+        pessoa.associacao[-1][1] = self.data
       except:
         if PEDANTE:
           print("ERRO: nao achei registro de associacao para '{}'".format(pessoa.nome))
