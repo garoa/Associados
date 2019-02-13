@@ -13,3 +13,11 @@
 3. **Amarelo:** Padawans apresentados nos últimos 6 meses
 4. **Vermelho:** Parawans abandonados (muito antigos, com pouquissima chance de se efetivarem)
 5. **Cinza:** Ex-associados.
+
+# Exemplo de diagrama
+
+Diagrama de exemplo gerado em 2019-FEV-13.
+
+Para maior resolução e dados atualizados, exporte um PDF a partir do script python.
+
+![Gerado em 2019-FEV-13.](exemplo/diagrama_garoa.jpg)
