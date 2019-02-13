@@ -11,12 +11,12 @@ AffonsoAmendola = Pessoa("Affonso Gino Amendola Neto", wiki="AffonsoAmendola")
 Alexandra = Pessoa("Alexandra Percario")
 AleSouza = Pessoa("Alexandre Souza", wiki="Alexandre_Souza")
 Aleph = Pessoa("Alberto Fabiano Caires de Medeiros", wiki="Aleph")
-AlexPorto = Pessoa("Alex Porto")
+AlexPorto = Pessoa("Alex Rocha Porto")
 AllanMoreira = Pessoa("Allan Moreira")
 AllanTrindade = Pessoa("Allan Trindad Arcanjo Ferreira") # (de São Vicente)
 AnaBastos = Pessoa("Ana Bastos")
 Anchises = Pessoa("Anchises Moraes Guimarães de Paula", wiki="Anchisesbr")
-Anderson = Pessoa("Anderson Queiroz") # irmao gemeo do Tiago Queiroz
+Anderson = Pessoa("Anderson de França Queiroz") # irmao gemeo do Tiago Queiroz
 AndreOliveira = Pessoa("Andre de Oliveira")
 AndreHermann = Pessoa("André Hermann")
 AntonioSouza = Pessoa("Antonio Celso Cavalieri Lins de Souza") # co-fundador #FIXME! Não consta na planilha de associados!
@@ -36,7 +36,7 @@ CarlosCM = Pessoa("Carlos CM") # do time de CTF do Garoa
 Caique = Pessoa("Caique Severo")
 Carine = Pessoa("Carine Roos")
 Carril = Pessoa("Fernando Carril")
-Ceci = Pessoa("Cecilia Tanaka")
+Ceci = Pessoa("Cecilia Tanaka", apelido="Ceci")
 Christian = Pessoa("Christian Oliveira")
 CleitonAlves = Pessoa("Cleiton Alves") #FIXME! Não consta na planilha de associados!
 Coruja = Pessoa("Gustavo Lima") #FIXME! Não consta na planilha de associados!
@@ -50,8 +50,8 @@ Dente = Pessoa("Marcelo Araujo Dente")
 Diogenes = Pessoa("Diógenes Rossi da Costa", wiki="Diógenes", apelido="Sene")
 DQ = Pessoa("Daniel Gerk de Azevedo Quadros")
 Eden = Pessoa("Eden Cardim")
-EmersonMonteiro = Pessoa("Emerson Monteiro Sobreiro") #padawan do Fabricio
-EmersonMarques = Pessoa("Emersos Marques Pedro")
+EmersonMonteiro = Pessoa("Emerson Monteiro Sobreiro") #padawan do Fabricio #FIXME! Não consta na planilha de associados!
+EmersonMarques = Pessoa("Emerson Marques Pedro") #FIXME! Não consta na planilha de associados!
 ErickEmiliano = Pessoa("Erick Emiliano")  #FIXME! Não consta na planilha de associados!
 ErikDataleak = Pessoa("Erik Dataleak Ramos") #nome real? #FIXME! Não consta na planilha de associados!
 Erico = Pessoa("Erico") #nome completo? Padawan do Otto em 2015-04-21
@@ -72,7 +72,7 @@ GabrielAraujo = Pessoa("Gabriel Araújo")
 Gafanhoto = Pessoa("Mateus Zitelli", wiki="MateusZitelli") #FIXME! Não consta na planilha de associados!
 Grigolato = Pessoa("Samuel Grigolato", wiki="Samuel.grigolato")
 Gola = Pessoa("Bruno Gola", wiki="Brunogola")
-Guima = Pessoa("Guima") #nome completo?
+Guima = Pessoa("Ricardo Guimarães", apelido="Guima")
 Guisso = Pessoa("Fernando Guisso")
 GustavoRibeiro = Pessoa("Gustavo de Paula Ribeiro")
 Gutem = Pessoa("Gutemberg Nunes de Carvalho")
@@ -91,11 +91,11 @@ JeanPaul = Pessoa("Jean Paul Depraz", apelido="kern")
 JeanTomceac = Pessoa("Jean Rafael Tomceac")
 JMBichara = Pessoa("José Mateus Bichara") # Organiza a atividade wiki:Estação_de_Monitoramento_da_Qualidade_do_Ar
 JonDroid = Pessoa("JonDroid") #nome real?
-Jonnes = Pessoa("Jonnes Tahara")
+Jonnes = Pessoa("Jonnes do Nascimento Tahara")
 Juan = Pessoa("Juan") #nome?
 Juca = Pessoa("Felipe Correa da Silva Sanches")
 Karol = Pessoa("Karol") #nome completo? Padawan da Priscila Gutierres
-Katia = Pessoa("Kátia Kitahara")
+Katia = Pessoa("Kátia Kitahara") #FIXME! Não consta na planilha de associados!
 Kemel = Pessoa("Kemel Zaidan")
 Kinoshita = Pessoa("Bruno Kinoshita")
 LAlcantara = Pessoa("Lucas Alcântara")
@@ -105,12 +105,11 @@ Laura = Pessoa("Laura Sobenes")
 LeandroSilva = Pessoa("Leandro Luciano da Silva", wiki="Leandrolsilva")
 Leandro = Pessoa("Leandro") # nome completo? Não é o Silva!
 Lechuga = Pessoa("Thiago Alvarenga Lechuga", apelido="Lechuga")
-LeonardoSantos = Pessoa("Leonardo Garcia Tales dos Santos")
-LeonardoTelles = Pessoa("Leonardo Telles", wiki="Lgtelles")
+LeonardoTelles = Pessoa("Leonardo Garcia Telles dos Santos", wiki="Lgtelles")
 Liane = Pessoa("Liane Lira")
 Lina = Pessoa("Lina Lopes")
 # Lint = Pessoa("Carlos Lint")
-Livia = Pessoa("Livia Ascava")
+LiviaAscava = Pessoa("Livia Ascava")
 LoganBr = Pessoa("Ricardo 'Logan'") #nome completo?
 Luca = Pessoa("Luciana de Toledo Barros") # Luca Toledo
 Lucas = Pessoa("Lucas") #nome completo? Talvez seja: https://garoa.net.br/wiki/Usu%C3%A1rio:Lucascfk
@@ -147,9 +146,11 @@ Ramalho = Pessoa("Luciano Gama de Souza Ramalho")
 RafaelML = Pessoa("Rafael M Lopes")
 RenatoCandido = Pessoa("Renato Candido")
 RicardoAmaral = Pessoa("Ricardo Amaral")
-RicardoOliveira = Pessoa("Ricardo Oliveira")
+RicardoOliveira = Pessoa("Ricardo Oliveira") # FIXME! Esse aque deve ser um dos dois 'Ricardo M. Oliveira' abaixo :-O !!!!!
 RicardoCastro = Pessoa("Ricardo Castro")
 RMartinelli = Pessoa("Ricardo Martinelli Oliveira")
+RMartinsOliveira = Pessoa("Ricardo Martins de Oliveira") # FIXME! Não consta em atas?! Planilha diz: admissão em 2012-08-05
+                                                         #                             e desligamento em 2015-05-01.
 RobertJr = Pessoa("Robert Junior") # Guisso disse: "Ele é um cabeludinho, magrinho, com cara de nerd, que vem com o pai."
 RodrigoSilveira = Pessoa("Rodrigo Gomes da Silveira") # "dos gatos"
 RogerRussel = Pessoa("Roger Russel")
@@ -167,11 +168,11 @@ Spinola = Pessoa("Spinola") #nome completo? #FIXME! Não consta na planilha de a
 Subnet = Pessoa("Luís Guilherme Pires Martins de Abreu", wiki="Subnet252")
 Tales = Pessoa("Tales Cione Adelano de Jesus", apelido="Tales")
 Taumaturgo = Pessoa("Raphael Taumaturgo") # "o cara da cerveja"
-TiagoQueiroz = Pessoa("Tiago Queiroz") # irmao gemeo do Anderson
+TiagoQueiroz = Pessoa("Tiago de França Queiroz") # irmao gemeo do Anderson
 TiagoAnjo = Pessoa("Tiago Anjo Santana", wiki="Tiagoasantana")
 TiagoTadeu = Pessoa("Tiago Tadeu")
 ThiagoMassa = Pessoa("Thiago Massa")
-ThiagoRondon = Pessoa("Thiago Rondon")
+ThiagoRondon = Pessoa("Thiago Berlitz Rondon")
 Tony = Pessoa("Tony de Marco e Silva")
 Thomas = Pessoa("Thomas Martin", apelido="Francês")
 Ulysses = Pessoa("Ulysses Soldá Junior")
@@ -427,7 +428,7 @@ CMC.aprova_associado(Gola, endosso=[Tony])
 # CMC de 19 de Março de 2013:
 CMC.data("2013-03-19")
 Ramalho.apresenta_padawans([Santagada,
-                            Lucas])
+                            Lucas]) # FIXME: Perguntar pro Ramalho se este é Lucas Emanoel Moura de Lima, desligado em 2013-12-31
 Tony.apresenta_padawan(Eden)
 Agaelebe.apresenta_padawan(Mike)
 CMC.aprova_associado(Santagada, endosso=[Ramalho])
@@ -463,7 +464,7 @@ CMC.data("2013-06-25")
 # CMC de 16 de Julho de 2013:
 CMC.data("2013-07-16")
 VitorFernandes.apresenta_padawan(Ceci)
-LuisLeao.apresenta_padawan(Livia)
+LuisLeao.apresenta_padawan(LiviaAscava)
 Tony.apresenta_padawan(Liane)
 
 
@@ -477,7 +478,7 @@ CMC.aprova_associado(Ceci)
 # CMC de 17 de Setembro de 2013:
 CMC.data("2013-09-17")
 Diogenes.apresenta_padawan(Murilo)
-CMC.aprova_associado(Livia, endosso=[LuisLeao])
+CMC.aprova_associado(LiviaAscava, endosso=[LuisLeao])
 CMC.aprova_associado(RafaelML, endosso=[Ramalho])
 CMC.observa_desligamento(Novelli, motivo="a pedido do próprio")
 CMC.observa_desligamento(Eden, motivo="por não ter pago nenhuma mensalidade")
@@ -516,7 +517,10 @@ MOTIVO="Sócios com mais de três meses de atraso na contribuição, automaticam
 #CMC.observa_desligamento(Juca, motivo=MOTIVO)
 CMC.observa_desligamento(Nessa, motivo=MOTIVO)
 CMC.observa_desligamento(Carine, motivo=MOTIVO)
-
+#
+# consta na planilha de associados:
+CMC.nao_documentou_desligamento(LiviaAscava, motivo=("Consta na planilha de associados"
+                                                     " desligamento em 2013-12-31."))
 
 # CMC de 18 de Fevereiro de 2014:
 CMC.data("2014-02-18")
@@ -538,6 +542,10 @@ CMC.aprova_associado(RMartinelli, endosso=[Mike])
 CMC.aprova_associado(Kemel, endosso=[Ramalho,
                                      Juca,
                                      Haoji])
+#
+# consta na planilha de associados:
+CMC.nao_documentou_desligamento(AlexPorto, motivo=("Consta na planilha de associados"
+                                                   " desligamento em 2014-03-09."))
 
 
 # CMC de 15 de Abril de 2014:
@@ -549,6 +557,13 @@ CMC.observa_desligamento(WagnerSartori, motivo=ATRASO)
 # CMC.observa_desligamento(Nessa, motivo=ATRASO) #Já havia sido desligada em Janeiro.
 CMC.observa_desligamento(GutoMaia, motivo=ATRASO)
 CMC.observa_desligamento(Gola, motivo=ATRASO)
+#
+# consta na planilha de associados:
+CMC.nao_documentou_desligamento(LeonardoTelles, motivo=("Consta na planilha de associados"
+                                                        " desligamento em 2014-04-15."))
+# FIXME! Como a data de admissão e de desligamento são iguais, isso pode significar que ele nunca pagou
+#        nenhuma mensalidade, mas o tesoureiro só percebeu isso uns 2 anos depois, em 2016 :-P
+#        Ou então pode ser um erro de digitação na planilha de associados...
 
 
 # CMC de 20 de Maio de 2014:
@@ -635,7 +650,10 @@ CMC.aprova_associado(Bilo, endosso=Oda)
 # CMC de 20 de Janeiro de 2015:
 CMC.data("2015-01-20")
 # Nenhuma alteração no quadro de associados e padawans
-
+#
+# consta na planilha de associados:
+CMC.nao_documentou_desligamento(ThiagoRondon, motivo=("Consta na planilha de associados"
+                                                      " desligamento em 2014-12-31."))
 
 # CMC de 10 de Fevereiro de 2015:
 CMC.data("2015-02-10")
@@ -664,7 +682,10 @@ CMC.readmite_associado(Otto) #regularizou
 CMC.readmite_associado(Carine) #regularizou
 CMC.readmite_associado(Moreno) #regularizou
 Otto.apresenta_padawan(Erico)
-
+#
+# consta na planilha de associados:
+CMC.nao_documentou_desligamento(Guima, motivo=("Consta na planilha de associados"
+                                               " desligamento em 2015-04-21."))
 
 # CMC de 19 de Maio de 2015:
 CMC.data("2015-05-19")
@@ -806,6 +827,10 @@ CMC.observa_desligamento(Otto,          motivo="3 (ou mais) meses de atraso na m
 CMC.observa_desligamento(Eros,          motivo="3 (ou mais) meses de atraso na mensalidade")
 CMC.observa_desligamento(FelipeMoreira, motivo="3 (ou mais) meses de atraso na mensalidade")
 CMC.observa_desligamento(AndreOliveira, motivo="3 (ou mais) meses de atraso na mensalidade")
+#
+# consta na planilha de associados:
+CMC.nao_documentou_desligamento(Ceci, motivo=("Consta na planilha de associados"
+                                              " desligamento em 2016-06-21."))
 
 
 # CMC de 19 de Julho de 2016:
@@ -840,8 +865,11 @@ CMC.data("2016-10-18")
 Mike.apresenta_padawan(Sandro) # implicitamente
 CMC.aprova_associado(Sandro, endosso=[Mike]) # Sandro Friedland
 # CMC.observa_desligamento(AndreOliveira, motivo="3 (ou mais) meses de atraso na mensalidade")
-# CMC.observa_desligamento(LeonardoSantos, motivo="3 (ou mais) meses de atraso na mensalidade")
-CMC.pergunta("LeonardoSantos foi desligado nessa ata, mas não consta em atas passadas quando foi que ele originalmente se tornou associado.")
+#
+# Nota:
+# "LeonardoSantos" foi desligado nessa ata, mas não consta em atas passadas quando foi que ele originalmente se tornou associado.
+# Na planilha de associados consta "Leonardo Garcia Telles dos Santos" desligado em 2014-04-15!
+# CMC.observa_desligamento(LeonardoTelles, motivo="3 (ou mais) meses de atraso na mensalidade")
 
 
 # CMC de 15 de Novembro de 2016:
@@ -871,6 +899,10 @@ Ramalho.apresenta_padawan(Belasco)
 # CMC.observa_desligamento(FelipeMoreira, motivo="3 (ou mais) meses de atraso na mensalidade")
 # CMC.observa_desligamento(RogerRussel,     motivo="3 (ou mais) meses de atraso na mensalidade")
 # CMC.observa_desligamento(AndreOliveira, motivo="3 (ou mais) meses de atraso na mensalidade")
+#
+# consta na planilha de associados:
+CMC.nao_documentou_desligamento(LeandroSilva, motivo=("Consta na planilha de associados"
+                                                      " desligamento em 2017-01-17."))
 
 
 # CMC de 21 de Fevereiro de 2017:
@@ -901,11 +933,14 @@ CMC.observa_desligamento(AllanMoreira, motivo="6 meses de atraso na mensalidade"
 
 # CMC de 18 de Abril de 2017:
 CMC.data("2017-04-18")
-CMC.pergunta("Uma pessoa com o nome (apelido?) 'Yanava' foi desligada nessa ata, mas não consta em atas passadas quando foi que originalmente se tornou associado(a).")
-#CMC.observa_desligamento(Yanava, motivo="3 meses de atraso na mensalidade")
+# Nota:
+# Uma pessoa com o nome (apelido?) 'Yanava' foi desligada nessa ata,
+# mas não consta em atas passadas quando foi que originalmente se tornou associado(a).
+# Essa pessoa foi identificada. É o Moreno. Essa informação consta na planilia de associados mantida pelo tesoureiro.
+#
 # CMC.observa_desligamento(LaTeX, motivo="3 meses de atraso na mensalidade") # ata diz "Leandro" (é o LaTeX mesmo?)
 CMC.observa_desligamento(DQ, motivo="requisitado")
-# NOTA: CMC aprova DQ como associado honorário.
+CMC.aprova_associado_honorario(DQ)
 #
 # Consta na planilha de associados:
 CMC.nao_documentou_desligamento(Moreno, motivo=("Consta na planilha de associados"
@@ -938,8 +973,9 @@ CMC.readmite_associado(DQ)
 CMC.pergunta("Porque o Vido propôs aprovar o Emerson Monteiro, que já tinha sido aprovado em Março de 2017?")
 #
 # consta na planilha de associados:
-CMC.nao_documentou_desligamento(Vecchio, motivo=("Consta na planilha de associados"
-                                                 " desligamento em 2017-07-21."))
+CMC.nao_documentou_desligamento(Grigolato, motivo=("Consta na planilha de associados"
+                                                   " desligamento em 2017-07-03."))
+
 
 # CMC de 15 de Agosto de 2017:
 CMC.data("2017-08-15")
@@ -947,6 +983,10 @@ Dente.apresenta_padawan(Taumaturgo) # "o cara da cerveja"
 Juca.apresenta_padawan(GustavoRibeiro)
 CMC.aprova_associado(GustavoRibeiro, endosso=[Juca])
 CMC.observa_desligamento(GutoMaia, motivo="3 meses de atraso na mensalidade")
+#
+# consta na planilha de associados:
+CMC.nao_documentou_desligamento(Vecchio, motivo=("Consta na planilha de associados"
+                                                 " desligamento em 2017-07-21."))
 
 
 # CMC de 19 de Setembro de 2017:
@@ -1010,6 +1050,10 @@ CMC.data("2018-04-17")
 CMC.pergunta("'BrunoLP' foi desligado nesse CMC, mas não constava quando se tornou associado originalmente. Seriam 'BrunoLP' e 'BrunoDJ' a mesma pessoa?")
 CMC.observa_desligamento(BrunoDJ, motivo="3 meses de atraso")
 CMC.pergunta("Dúvida: Marcelo Rodrigues ainda é associado?")
+#
+# consta na planilha de associados:
+CMC.nao_documentou_desligamento(Anderson, motivo=("Consta na planilha de associados"
+                                                  " desligamento em 2018-03-31."))
 
 
 # CMC de 15 de Maio de 2018:
@@ -1060,7 +1104,11 @@ CMC.aprova_associado(Vrech, endosso=[AfonsoCoutinho])
 CMC.aprova_associado(FSouza, endosso=[AfonsoCoutinho])
 CMC.aprova_associado(Alexandra, endosso=[AfonsoCoutinho])
 CMC.aprova_associado(Wesley, endosso=[AfonsoCoutinho])
-
+#
+# Consta na planilha de associados (e o Gutem solicitou seu desligamento
+#                                   por meio da lista de email de associados):
+CMC.nao_documentou_desligamento(Gutem, motivo=("Consta na planilha de associados"
+                                               " desligamento em 2018-10-13."))
 
 
 # CMC de 20 de Novembro de 2018:
@@ -1086,6 +1134,10 @@ CMC.nao_documentou_desligamento(Tales, motivo=("Consta na planilha de associados
                                                " desligamento em 2018-11-20."))
 CMC.nao_documentou_desligamento(Thomas, motivo=("Consta na planilha de associados"
                                                 " desligamento em 2018-11-20."))
+CMC.nao_documentou_desligamento(VJPixel, motivo=("Consta na planilha de associados"
+                                                 " desligamento em 2018-11-20."))
+CMC.nao_documentou_desligamento(Ulysses, motivo=("Consta na planilha de associados"
+                                                 " desligamento em 2018-11-20."))
 
 
 # CMC de 18 de Dezembro de 2018:
@@ -1112,6 +1164,23 @@ Juca.apresenta_padawans([JMBichara])
 # Na ata consta:
 # "Aguardar próximo CMC. Pedimos que compareçam ao próximo CMC e continuem frequentando o clube ao longo do mês, para que mais associados possam conhecê-los."
 
+
+# SEM DATA:
+CMC.nao_documentou_desligamento(Markun, motivo=("Não consta na planilha de associados.")) #FIXME!
+
+# SEM DATA:
+# Consta na planilha de associados:
+CMC.nao_documentou_desligamento(LAlcantara, motivo=("Consta na planilha de associados"
+                                                    " como desligado, mas sem a data.")) #FIXME!
+CMC.nao_documentou_desligamento(TiagoQueiroz, motivo=("Consta na planilha de associados"
+                                                      " como desligado, mas sem a data.")) #FIXME!
+CMC.nao_documentou_desligamento(Jonnes, motivo=("Consta na planilha de associados"
+                                                " como desligado, mas com data de desligamento"
+                                                " anterior à readmissão de 2016.")) #FIXME!
+# FIXME! A planilha de associados lista Manoel Lemos como associado ativo.
+#        Entretanto temos um desligamento registrado em ata em 2014-10-21.
+#        Não consta a data em que ele supostamente regularizou seu status de associado.
+ 
 
 # CMC de 19 de Fevereiro de 2019:
 CMC.data("2019-02-19")

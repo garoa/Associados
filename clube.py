@@ -75,6 +75,9 @@ class ConselhoMandaChuva():
 
     pessoa.associacao.append([self.dia, None])
 
+  def aprova_associado_honorario(self, pessoa):
+    """FIXME: Implementar esse método."""
+
   def aprova_associado(self, pessoa, endosso=None, fundador=False):
     pessoa.cmc = self
     pessoa.associacao.append([self.dia, None])
