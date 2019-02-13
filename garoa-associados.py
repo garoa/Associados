@@ -1029,11 +1029,18 @@ CMC.aprova_associado(Alexandra, endosso=[AfonsoCoutinho])
 CMC.aprova_associado(Wesley, endosso=[AfonsoCoutinho])
 
 
+
 # CMC de 20 de Novembro de 2018:
 CMC.data("2018-11-20")
 IanF.apresenta_padawans([DaniloVerde,
                          AnaBastos])
 CMC.aprova_associado(Gab, endosso=[AfonsoCoutinho])
+CMC.observa_desligamento(Guisso, motivo=("Desligamento anunciado via lista de emails de associados"
+                                         " em 01/NOV/2018 e confirmado no CMC."))
+# Vinicius Mesel também anunciou desligamento em 03/NOV/2018 via lista de email, mas depois mudou de idéia.
+# Esse caso alterou a política do CMC que optou por de agora em diante aguardar que as pessoas 'protocolem'
+# o desligamento junto ao CMC ou que 3 mensalidades não sejam pagas.
+# Mesel, portanto, continua sendo associado.
 
 
 # CMC de 18 de Dezembro de 2018:
@@ -1054,6 +1061,24 @@ Juca.apresenta_padawans([JMBichara])
 # Juca considera a possibilidade de reapresentá-los em alguma reunião futura após o tal "namoro mais longo"...
 # Na ata consta:
 # "Aguardar próximo CMC. Pedimos que compareçam ao próximo CMC e continuem frequentando o clube ao longo do mês, para que mais associados possam conhecê-los."
+
+
+# CMC de 19 de Fevereiro de 2019:
+CMC.data("2019-02-19")
+# ...
+
+
+# CMC de 19 de Março de 2019:
+CMC.data("2019-03-19")
+# ...
+
+
+# CMC de 16 de Abril de 2019:
+CMC.data("2019-04-16")
+# ...
+CMC.observa_desligamento(FabioH, motivo=("Em 12/FEV/2019, Fabio Hirano anunciou desligamento"
+                                         " via lista de emails de associados."))
+
 
 CMC.print_padawans()
 CMC.output_graph()
