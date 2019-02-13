@@ -93,7 +93,7 @@ JMBichara = Pessoa("José Mateus Bichara") # Organiza a atividade wiki:Estação
 JonDroid = Pessoa("JonDroid") #nome real?
 Jonnes = Pessoa("Jonnes do Nascimento Tahara")
 Juan = Pessoa("Juan") #nome?
-Juca = Pessoa("Felipe Correa da Silva Sanches")
+Juca = Pessoa("Felipe Correa da Silva Sanches", wiki="Juca", apelido="Juca")
 Karol = Pessoa("Karol") #nome completo? Padawan da Priscila Gutierres
 Katia = Pessoa("Kátia Kitahara") #FIXME! Não consta na planilha de associados!
 Kemel = Pessoa("Kemel Zaidan")
@@ -140,7 +140,7 @@ Oda = Pessoa("Eduardo Oda")
 Otto = Pessoa("Otto Heringer")
 Pampolha = Pessoa("Pampolha") #nome?
 PauloBiohack = Pessoa("Paulo (do Biohacking)") #nome completo?
-Pitanga = Pessoa("Rodrigo Rodrigues da Silva")
+Pitanga = Pessoa("Rodrigo Rodrigues da Silva", wiki="Pitanga", apelido="Pitanga")
 Priscila = Pessoa("Priscila Gutierres")
 Ramalho = Pessoa("Luciano Gama de Souza Ramalho")
 RafaelML = Pessoa("Rafael M Lopes")

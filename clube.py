@@ -10,6 +10,7 @@ PEDANTE = False
 class Pessoa():
   def __init__(self, nome, wiki=None, apelido=None):
     self.nome = nome
+    self.apelido = apelido
     self.wiki = wiki
     self.cmc = None
     self.associacao = []
@@ -158,7 +159,12 @@ class ConselhoMandaChuva():
           dot.attr('node', color='#cc7777')
       else: # atualmente é associado
         dot.attr('node', color='#559955')
-      dot.node("Pessoa_{}".format(pessoas.index(p)), '\n'.join(p.nome.split()))
+
+      nome = '\n'.join(p.nome.split())
+      if p.apelido:
+        nome += '\n({})'.format(p.apelido)
+      dot.node("Pessoa_{}".format(pessoas.index(p)), nome)
+
 
     for p in pessoas:
       if p.endosso == "HACK":
