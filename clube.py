@@ -110,7 +110,7 @@ class ConselhoMandaChuva():
       self.associados.remove(pessoa)
       try:
         pessoa.associacao[-1][1] = self.data_da_reuniao
-      except:
+      except IndexError:
         if PEDANTE:
           print("ERRO: nao achei registro de associacao para '{}'".format(pessoa.nome))
     else:
