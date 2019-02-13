@@ -33,7 +33,7 @@ class Pessoa():
                                                 p.apresentacao))
     else:
       p.jedi = [self]
-      p.apresentacao = self.cmc.dia
+      p.apresentacao = self.cmc.data_da_reuniao
       self.padawans.append(p)
       self.cmc.padawans.append(p)
 
@@ -48,7 +48,7 @@ def menos_de_6_meses(data):
 
 class ConselhoMandaChuva():
   def __init__(self, fundadores=[]):
-    self.data = "????-??-??"
+    self.data_da_reuniao = "????-??-??"
     self.num_fundadores = len(fundadores)
     self.associados = fundadores
     self.padawans = []
@@ -58,11 +58,11 @@ class ConselhoMandaChuva():
       f.cmc = self
       f.cofundador = True
 
-  def pergunta(self, p):
-    print("[{}] Pergunta: '{}'".format(self.data, p))
+  def pergunta(self, pergunta):
+    print("[{}] Pergunta: '{}'".format(self.data_da_reuniao, pergunta))
 
   def data(self, d):
-    self.data = d
+    self.data_da_reuniao = d
     print("CMC de {}:".format(d))
 
   def readmite_associado(self, pessoa):
@@ -74,14 +74,14 @@ class ConselhoMandaChuva():
     if pessoa not in self.associados:
       self.associados.append(pessoa)
 
-    pessoa.associacao.append([self.data, None])
+    pessoa.associacao.append([self.data_da_reuniao, None])
 
   def aprova_associado_honorario(self, pessoa):
     """FIXME: Implementar esse método."""
 
   def aprova_associado(self, pessoa, endosso=None, fundador=False):
     pessoa.cmc = self
-    pessoa.associacao.append([self.data, None])
+    pessoa.associacao.append([self.data_da_reuniao, None])
     pessoa.endosso = endosso
 
     if pessoa in self.padawans:
@@ -109,7 +109,7 @@ class ConselhoMandaChuva():
     if pessoa in self.associados:
       self.associados.remove(pessoa)
       try:
-        pessoa.associacao[-1][1] = self.data
+        pessoa.associacao[-1][1] = self.data_da_reuniao
       except:
         if PEDANTE:
           print("ERRO: nao achei registro de associacao para '{}'".format(pessoa.nome))

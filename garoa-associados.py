@@ -1181,7 +1181,7 @@ CMC.nao_documentou_desligamento(Jonnes, motivo=("Consta na planilha de associado
 # FIXME! A planilha de associados lista Manoel Lemos como associado ativo.
 #        Entretanto temos um desligamento registrado em ata em 2014-10-21.
 #        Não consta a data em que ele supostamente regularizou seu status de associado.
- 
+
 
 # CMC de 19 de Fevereiro de 2019:
 CMC.data("2019-02-19")
