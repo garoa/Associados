@@ -235,7 +235,7 @@ CMC.aprova_associado(Markun, endosso="HACK")
 # Há uma afirmação em https://garoa.net.br/wiki/Reuni%C3%A3o_de_24/05/2011 de que o David Robert optou por não ser sócio fundador.
 #
 # Nota:
-# CMC.aprova_associado(Lint, fundador=True) 
+# CMC.aprova_associado(Lint, fundador=True)
 # Em 24/05/2011, Lint comunicou que não quer ser mais membro nem fundador.
 # O CMC aprovou seu desligamento. Entregou as chaves, que foram repassadas para o Oda
 
@@ -265,6 +265,9 @@ Anchises.apresenta_padawan(CleitonAlves)
 CMC.aprova_associado(Tony, endosso="HACK") # Nota: na planilha de associados consta "admissão: 20/02/2011" junto com outros fundadores.
 
 
+ATRASO = ("Sócios com mais de três meses de atraso na contribuição,"
+          " automaticamente desligados.")
+
 # CMC de 26 de Julho de 2011:
 CMC.data("2011-07-26")
 Aleph.apresenta_padawan(Miklos)
@@ -272,7 +275,7 @@ Aleph.apresenta_padawan(Miklos)
 # Ricardo Amaral é um padawan perdido pois quando ele manifestou interesse por se associar ao Garoa ainda não havia essa de padawan e logo em seguida ele sumiu (após pagar uma mensalidade).
 # Hack só pra constar:
 CMC.aprova_associado(RicardoAmaral, endosso="HACK")
-CMC.observa_desligamento(RicardoAmaral, motivo="3 (ou mais) meses de atraso na mensalidade")
+CMC.observa_desligamento(RicardoAmaral, motivo=ATRASO)
 
 
 # CMC de 16 de Agosto de 2011:
@@ -513,10 +516,9 @@ CMC.aprova_associado(TiagoAnjo)
 CMC.observa_desligamento(LoganBr, motivo=("Está com pouco tempo para frequentar,"
                                           " comunica pelo Vitor seu pedido de desligamento."))
 
-MOTIVO="Sócios com mais de três meses de atraso na contribuição, automaticamente desligados."
-#CMC.observa_desligamento(Juca, motivo=MOTIVO)
-CMC.observa_desligamento(Nessa, motivo=MOTIVO)
-CMC.observa_desligamento(Carine, motivo=MOTIVO)
+#CMC.observa_desligamento(Juca, motivo=ATRASO)
+CMC.observa_desligamento(Nessa, motivo=ATRASO)
+CMC.observa_desligamento(Carine, motivo=ATRASO)
 #
 # consta na planilha de associados:
 CMC.nao_documentou_desligamento(LiviaAscava, motivo=("Consta na planilha de associados"
@@ -552,7 +554,6 @@ CMC.nao_documentou_desligamento(AlexPorto, motivo=("Consta na planilha de associ
 CMC.data("2014-04-15")
 CMC.aprova_associado(LeonardoTelles, endosso=Juca)
 CMC.aprova_associado(ManoelLemos, endosso=LuisLeao)
-ATRASO="Sócios com mais de três meses de atraso na contribuição, automaticamente desligados."
 CMC.observa_desligamento(WagnerSartori, motivo=ATRASO)
 # CMC.observa_desligamento(Nessa, motivo=ATRASO) #Já havia sido desligada em Janeiro.
 CMC.observa_desligamento(GutoMaia, motivo=ATRASO)
@@ -591,7 +592,7 @@ CMC.aprova_associado(Romulo, endosso=AfonsoCoutinho)
 # CMC de 19 de Agosto de 2014:
 CMC.data("2014-08-19")
 Juca.apresenta_padawan(Larios) # NOTA: A apresentação supostamente ocorreu em algum
-                               # momento do passado, mas faltam registros exatos. 
+                               # momento do passado, mas faltam registros exatos.
 Mike.apresenta_padawans([NelsonCanton, # a ata só diz "Nelson", mas infere-se que se trata do Canton com base nas atas seguintes.
                          Otto])
 VitorFernandes.apresenta_padawan(Vecchio)
