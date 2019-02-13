@@ -1,3 +1,22 @@
+# O que é isso?
+
+Esta é uma sistematização das informações sobre o quadro societário do Garoa Hacker Clube.
+
+Ao longo dos anos, a evolução do quadro societário (por meio de admissões de novos associados, desligamentos, apresentações de "padawans") foram registradas nas atas das reuniões mensais de gestáo do clube, o Conselho Manda Chuva. Entretanto, a precisão desses registro variou bastante e várias informações permaneceram ambíguas ao ponto de ser bastante difícil responder a perguntas como:
+* "Quem somos?"
+* "Quantos somos?"
+* "Quem são os padawans aguardando aprovação?"
+* "Estamos crescendo?" ou "Estamos encolhendo?"
+* etc...
+
+Uma outra fonte semi-estruturada de informação é uma planilha de associados organizada pelo tesoureiro, porém mantida privada por conter dados confidenciais como endereço residencial, telefone e email dos associados. As informações de data de admissão e data de desligamento dessa planilha ajudaram a complementar este grafo, onde as atas de CMCs estavam imprecisas.
+
+Foi criada uma API em python para documentar os eventos de alteração do quadro societário como visto no exemplo abaixo.
+
+![Exemplo de uso da API de associados para documentar alterações do quadro societário em reuniões do CMC.](exemplos/API_de_associados.jpg)
+
+Ao executar este programa, é gerado um grafo de relacionamentos representando algo similar a uma "árvore genealógica" dos padawans, associados e ex-associados do Garoa. Um exemplo pode ser visto nas seções abaixo.
+
 # Como usar:
 
     sudo apt-get install graphviz virtualenv
@@ -20,4 +39,4 @@ Diagrama de exemplo gerado em 2019-FEV-13.
 
 Para maior resolução e dados atualizados, exporte um PDF a partir do script python.
 
-![Gerado em 2019-FEV-13.](exemplo/diagrama_garoa.jpg)
+![Gerado em 2019-FEV-13.](exemplos/diagrama_garoa.jpg)
