@@ -88,6 +88,7 @@ JamesRaznor = Pessoa("James Raznor")
 JamesSouza = Pessoa("James Souza")
 JeanPaul = Pessoa("Jean Paul")
 JeanTomceac = Pessoa("Jean Tomceac")
+JMBichara = Pessoa("José Mateus Bichara") # Organiza a atividade wiki:Estação_de_Monitoramento_da_Qualidade_do_Ar
 JonDroid = Pessoa("JonDroid") #nome real?
 Jonnes = Pessoa("Jonnes Tahara")
 Juan = Pessoa("Juan") #nome?
@@ -1042,6 +1043,17 @@ Juca.apresenta_padawans([AffonsoAmendola,
 Priscila.apresenta_padawans([Karol])
 CMC.readmite_associado(Erin)
 
+
+# CMC de 15 de Janeiro de 2019:
+CMC.data("2019-01-15")
+Juca.apresenta_padawans([JMBichara])
+# Juca propõe Luciana Marques como nova associada.
+# Afonso Coutinho é contra aprovar a associação da Luciana. Oda sugere "namoro mais longo antes de aprovar"
+# Juca propõe Affonso Amendola como novo associado.
+# Anchises fica inconformado com a rejeição da Luciana e, em trolagem/retaliação, se declara contra a aprovação do Affonso Amendola.
+# Juca considera a possibilidade de reapresentá-los em alguma reunião futura após o tal "namoro mais longo"...
+# Na ata consta:
+# "Aguardar próximo CMC. Pedimos que compareçam ao próximo CMC e continuem frequentando o clube ao longo do mês, para que mais associados possam conhecê-los."
 
 CMC.print_padawans()
 CMC.output_graph()
