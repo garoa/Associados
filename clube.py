@@ -47,7 +47,7 @@ def menos_de_6_meses(data):
 
 
 class ConselhoMandaChuva():
-  def __init__(self, fundadores=[]):
+  def __init__(self, fundadores):
     self.data_da_reuniao = "????-??-??"
     self.num_fundadores = len(fundadores)
     self.associados = fundadores
@@ -74,14 +74,14 @@ class ConselhoMandaChuva():
     if pessoa not in self.associados:
       self.associados.append(pessoa)
 
-    pessoa.associacao.append([self.data_da_reuniao, None])
+    pessoa.associacao.append({"admissao": self.data_da_reuniao})
 
   def aprova_associado_honorario(self, pessoa):
     """FIXME: Implementar esse método."""
 
   def aprova_associado(self, pessoa, endosso=None, fundador=False):
     pessoa.cmc = self
-    pessoa.associacao.append([self.data_da_reuniao, None])
+    pessoa.associacao.append({"admissao": self.data_da_reuniao})
     pessoa.endosso = endosso
 
     if pessoa in self.padawans:
@@ -109,10 +109,11 @@ class ConselhoMandaChuva():
     if pessoa in self.associados:
       self.associados.remove(pessoa)
       try:
-        pessoa.associacao[-1][1] = self.data_da_reuniao
+        pessoa.associacao[-1]["desligamento"] = self.data_da_reuniao
+        pessoa.associacao[-1]["motivo"] = motivo
       except IndexError:
         if PEDANTE:
-          print("ERRO: nao achei registro de associacao para '{}'".format(pessoa.nome))
+          print("ERRO: não achei registro de associação para '{}'".format(pessoa.nome))
     else:
       print("ERRO: Desligando '{}' que nem era associado!".format(pessoa.nome))
 
