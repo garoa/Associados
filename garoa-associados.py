@@ -7,22 +7,20 @@ from clube import Pessoa, ConselhoMandaChuva
 
 Abayomi = Pessoa("Abayomi") #nome completo?
 Abdo = Pessoa("Alexandre Abdo")
-Abreu = Pessoa("Abreu") #nome?
+AffonsoAmendola = Pessoa("Affonso Gino Amendola Neto", wiki="AffonsoAmendola")
 Alexandra = Pessoa("Alexandra Percario")
 AleSouza = Pessoa("Alexandre Souza", wiki="Alexandre_Souza")
 Aleph = Pessoa("Alberto Fabiano Caires de Medeiros", wiki="Aleph")
 AlexPorto = Pessoa("Alex Porto")
-Allan = Pessoa("Allan") #nome completo? Seria esse o Allan Moreira?
 AllanMoreira = Pessoa("Allan Moreira")
 AllanTrindade = Pessoa("Allan Trindade") # (de São Vicente)
 AnaBastos = Pessoa("Ana Bastos")
 Anchises = Pessoa("Anchises Moraes Guimarães de Paula", wiki="Anchisesbr")
 Anderson = Pessoa("Anderson Queiroz") # irmao gemeo do Tiago Queiroz
-Andre = Pessoa("Andre") #nome completo? (seria esse o Hermann? ou o Oliveira?)
 AndreOliveira = Pessoa("Andre de Oliveira")
 AndreHermann = Pessoa("André Hermann")
 AntonioSouza = Pessoa("Antonio Celso Cavalieri Lins de Souza") # co-fundador
-Afonso = Pessoa("Afonso Coutinho")
+AfonsoCoutinho = Pessoa("Afonso Coutinho")
 Agaelebe = Pessoa("Hugo Lima Borges")
 Asa = Pessoa("Luis Henrique Fagundes")
 Aylons = Pessoa("Gustavo Barbosa Monteiro Bruno", wiki="Aylons")
@@ -31,9 +29,9 @@ Baraldi = Pessoa("Mauro Navarro Baraldi")
 Belasco = Pessoa("Pedro Belasco")
 BrunoBorges = Pessoa("Bruno Lima Borges") # (Irmão do Hugo)
 BrunoDJ = Pessoa("Bruno 'DJ'") # seria o mesmo que BrunoLP talvez?!
-BrunoLP = Pessoa("Bruno Luiz de Paula")
+# BrunoLP = Pessoa("Bruno Luiz de Paula")
 Buzz = Pessoa("Buzz") #nome?
-CSM = Pessoa("CSM") #nome? Seria esse o Carlos CM?
+#CSM = Pessoa("CSM") #nome? Seria esse o Carlos CM?
 CarlosCM = Pessoa("Carlos CM") # do time de CTF do Garoa
 Caique = Pessoa("Caique Severo")
 Carine = Pessoa("Carine Roos")
@@ -47,7 +45,7 @@ DanielaIwassa = Pessoa("Daniela Iwassa")
 DanielSeda = Pessoa("Daniel Seda")
 DaniloVerde = Pessoa("Danilo Verde")
 DaniloZampronio = Pessoa("Danilo Zampronio")
-DavidRobert = Pessoa("David Robert")
+# DavidRobert = Pessoa("David Robert") # quase foi co-fundador
 Dente = Pessoa("Marcelo Araujo Dente")
 Diogenes = Pessoa("Diógenes Rossi", wiki="Diógenes")
 DQ = Pessoa("Daniel Gerk de Azevedo Quadros")
@@ -62,19 +60,15 @@ Erin = Pessoa("Erin Pinheiro Manal", wiki="Erin")
 Eros = Pessoa("Eros", wiki="Brunakalil") # Padawan 'Bruna' do Oda em 2014-11-18 (Nome anterior: "Bruna Kalil")
 FabioH = Pessoa("Fabio Hirano")
 FabricioBiazzotto = Pessoa("Fabricio Biazzotto")
-Fellype = Pessoa("Fellype Cazorino")
+# Fellype = Pessoa("Fellype Cazorino") # frequentador hoje em dia (2018/19). Talvez se associe algum dia.
 FelipeMoreira = Pessoa("Felipe Moreira")
-Fernanda = Pessoa("Fernanda") # do Lab de Garagem #nome completo?
 Ferno = Pessoa("Fernando", wiki="Ferno") # nome completo?
-FMolina = Pessoa("Fernando Molina")
 FSouza = Pessoa("Felipe Souza")
 Gab = Pessoa("Gabriela Fonseca")
 Gabrielzinho = Pessoa("Gabriel Almeida")
 G4b1s = Pessoa("Gabriel Romano Mascarenhas", wiki="G4b1s")
 GabrielAraujo = Pessoa("Gabriel Araújo")
 Gafanhoto = Pessoa("Mateus Zitelli", wiki="MateusZitelli")
-Giovanna = Pessoa("Giovanna")
-GringoMexico = Pessoa("Gringo do México") #nome real?
 Grigolato = Pessoa("Samuel Grigolato", wiki="Samuel.grigolato")
 Gola = Pessoa("Bruno Gola", wiki="Brunogola")
 Guima = Pessoa("Guima") #nome completo?
@@ -87,7 +81,6 @@ Helena = Pessoa("Helena (amiga do Afonso)")
 Hugo = Pessoa("Hugo") # nome completo? Não é o Agaelebe!
 IanF = Pessoa("Ian Fernandez")
 Igor = Pessoa("Igor") #nome?
-Italo = Pessoa("Italo") #nome completo?
 Ivar = Pessoa("Ivar") #nome completo?
 Ismael = Pessoa("Ismael Lopes")
 JAFreitas = Pessoa("João Adriano Freitas")
@@ -99,6 +92,7 @@ JonDroid = Pessoa("JonDroid") #nome real?
 Jonnes = Pessoa("Jonnes Tahara")
 Juan = Pessoa("Juan") #nome?
 Juca = Pessoa("Felipe Correa da Silva Sanches")
+Karol = Pessoa("Karol") #nome completo? Padawan da Priscila Gutierres
 Katia = Pessoa("Kátia Kitahara")
 Kemel = Pessoa("Kemel Zaidan")
 Kinoshita = Pessoa("Bruno Kinoshita")
@@ -118,6 +112,7 @@ Livia = Pessoa("Livia Ascava")
 LoganBr = Pessoa("Ricardo 'Logan'") #nome completo?
 Luca = Pessoa("Luca Toledo")
 Lucas = Pessoa("Lucas") #nome completo? Talvez seja: https://garoa.net.br/wiki/Usu%C3%A1rio:Lucascfk
+LucianaMarques = Pessoa("Luciana da Costa Marques", wiki="LucianaMarques")
 Luciano = Pessoa("Luciano") #nome completo? (Não é o Luciano Batista! Ver: 2014-08-19)
 LucianoBatista = Pessoa("Luciano Batista de Souza")
 LuisLeao = Pessoa("Luis Fernando de Oliveira Leão", wiki="Luis.leao")
@@ -205,6 +200,8 @@ cofundadores = [
   Pitanga,
   Ramalho
 ]
+
+# deveriamos adicionar aqui também o AntonioSouza na lista de co-fundadores? Parece que sim. TODO: pesquisar.
 
 CMC = ConselhoMandaChuva(cofundadores)
 
@@ -526,8 +523,8 @@ CMC.data("2014-02-18")
 Juca.apresenta_padawans([Kemel,
                          LeonardoTelles])
 Vitor.apresenta_padawans([AndreOliveira,
-                          Afonso])
-CMC.aprova_associado(Afonso, endosso=Vitor)
+                          AfonsoCoutinho])
+CMC.aprova_associado(AfonsoCoutinho, endosso=Vitor)
 
 
 # CMC de 18 de Março de 2014:
@@ -554,8 +551,8 @@ CMC.observa_desligamento(Gola, motivo=ATRASO)
 
 # CMC de 20 de Maio de 2014:
 CMC.data("2014-05-20")
-Afonso.apresenta_padawans([Buzz,
-                           Igor])
+AfonsoCoutinho.apresenta_padawans([Buzz,
+                                   Igor])
 CMC.readmite_associado(GutoMaia)
 
 
@@ -570,8 +567,8 @@ CMC.observa_desligamento(AleSouza, motivo=("a pedido do próprio por mudança de
 CMC.data("2014-07-15")
 Vitor.apresenta_padawans([LuisSouza,
                           RonaldoRussel])
-Afonso.apresenta_padawan(Romulo)
-CMC.aprova_associado(Romulo, endosso=Afonso)
+AfonsoCoutinho.apresenta_padawan(Romulo)
+CMC.aprova_associado(Romulo, endosso=AfonsoCoutinho)
 
 
 # CMC de 19 de Agosto de 2014:
@@ -594,7 +591,7 @@ RonaldoRussel.apresenta_padawan(RogerRussel) # Ceci também "apresentou", mas n�
 
 # CMC de 16 de Setembro de 2014:
 CMC.data("2014-09-16")
-Afonso.apresenta_padawan(LucianoBatista)
+AfonsoCoutinho.apresenta_padawan(LucianoBatista)
 Ceci.apresenta_padawan(JeanTomceac)
 
 CMC.aprova_associado(JeanPaul, endosso=Juca)
@@ -709,7 +706,7 @@ CMC.observa_desligamento(Carine,    motivo=ATRASO)
 CMC.observa_desligamento(Ulysses,    motivo=ATRASO)
 CMC.observa_desligamento(Santagada,    motivo=ATRASO)
 CMC.observa_desligamento(TiagoAnjo,    motivo=ATRASO) # Tiago Santana
-CMC.observa_desligamento(Afonso,    motivo=ATRASO)
+CMC.observa_desligamento(AfonsoCoutinho,    motivo=ATRASO)
 # CMC.observa_desligamento(ManoelLemos,    motivo=ATRASO)
 # CMC.observa_desligamento(Romulo,    motivo=ATRASO) # Romulo Nascimento
 # CMC.observa_desligamento(RicardoGuimaraes,    motivo=ATRASO)
@@ -735,7 +732,7 @@ Mike.apresenta_padawan(DanielaIwassa)
 # CMC.observa_desligamento(Jonnes,    motivo=ATRASO)
 # CMC.observa_desligamento(Santagada,    motivo=ATRASO)
 # CMC.observa_desligamento(TiagoAnjo,    motivo=ATRASO)
-# CMC.observa_desligamento(Afonso,    motivo=ATRASO)
+# CMC.observa_desligamento(AfonsoCoutinho,    motivo=ATRASO)
 CMC.observa_desligamento(RMartinelli,    motivo=ATRASO)
 # CMC.observa_desligamento(ManoelLemos,    motivo=ATRASO)
 # CMC.observa_desligamento(Romulo,    motivo=ATRASO)
@@ -806,7 +803,7 @@ CMC.data("2016-08-16")
 FabioH.apresenta_padawan(Luiz) # ata diz apenas "Fabio"
 Vido.apresenta_padawan(Ismael)
 CMC.readmite_associado(Jonnes) # DQ sugeriu. "Ele se afastou por algum tempo mas quer retornar."
-CMC.readmite_associado(Afonso) # "Afonso pede para reativar associação e entrar no Starving Hacker"
+CMC.readmite_associado(AfonsoCoutinho) # "Afonso pede para reativar associação e entrar no Starving Hacker"
 CMC.observa_desligamento(Tales) # "Anchises informa que Tales Cione solicitou o seu desligamento"
 
 
@@ -887,8 +884,8 @@ CMC.observa_desligamento(DQ, motivo="requisitado")
 
 # CMC de 16 de Maio de 2017:
 CMC.data("2017-05-16")
-CMC.readmite_associado(Afonso)
-Afonso.apresenta_padawan(Micael)
+CMC.readmite_associado(AfonsoCoutinho)
+AfonsoCoutinho.apresenta_padawan(Micael)
 TiagoQueiroz.apresenta_padawan(Anderson) # "como seu padawan recursivo"
 Mike.apresenta_padawans([Dente,
                          Thomas])
@@ -938,10 +935,10 @@ CMC.data("2017-10-17")
 CMC.data("2017-11-21")
 Guisso.apresenta_padawans([Gab,
                            RobertJr])
-Afonso.apresenta_padawans([AllanTrindade,
-                           JamesSouza,
-                           Vrech,
-                           CarlosCM])
+AfonsoCoutinho.apresenta_padawans([AllanTrindade,
+                                   JamesSouza,
+                                   Vrech,
+                                   CarlosCM])
 CMC.observa_desligamento(Erin, motivo="Consta na planilha de associados: 'desligamento em 01/11/2017'.")
 
 
@@ -950,13 +947,13 @@ CMC.data("2017-12-19")
 Guisso.apresenta_padawans([RogerioMunhoz,
                            IanF])
 CMC.aprova_associado(Mesel, endosso=[Vido, Yumi])
-CMC.aprova_associado(AllanTrindade, endosso=[Vido, Afonso])
-CMC.aprova_associado(JamesSouza, endosso=[Afonso])
+CMC.aprova_associado(AllanTrindade, endosso=[Vido, AfonsoCoutinho])
+CMC.aprova_associado(JamesSouza, endosso=[AfonsoCoutinho])
 
 
 # CMC de 16 de Janeiro de 2018:
 CMC.data("2018-01-16")
-Afonso.apresenta_padawan(JamesRaznor)
+AfonsoCoutinho.apresenta_padawan(JamesRaznor)
 Mike.apresenta_padawan(Marcel) # faz cerveja, lava panela de feijoada e faz pizza.
 Mesel.apresenta_padawan(NelsonBrito)
 
@@ -977,7 +974,7 @@ CMC.aprova_associado(NelsonBrito, endosso=[Mesel])
 # CMC de 17 de Abril de 2018:
 CMC.data("2018-04-17")
 CMC.pergunta("'BrunoLP' foi desligado nesse CMC, mas não constava quando se tornou associado originalmente. Seriam 'BrunoLP' e 'BrunoDJ' a mesma pessoa?")
-# CMC.observa_desligamento(BrunoLP, motivo="3 meses de atraso")
+CMC.observa_desligamento(BrunoDJ, motivo="3 meses de atraso")
 CMC.pergunta("Dúvida: Marcelo Rodrigues ainda é associado?")
 
 
@@ -1002,17 +999,17 @@ CMC.observa_desligamento(BrunoBorges)
 
 # CMC de 17 de Julho de 2018:
 CMC.data("2018-07-17")
-Afonso.apresenta_padawan(Vrech)
+AfonsoCoutinho.apresenta_padawan(Vrech)
 CMC.aprova_associado(LAlcantara, endosso=[Juca])
 
 
 # CMC de 21 de Agosto de 2018:
 CMC.data("2018-08-21")
-Afonso.apresenta_padawans([Alexandra,
-                           Dandara,
-                           FSouza,
-                           Wesley,
-                           VAlves])
+AfonsoCoutinho.apresenta_padawans([Alexandra,
+                                   Dandara,
+                                   FSouza,
+                                   Wesley,
+                                   VAlves])
 
 
 # CMC de 21 de Setembro de 2018:
@@ -1025,17 +1022,25 @@ Villares.apresenta_padawans([DanielSeda,
                              Priscila])
 CMC.aprova_associado(DanielSeda, endosso=[Villares])
 CMC.aprova_associado(Priscila, endosso=[Villares])
-CMC.aprova_associado(Vrech, endosso=[Afonso])
-CMC.aprova_associado(FSouza, endosso=[Afonso])
-CMC.aprova_associado(Alexandra, endosso=[Afonso])
-CMC.aprova_associado(Wesley, endosso=[Afonso])
+CMC.aprova_associado(Vrech, endosso=[AfonsoCoutinho])
+CMC.aprova_associado(FSouza, endosso=[AfonsoCoutinho])
+CMC.aprova_associado(Alexandra, endosso=[AfonsoCoutinho])
+CMC.aprova_associado(Wesley, endosso=[AfonsoCoutinho])
 
 
 # CMC de 20 de Novembro de 2018:
 CMC.data("2018-11-20")
 IanF.apresenta_padawans([DaniloVerde,
                          AnaBastos])
-CMC.aprova_associado(Gab, endosso=[Afonso])
+CMC.aprova_associado(Gab, endosso=[AfonsoCoutinho])
+
+
+# CMC de 18 de Dezembro de 2018:
+CMC.data("2018-12-18")
+Juca.apresenta_padawans([AffonsoAmendola,
+                         LucianaMarques])
+Priscila.apresenta_padawans([Karol])
+CMC.readmite_associado(Erin)
 
 
 CMC.print_padawans()
