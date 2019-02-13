@@ -2,14 +2,15 @@
 
 Esta é uma sistematização das informações sobre o quadro societário do Garoa Hacker Clube.
 
-Ao longo dos anos, a evolução do quadro societário (por meio de admissões de novos associados, desligamentos, apresentações de "padawans") foram registradas nas atas das reuniões mensais de gestáo do clube, o Conselho Manda Chuva. Entretanto, a precisão desses registro variou bastante e várias informações permaneceram ambíguas ao ponto de ser bastante difícil responder a perguntas como:
+Ao longo dos anos, a evolução do quadro societário (por meio de admissões de novos associados, desligamentos e apresentações de "padawans") foi registrada nas atas das reuniões do Conselho Manda Chuva, nossos encontros mensais de gestão do clube. Entretanto, a precisão desses registros variou bastante e várias informações permaneceram ambíguas ao ponto de ser bastante difícil responder a perguntas como:
+
 * "Quem somos?"
 * "Quantos somos?"
 * "Quem são os padawans aguardando aprovação?"
 * "Estamos crescendo?" ou "Estamos encolhendo?"
 * etc...
 
-Uma outra fonte semi-estruturada de informação é uma planilha de associados organizada pelo tesoureiro, porém mantida privada por conter dados confidenciais como endereço residencial, telefone e email dos associados. As informações de data de admissão e data de desligamento dessa planilha ajudaram a complementar este grafo, onde as atas de CMCs estavam imprecisas.
+Uma outra fonte semi-estruturada de informação é uma planilha de associados organizada pelo tesoureiro, porém mantida privada por conter dados confidenciais como endereço residencial, telefone e email dos associados. As informações de data de admissão e data de desligamento dessa planilha ajudaram a complementar este grafo onde as atas de CMCs estavam imprecisas.
 
 Foi criada uma API em python para documentar os eventos de alteração do quadro societário como visto no exemplo abaixo.
 
