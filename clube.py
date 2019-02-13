@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 #
-# (c) 2018 Felipe Correa da Silva Sanches <juca@members.fsf.org>
+# (c) 2019 Felipe Correa da Silva Sanches <juca@members.fsf.org>
 # Licensed under the terms of the GNU General Public License, version 2 (or later)
+import os
 
 PEDANTE = False
 
@@ -13,27 +14,37 @@ class Pessoa():
     self.cmc = None
     self.associacao = []
     self.padawans = []
+    self.cofundador = False
+    self.endosso = None
 
   def __repr__(self):
     return self.nome
 
-  def apresenta_padawans(self, pessoas):
-    for p in pessoas:
+  def apresenta_padawans(self, padawans):
+    for p in padawans:
       self.apresenta_padawan(p)
 
-  def apresenta_padawan(self, pessoa):
-
-    if pessoa in self.cmc.padawans:
-      if self not in pessoa.jedi:
-        pessoa.jedi.append(self)
+  def apresenta_padawan(self, p):
+    if p in self.cmc.padawans:
+      if self not in p.jedi:
+        p.jedi.append(self)
       print(("{} já havia sido apresentado"
-             " como padawan no dia {}!").format(pessoa.nome,
-                                                pessoa.apresentacao))
+             " como padawan no dia {}!").format(p.nome,
+                                                p.apresentacao))
     else:
-      pessoa.jedi = [self]
-      pessoa.apresentacao = self.cmc.dia
-      self.padawans.append(pessoa)
-      self.cmc.padawans.append(pessoa)
+      p.jedi = [self]
+      p.apresentacao = self.cmc.dia
+      self.padawans.append(p)
+      self.cmc.padawans.append(p)
+
+
+def menos_de_6_meses(data):
+  import datetime
+  ano, mes, dia = data.split('-')
+  data = datetime.datetime(int(ano), int(mes), int(dia))
+  hoje = datetime.datetime.today()
+  return (hoje - data).days <= 6*30
+
 
 class ConselhoMandaChuva():
   def __init__(self, fundadores=[]):
@@ -44,6 +55,7 @@ class ConselhoMandaChuva():
 
     for f in fundadores:
       f.cmc = self
+      f.cofundador = True
 
   def pergunta(self, p):
     print("Pergunta: '{}'".format(p))
@@ -66,6 +78,7 @@ class ConselhoMandaChuva():
   def aprova_associado(self, pessoa, endosso=None, fundador=False):
     pessoa.cmc = self
     pessoa.associacao.append([self.dia, None])
+    pessoa.endosso = endosso
 
     if pessoa in self.padawans:
       self.padawans.remove(pessoa)
@@ -103,37 +116,45 @@ class ConselhoMandaChuva():
     print("Associados:\n\t{}".format('\n\t'.join(map(lambda x: "{} ({})".format(x.nome, len(x.padawans)), self.associados))))
 
   def output_graph(self):
+    from graphviz import Digraph
+    dot = Digraph(comment='Associados e Padawans do Garoa Hacker Clube')
+    dot.engine = "neato"
+    dot.attr('graph', overlap="false")
+#    dot.attr('node', shape='circle')
+    dot.attr('node', labelloc='c')
+    dot.attr('node', fontsize='12')
+    dot.attr('node', style='filled')
+    dot.attr('node', fontcolor="#eeffee")
+
     pessoas = self.associados + self.padawans + self.ex_associados
-    fundadores = "fundadores [label=\"Sócios Fundadores do Garoa Hacker Clube\"];\n\n"
-    fundadores += "\n".join(["fundadores -> Pessoa_{};".format(n) for n in range(self.num_fundadores)])
+    dot.attr('node', color='black')
+    dot.node("Pre_sistema_de_padawanice", "Primeiros associados\nantes da criação\ndo sistema\nde padawanice")
 
-    padawans = "\n#padawans\n"
     for p in pessoas:
-      for padawan in p.padawans:
-        padawans += "Pessoa_{} -> Pessoa_{};\n".format(pessoas.index(p),
-                                                       pessoas.index(padawan))
-
-    pessoas_str = "\n#pessoas\n"
-    for p in pessoas:
-      color_str = "color=\"#559955\";"
-      if pessoas.index(p) < self.num_fundadores:
-        color_str = "color=\"black\";"
+      if p.cofundador:
+        dot.attr('node', color='black')
       elif p in self.ex_associados:
-        color_str = "color=\"darkgray\";"
-      elif p.associacao == []:
-        color_str = "color=\"#888800\";"
+        dot.attr('node', color='gray')
+      elif p.associacao == []: # é padawan
+        if menos_de_6_meses(p.apresentacao):
+          # é padawan recente
+          dot.attr('node', color='#cccc00')
+        else:
+          # provavelmente é um padawan abandonado
+          # ou com muito pouca chance de se efetivar associado
+          dot.attr('node', color='#cc7777')
+      else: # atualmente é associado
+        dot.attr('node', color='#559955')
+      dot.node("Pessoa_{}".format(pessoas.index(p)), '\n'.join(p.nome.split()))
 
-      pessoas_str += "Pessoa_{} [label=\"{}\";{}];\n".format(pessoas.index(p),
-                                                             '\\n'.join(p.nome.split(" ")),
-                                                             color_str)
+    for p in pessoas:
+      if p.endosso == "HACK":
+        dot.edge("Pre_sistema_de_padawanice",
+                 "Pessoa_{}".format(pessoas.index(p)))
 
-    output = """\
-digraph G {
-  node [shape=egg,
-        labelloc=c,
-        fontsize=4,
-        style=filled,
-        fontcolor="#eeffee"];
-""" + str(fundadores) + "\n" + str(padawans) + "\n" + str(pessoas_str) + "\n}"
+      for padawan in p.padawans:
+        dot.edge("Pessoa_{}".format(pessoas.index(p)),
+                 "Pessoa_{}".format(pessoas.index(padawan)))
 
-    open("garoa-associados.gv", "w").write(output)
+    dot.render('garoa-associados', view=True)
+    os.rename('garoa-associados', 'garoa-associados.gv')
