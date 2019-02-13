@@ -10,7 +10,7 @@ Abdo = Pessoa("Alexandre Hannud Abdo")
 AffonsoAmendola = Pessoa("Affonso Gino Amendola Neto", wiki="AffonsoAmendola")
 Alexandra = Pessoa("Alexandra Percario")
 AleSouza = Pessoa("Alexandre Souza", wiki="Alexandre_Souza")
-Aleph = Pessoa("Alberto Fabiano Caires de Medeiros", wiki="Aleph")
+Aleph = Pessoa("Alberto Fabiano Caires de Medeiros", wiki="Aleph", apelido="Aleph")
 AlexPorto = Pessoa("Alex Rocha Porto")
 AllanMoreira = Pessoa("Allan Moreira")
 AllanTrindade = Pessoa("Allan Trindad Arcanjo Ferreira") # (de São Vicente)
@@ -21,14 +21,14 @@ AndreOliveira = Pessoa("Andre de Oliveira")
 AndreHermann = Pessoa("André Hermann")
 AntonioSouza = Pessoa("Antonio Celso Cavalieri Lins de Souza") # co-fundador #FIXME! Não consta na planilha de associados!
 AfonsoCoutinho = Pessoa("Afonso Coutinho")
-Agaelebe = Pessoa("Hugo Lima Borges")
-Asa = Pessoa("Luis Henrique Fagundes")
-Aylons = Pessoa("Gustavo Barbosa Monteiro Bruno", wiki="Aylons")
+Agaelebe = Pessoa("Hugo Lima Borges", apelido="Agaelebê")
+Asa = Pessoa("Luis Henrique Fagundes", apelido="Asa")
+Aylons = Pessoa("Gustavo Barbosa Monteiro Bruno", wiki="Aylons", apelido="Aylons")
 Bilo = Pessoa("Ricardo Bilo", wiki="Ricardobilo")
 Baraldi = Pessoa("Mauro Navarro Baraldi")
 Belasco = Pessoa("Pedro Belasco")
 BrunoBorges = Pessoa("Bruno Lima Borges") # (Irmão do Hugo)
-BrunoDJ = Pessoa("Bruno 'DJ'") # seria o mesmo que BrunoLP talvez?!
+BrunoDJ = Pessoa("Bruno", apelido="DJ") # seria o mesmo que BrunoLP talvez?!
 # BrunoLP = Pessoa("Bruno Luiz de Paula")
 Buzz = Pessoa("Buzz") #nome?
 #CSM = Pessoa("CSM") #nome? Seria esse o Carlos CM?
@@ -48,7 +48,7 @@ DaniloZampronio = Pessoa("Danilo Zampronio")
 # DavidRobert = Pessoa("David Robert") # quase foi co-fundador
 Dente = Pessoa("Marcelo Araujo Dente")
 Diogenes = Pessoa("Diógenes Rossi da Costa", wiki="Diógenes", apelido="Sene")
-DQ = Pessoa("Daniel Gerk de Azevedo Quadros")
+DQ = Pessoa("Daniel Gerk de Azevedo Quadros", wiki="DQ", apelido="DQ")
 Eden = Pessoa("Eden Cardim")
 EmersonMonteiro = Pessoa("Emerson Monteiro Sobreiro") #padawan do Fabricio #FIXME! Não consta na planilha de associados!
 EmersonMarques = Pessoa("Emerson Marques Pedro") #FIXME! Não consta na planilha de associados!
@@ -62,23 +62,22 @@ FabioH = Pessoa("Fabio Hirano")
 FabricioBiazzotto = Pessoa("Fabricio Biazzotto")
 # Fellype = Pessoa("Fellype Cazorino") # frequentador hoje em dia (2018/19). Talvez se associe algum dia.
 FelipeMoreira = Pessoa("Felipe Moreira")
-Ferno = Pessoa("Fernando", wiki="Ferno") # nome completo? # FIXME: Na planilha consta Fernando Molina
-                                                          # admissao:2014-10-21 e ainda ativo
+Ferno = Pessoa("Fernando", wiki="Ferno", apelido="Ferno") # nome completo? # FIXME: Na planilha consta Fernando Molina
+                                                                           # admissao:2014-10-21 e ainda ativo
 FSouza = Pessoa("Felipe Souza") #FIXME: Consta em vermelho na planilha de associados. O que significa?
-Gab = Pessoa("Gabriela Fonseca")
-Gabrielzinho = Pessoa("Gabriel Almeida")
-G4b1s = Pessoa("Gabriel Romano Mascarenhas", wiki="G4b1s")
+Gab = Pessoa("Gabriela Fonseca", apelido="Gab")
+Gabrielzinho = Pessoa("Gabriel Almeida", apelido="Gabrielzinho")
+G4b1s = Pessoa("Gabriel Romano Mascarenhas", wiki="G4b1s", apelido="G4b1s")
 GabrielAraujo = Pessoa("Gabriel Araújo")
-Gafanhoto = Pessoa("Mateus Zitelli", wiki="MateusZitelli") #FIXME! Não consta na planilha de associados!
+Gafanhoto = Pessoa("Mateus Zitelli", wiki="MateusZitelli", apelido="Gafanhoto") #FIXME! Não consta na planilha de associados!
 Grigolato = Pessoa("Samuel Grigolato", wiki="Samuel.grigolato")
 Gola = Pessoa("Bruno Gola", wiki="Brunogola")
 Guima = Pessoa("Ricardo Guimarães", apelido="Guima")
 Guisso = Pessoa("Fernando Guisso")
 GustavoRibeiro = Pessoa("Gustavo de Paula Ribeiro")
-Gutem = Pessoa("Gutemberg Nunes de Carvalho")
-GutoMaia = Pessoa("Gustavo Maia Neto")
+Gutem = Pessoa("Gutemberg Nunes de Carvalho", apelido="Gutem")
+GutoMaia = Pessoa("Gustavo Maia Neto", apelido="Guto Maia")
 Haoji = Pessoa("Haoji") #nome?
-Helena = Pessoa("Helena (amiga do Afonso)")
 Hugo = Pessoa("Hugo") # nome completo? Não é o Agaelebe!
 IanF = Pessoa("Ian Fernandez Fortes da Costa Santos")
 Igor = Pessoa("Igor") #nome?
@@ -99,8 +98,8 @@ Katia = Pessoa("Kátia Kitahara") #FIXME! Não consta na planilha de associados!
 Kemel = Pessoa("Kemel Zaidan")
 Kinoshita = Pessoa("Bruno Kinoshita")
 LAlcantara = Pessoa("Lucas Alcântara")
-Larios = Pessoa("Marcelo Lários") # a.k.a.: "Truman"
-LaTeX = Pessoa("Leandro Teixeira (LaTeX)")
+Larios = Pessoa("Marcelo Lários", apelido="Truman")
+LaTeX = Pessoa("Leandro Teixeira", apelido="LaTeX")
 Laura = Pessoa("Laura Sobenes")
 LeandroSilva = Pessoa("Leandro Luciano da Silva", wiki="Leandrolsilva")
 Leandro = Pessoa("Leandro") # nome completo? Não é o Silva!
@@ -110,8 +109,8 @@ Liane = Pessoa("Liane Lira")
 Lina = Pessoa("Lina Lopes")
 # Lint = Pessoa("Carlos Lint")
 LiviaAscava = Pessoa("Livia Ascava")
-LoganBr = Pessoa("Ricardo 'Logan'") #nome completo?
-Luca = Pessoa("Luciana de Toledo Barros") # Luca Toledo
+LoganBr = Pessoa("Ricardo", apelido="Logan") #nome completo?
+Luca = Pessoa("Luciana de Toledo Barros", apelido="Luca")
 Lucas = Pessoa("Lucas") #nome completo? Talvez seja: https://garoa.net.br/wiki/Usu%C3%A1rio:Lucascfk
 LucianaMarques = Pessoa("Luciana da Costa Marques", wiki="LucianaMarques")
 Luciano = Pessoa("Luciano") #nome completo? (Não é o Luciano Batista! Ver: 2014-08-19)
@@ -123,7 +122,7 @@ LuizVieira = Pessoa("Luiz Vieira")
 ManoelLemos = Pessoa("Manoel Lemos")
 Marcel = Pessoa("Marcel") #nome?
 MarceloCampos = Pessoa("Marcelo Campos")
-MarceloRodrigues = Pessoa("Marcelo Alatzatianov Rodrigues") # Lab de Garagem
+MarceloRodrigues = Pessoa("Marcelo Alatzatianov Rodrigues", apelido="Lab de Garagem")
 Markun = Pessoa("Pedro Markun")
 MauroAlex = Pessoa("Mauro Alexandrowitsch")
 Mesel = Pessoa("Vinicius Carqueijo Mesel")
@@ -134,7 +133,7 @@ Moreno = Pessoa("Moreno Hassem", apelido="Yanava")
 Murilo = Pessoa("Murilo Prestes")
 NelsonCanton = Pessoa("Nelson Canton Filho")
 NelsonBrito = Pessoa("Nelson Brito") #FIXME! Não consta na planilha de associados!
-Nessa = Pessoa("Vanessa Guedes")
+Nessa = Pessoa("Vanessa Guedes", apelido="Nessa")
 Novelli = Pessoa("Novelli") #nome? André Novelli?
 Oda = Pessoa("Eduardo Oda")
 Otto = Pessoa("Otto Heringer")
@@ -152,12 +151,12 @@ RMartinelli = Pessoa("Ricardo Martinelli Oliveira")
 RMartinsOliveira = Pessoa("Ricardo Martins de Oliveira") # FIXME! Não consta em atas?! Planilha diz: admissão em 2012-08-05
                                                          #                             e desligamento em 2015-05-01.
 RobertJr = Pessoa("Robert Junior") # Guisso disse: "Ele é um cabeludinho, magrinho, com cara de nerd, que vem com o pai."
-RodrigoSilveira = Pessoa("Rodrigo Gomes da Silveira") # "dos gatos"
+RodrigoSilveira = Pessoa("Rodrigo Gomes da Silveira", apelido="dos gatos")
 RogerRussel = Pessoa("Roger Russel")
 RogerioMunhoz = Pessoa("Rogério Munhoz")
 Romulo = Pessoa("Romulo Nascimento")
 RonaldoRussel = Pessoa("Ronaldo Russel", wiki="Ronas")
-Rubao = Pessoa("Rubens Tadeu Arena Júnior") #Rubão
+Rubao = Pessoa("Rubens Tadeu Arena Júnior", apelido="Rubão")
 # Samir = Pessoa("Sam Carecho")
 SamuelDamasceno = Pessoa("Samuel Damasceno")
 Sandro = Pessoa("Sandro Friedland")
@@ -165,7 +164,7 @@ Santagada = Pessoa("Leonardo Santagada")
 SebastiaoBarreto = Pessoa("Sebastião Santiago Barreto")
 Skavurzka = Pessoa("Skavurzka") #nome completo?
 Spinola = Pessoa("Spinola") #nome completo? #FIXME! Não consta na planilha de associados!
-Subnet = Pessoa("Luís Guilherme Pires Martins de Abreu", wiki="Subnet252")
+Subnet = Pessoa("Luís Guilherme Pires Martins de Abreu", wiki="Subnet252", apelido="Subnet")
 Tales = Pessoa("Tales Cione Adelano de Jesus", apelido="Tales")
 Taumaturgo = Pessoa("Raphael Taumaturgo") # "o cara da cerveja"
 TiagoQueiroz = Pessoa("Tiago de França Queiroz") # irmao gemeo do Anderson
@@ -182,10 +181,9 @@ VictorScattone = Pessoa("Victor Scattone")
 VitorFernandes = Pessoa("Vitor Fernandes")
 Vido = Pessoa("Lucas Vido", wiki="Vido")
 Villares = Pessoa("Alexandre Villares")
-VJPixel = Pessoa("VJ Pixel")
+VJPixel = Pessoa("?", apelido="VJ Pixel")
 Vrech = Pessoa("Matheus Vral Vrech") # (São Carlos) #FIXME: Consta em vermelho na planilha de associados. O que significa?
 Yumi = Pessoa("Amanda Yumi Ambriola")
-Yanava = Pessoa("Yanava") # nome?
 WagnerSartori = Pessoa("Wagner Sartori")
 Wesley = Pessoa("Wesley Shaimon") #FIXME: Consta em vermelho na planilha de associados. O que significa?
 Zanst = Pessoa("Zanst")
