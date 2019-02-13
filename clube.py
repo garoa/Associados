@@ -8,7 +8,7 @@ import os
 PEDANTE = False
 
 class Pessoa():
-  def __init__(self, nome, wiki=None):
+  def __init__(self, nome, wiki=None, apelido=None):
     self.nome = nome
     self.wiki = wiki
     self.cmc = None
@@ -87,6 +87,14 @@ class ConselhoMandaChuva():
         print("ERRO: Aprovando associado '{}' que não é padawan de ninguém!".format(pessoa.nome))
     if pessoa not in self.associados:
       self.associados.append(pessoa)
+
+  def nao_documentou_desligamento(self, pessoa, motivo=None):
+    """Para todos efeitos, esse método é equivalente ao
+       observa_desligamento. Mas ele é usado para que não
+       haja confusão, diferenciando os desligamentos que constam
+       em atas, daqueles que foram inferidos por outros meios como,
+       por exemplo, pela planilha de associados mantida pelo tesoureiro."""
+    self.observa_desligamento(pessoa, motivo)
 
   def observa_desligamento(self, pessoa, motivo=None):
     pessoa.cmc = None
