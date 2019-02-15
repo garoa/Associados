@@ -656,9 +656,11 @@ CMC.nao_documentou_desligamento(ThiagoRondon, motivo=("Consta na planilha de ass
 
 # CMC de 10 de Fevereiro de 2015:
 CMC.data("2015-02-10")
-CMC.pergunta("'DQ propõem Alexandre como sócio - Aprovado': Esse é o Villares?")
-DQ.apresenta_padawan(Villares) #implicitamente
-CMC.aprova_associado(Villares, endosso=DQ)
+CMC.pergunta("'DQ propõem Alexandre como sócio - Aprovado': Quem é esse Alexandre?"
+             " O Alexandre Villares esclareceu em 2019-FEV-15 que não é ele:"
+             " 'A seta do DQ para mim não existe. Meu mestre é o Ramalho.'")
+#DQ.apresenta_padawan(Alexandre) #implicitamente #FIXME: descobrir quem é esse Alexandre.
+#CMC.aprova_associado(Alexandre, endosso=DQ)
 CMC.observa_desligamento(Otto,      motivo=ATRASO)
 CMC.observa_desligamento(LuisSouza, motivo=ATRASO)
 CMC.observa_desligamento(Romulo,    motivo=ATRASO)

@@ -36,8 +36,8 @@ Ao executar este programa, é gerado um grafo de relacionamentos representando a
 
 # Exemplo de diagrama
 
-Diagrama de exemplo gerado em 2019-FEV-13.
+Diagrama de exemplo gerado em 2019-FEV-15.
 
 Para maior resolução e dados atualizados, exporte um PDF a partir do script python.
 
-![Gerado em 2019-FEV-13.](exemplos/diagrama_garoa.jpg)
+![Gerado em 2019-FEV-15.](exemplos/diagrama_garoa.jpg)
