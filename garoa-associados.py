@@ -19,7 +19,7 @@ Anchises = Pessoa("Anchises Moraes Guimarães de Paula", wiki="Anchisesbr")
 Anderson = Pessoa("Anderson de França Queiroz") # irmao gemeo do Tiago Queiroz
 AndreOliveira = Pessoa("Andre de Oliveira")
 AndreHermann = Pessoa("André Hermann")
-AntonioSouza = Pessoa("Antonio Celso Cavalieri Lins de Souza") # co-fundador #FIXME! Não consta na planilha de associados!
+AntonioSouza = Pessoa("Antonio Celso Cavalieri Lins de Souza") # co-fundador
 AfonsoCoutinho = Pessoa("Afonso Coutinho")
 Agaelebe = Pessoa("Hugo Lima Borges", apelido="Agaelebê")
 Asa = Pessoa("Luis Henrique Fagundes", apelido="Asa")
@@ -28,18 +28,18 @@ Bilo = Pessoa("Ricardo Bilo", wiki="Ricardobilo")
 Baraldi = Pessoa("Mauro Navarro Baraldi")
 Belasco = Pessoa("Pedro Belasco")
 BrunoBorges = Pessoa("Bruno Lima Borges") # (Irmão do Hugo)
-BrunoDJ = Pessoa("Bruno", apelido="DJ") # seria o mesmo que BrunoLP talvez?!
+BrunoDJ = Pessoa("Bruno", apelido="DJ")
 # BrunoLP = Pessoa("Bruno Luiz de Paula")
-Buzz = Pessoa("Buzz") #nome?
-#CSM = Pessoa("CSM") #nome? Seria esse o Carlos CM?
+Buzz = Pessoa("Buzz")
+# CSM = Pessoa("CSM")
 CarlosCM = Pessoa("Carlos CM") # do time de CTF do Garoa
 Caique = Pessoa("Caique Severo")
 Carine = Pessoa("Carine Roos")
 Carril = Pessoa("Fernando Carril")
 Ceci = Pessoa("Cecilia Tanaka", apelido="Ceci")
 Christian = Pessoa("Christian Oliveira")
-CleitonAlves = Pessoa("Cleiton Alves") #FIXME! Não consta na planilha de associados!
-Coruja = Pessoa("Gustavo Lima") #FIXME! Não consta na planilha de associados!
+CleitonAlves = Pessoa("Cleiton Alves")
+Coruja = Pessoa("Gustavo Lima", apelido="Coruja de TI")
 Dandara = Pessoa("Dandara Jatobá")
 DanielaIwassa = Pessoa("Daniela Tamy Iwassa", apelido="Dany")
 DanielSeda = Pessoa("Daniel Seda")
@@ -50,10 +50,10 @@ Dente = Pessoa("Marcelo Araujo Dente")
 Diogenes = Pessoa("Diógenes Rossi da Costa", wiki="Diógenes", apelido="Sene")
 DQ = Pessoa("Daniel Gerk de Azevedo Quadros", wiki="DQ", apelido="DQ")
 Eden = Pessoa("Eden Cardim")
-EmersonMonteiro = Pessoa("Emerson Monteiro Sobreiro") #padawan do Fabricio #FIXME! Não consta na planilha de associados!
-EmersonMarques = Pessoa("Emerson Marques Pedro") #FIXME! Não consta na planilha de associados!
-ErickEmiliano = Pessoa("Erick Emiliano")  #FIXME! Não consta na planilha de associados!
-ErikDataleak = Pessoa("Erik Dataleak Ramos") #nome real? #FIXME! Não consta na planilha de associados!
+EmersonMonteiro = Pessoa("Emerson Monteiro Sobreiro") #padawan do Fabricio
+EmersonMarques = Pessoa("Emerson Marques Pedro")
+ErickEmiliano = Pessoa("Erick Emiliano")
+ErikDataleak = Pessoa("Erik Dataleak Ramos")
 Erico = Pessoa("Erico") #nome completo? Padawan do Otto em 2015-04-21
 Erika = Pessoa("Erika") #nome completo? Padawan da Luca em 2015-09-15
 Erin = Pessoa("Erin Pinheiro Manal", wiki="Erin")
@@ -62,14 +62,13 @@ FabioH = Pessoa("Fabio Hirano")
 FabricioBiazzotto = Pessoa("Fabricio Biazzotto")
 # Fellype = Pessoa("Fellype Cazorino") # frequentador hoje em dia (2018/19). Talvez se associe algum dia.
 FelipeMoreira = Pessoa("Felipe Moreira")
-Ferno = Pessoa("Fernando", wiki="Ferno", apelido="Ferno") # nome completo? # FIXME: Na planilha consta Fernando Molina
-                                                                           # admissao:2014-10-21 e ainda ativo
-FSouza = Pessoa("Felipe Souza") #FIXME: Consta em vermelho na planilha de associados. O que significa?
+Ferno = Pessoa("Fernando", wiki="Ferno", apelido="Ferno")
+FSouza = Pessoa("Felipe Souza")
 Gab = Pessoa("Gabriela Fonseca", apelido="Gab")
 Gabrielzinho = Pessoa("Gabriel Almeida", apelido="Gabrielzinho")
 G4b1s = Pessoa("Gabriel Romano Mascarenhas", wiki="G4b1s", apelido="G4b1s")
 GabrielAraujo = Pessoa("Gabriel Araújo")
-Gafanhoto = Pessoa("Mateus Zitelli", wiki="MateusZitelli", apelido="Gafanhoto") #FIXME! Não consta na planilha de associados!
+Gafanhoto = Pessoa("Mateus Zitelli", wiki="MateusZitelli", apelido="Gafanhoto")
 Grigolato = Pessoa("Samuel Grigolato", wiki="Samuel.grigolato")
 Gola = Pessoa("Bruno Gola", wiki="Brunogola")
 Guima = Pessoa("Ricardo Guimarães", apelido="Guima")
@@ -84,17 +83,17 @@ Igor = Pessoa("Igor") #nome?
 Ivar = Pessoa("Ivar") #nome completo?
 Ismael = Pessoa("Ismael Lopes")
 JAFreitas = Pessoa("João Adriano Freitas")
-JamesRaznor = Pessoa("James Raznor") #FIXME! Não consta na planilha de associados!
-JamesSouza = Pessoa("James Souza") #FIXME! Não consta na planilha de associados!
+JamesRaznor = Pessoa("James Raznor")
+JamesSouza = Pessoa("James Souza")
 JeanPaul = Pessoa("Jean Paul Depraz", apelido="kern")
 JeanTomceac = Pessoa("Jean Rafael Tomceac")
 JMBichara = Pessoa("José Mateus Bichara") # Organiza a atividade wiki:Estação_de_Monitoramento_da_Qualidade_do_Ar
 JonDroid = Pessoa("JonDroid") #nome real?
 Jonnes = Pessoa("Jonnes do Nascimento Tahara")
-Juan = Pessoa("Juan") #nome?
+Juan = Pessoa("Juan")
 Juca = Pessoa("Felipe Correa da Silva Sanches", wiki="Juca", apelido="Juca")
-Karol = Pessoa("Karol") #nome completo? Padawan da Priscila Gutierres
-Katia = Pessoa("Kátia Kitahara") #FIXME! Não consta na planilha de associados!
+Karol = Pessoa("Karol")
+Katia = Pessoa("Kátia Kitahara")
 Kemel = Pessoa("Kemel Zaidan")
 Kinoshita = Pessoa("Bruno Kinoshita")
 LAlcantara = Pessoa("Lucas Alcântara")
@@ -132,7 +131,7 @@ Miklos = Pessoa("Cláudio Miklos")
 Moreno = Pessoa("Moreno Hassem", apelido="Yanava")
 Murilo = Pessoa("Murilo Prestes")
 NelsonCanton = Pessoa("Nelson Canton Filho")
-NelsonBrito = Pessoa("Nelson Brito") #FIXME! Não consta na planilha de associados!
+NelsonBrito = Pessoa("Nelson Brito")
 Nessa = Pessoa("Vanessa Guedes", apelido="Nessa")
 Novelli = Pessoa("Novelli") #nome? André Novelli?
 Oda = Pessoa("Eduardo Oda")
@@ -145,11 +144,10 @@ Ramalho = Pessoa("Luciano Gama de Souza Ramalho")
 RafaelML = Pessoa("Rafael M Lopes")
 RenatoCandido = Pessoa("Renato Candido")
 RicardoAmaral = Pessoa("Ricardo Amaral")
-RicardoOliveira = Pessoa("Ricardo Oliveira") # FIXME! Esse aque deve ser um dos dois 'Ricardo M. Oliveira' abaixo :-O !!!!!
+RicardoOliveira = Pessoa("Ricardo Oliveira") #FIXME: Esse aqui deve ser um dos dois 'Ricardo M. Oliveira' abaixo :-O !!!!!
 RicardoCastro = Pessoa("Ricardo Castro")
 RMartinelli = Pessoa("Ricardo Martinelli Oliveira")
-RMartinsOliveira = Pessoa("Ricardo Martins de Oliveira") # FIXME! Não consta em atas?! Planilha diz: admissão em 2012-08-05
-                                                         #                             e desligamento em 2015-05-01.
+RMartinsOliveira = Pessoa("Ricardo Martins de Oliveira")
 RobertJr = Pessoa("Robert Junior") # Guisso disse: "Ele é um cabeludinho, magrinho, com cara de nerd, que vem com o pai."
 RodrigoSilveira = Pessoa("Rodrigo Gomes da Silveira", apelido="dos gatos")
 RogerRussel = Pessoa("Roger Russel")
@@ -163,7 +161,7 @@ Sandro = Pessoa("Sandro Friedland")
 Santagada = Pessoa("Leonardo Santagada")
 SebastiaoBarreto = Pessoa("Sebastião Santiago Barreto")
 Skavurzka = Pessoa("Skavurzka") #nome completo?
-Spinola = Pessoa("Spinola") #nome completo? #FIXME! Não consta na planilha de associados!
+Spinola = Pessoa("Spinola") #nome completo?
 Subnet = Pessoa("Luís Guilherme Pires Martins de Abreu", wiki="Subnet252", apelido="Subnet")
 Tales = Pessoa("Tales Cione Adelano de Jesus", apelido="Tales")
 Taumaturgo = Pessoa("Raphael Taumaturgo") # "o cara da cerveja"
@@ -182,11 +180,11 @@ VitorFernandes = Pessoa("Vitor Fernandes")
 Vido = Pessoa("Lucas Vido", wiki="Vido")
 Villares = Pessoa("Alexandre Villares")
 VJPixel = Pessoa("?", apelido="VJ Pixel")
-Vrech = Pessoa("Matheus Vral Vrech") # (São Carlos) #FIXME: Consta em vermelho na planilha de associados. O que significa?
+Vrech = Pessoa("Matheus Vral Vrech") # (São Carlos)
 Yumi = Pessoa("Amanda Yumi Ambriola")
 WagnerSartori = Pessoa("Wagner Sartori")
-Wesley = Pessoa("Wesley Shaimon") #FIXME: Consta em vermelho na planilha de associados. O que significa?
-Zanst = Pessoa("Zanst")
+Wesley = Pessoa("Wesley Shaimon")
+Zanst = Pessoa("Zanst") #nome real?
 
 cofundadores = [
   Agaelebe,
@@ -393,9 +391,7 @@ CMC.aprova_associado(LeandroSilva)
 CMC.data("2012-09-18")
 CMC.aprova_associado(RenatoCandido)
 CMC.aprova_associado(RicardoOliveira)
-#FIXME: Desligamentos:
-# A ata diz: "2 pessoas não se manifestaram sobre resolver a situação e serão desligadas."
-# Quem são?!
+#FIXME: Desligamentos: A ata de SET/2012 diz: "2 pessoas não se manifestaram sobre resolver a situação e serão desligadas." Quem são?!
 
 
 # CMC de 16 de Outubro de 2012:
@@ -560,7 +556,7 @@ CMC.observa_desligamento(Gola, motivo=ATRASO)
 # consta na planilha de associados:
 CMC.nao_documentou_desligamento(LeonardoTelles, motivo=("Consta na planilha de associados"
                                                         " desligamento em 2014-04-15."))
-# FIXME! Como a data de admissão e de desligamento são iguais, isso pode significar que ele nunca pagou
+# FIXME: Leonardo Telles: Como a data de admissão e de desligamento são iguais, isso pode significar que ele nunca pagou
 #        nenhuma mensalidade, mas o tesoureiro só percebeu isso uns 2 anos depois, em 2016 :-P
 #        Ou então pode ser um erro de digitação na planilha de associados...
 
@@ -823,8 +819,8 @@ TiagoQueiroz.apresenta_padawan(FabricioBiazzotto)
 CMC.observa_desligamento(LuisLeao,      motivo="3 (ou mais) meses de atraso na mensalidade")
 CMC.observa_desligamento(RafaelML,      motivo="3 (ou mais) meses de atraso na mensalidade")
 CMC.observa_desligamento(Kemel,         motivo="3 (ou mais) meses de atraso na mensalidade")
-CMC.observa_desligamento(Otto,          motivo="3 (ou mais) meses de atraso na mensalidade") #FIXME: na planilha de associados
-                                                                                             # não consta desligamento do Otto...
+CMC.observa_desligamento(Otto,          motivo="3 (ou mais) meses de atraso na mensalidade")
+#FIXME: na planilha de associados não consta desligamento do Otto...
 CMC.observa_desligamento(Eros,          motivo="3 (ou mais) meses de atraso na mensalidade")
 CMC.observa_desligamento(FelipeMoreira, motivo="3 (ou mais) meses de atraso na mensalidade")
 CMC.observa_desligamento(AndreOliveira, motivo="3 (ou mais) meses de atraso na mensalidade")
@@ -1167,17 +1163,17 @@ Juca.apresenta_padawans([JMBichara])
 
 
 # SEM DATA:
-CMC.nao_documentou_desligamento(Markun, motivo=("Não consta na planilha de associados.")) #FIXME!
+CMC.nao_documentou_desligamento(Markun, motivo=("Não consta na planilha de associados.")) #FIXME: desligamento Markun
 
 # SEM DATA:
 # Consta na planilha de associados:
 CMC.nao_documentou_desligamento(LAlcantara, motivo=("Consta na planilha de associados"
-                                                    " como desligado, mas sem a data.")) #FIXME!
+                                                    " como desligado, mas sem a data.")) #FIXME: desligamento LAlcantara
 CMC.nao_documentou_desligamento(TiagoQueiroz, motivo=("Consta na planilha de associados"
-                                                      " como desligado, mas sem a data.")) #FIXME!
+                                                      " como desligado, mas sem a data.")) #FIXME: desligamento TiagoQueiroz
 CMC.nao_documentou_desligamento(Jonnes, motivo=("Consta na planilha de associados"
                                                 " como desligado, mas com data de desligamento"
-                                                " anterior à readmissão de 2016.")) #FIXME!
+                                                " anterior à readmissão de 2016.")) #FIXME: desligamento Jonnes
 # FIXME! A planilha de associados lista Manoel Lemos como associado ativo.
 #        Entretanto temos um desligamento registrado em ata em 2014-10-21.
 #        Não consta a data em que ele supostamente regularizou seu status de associado.
@@ -1187,6 +1183,31 @@ CMC.nao_documentou_desligamento(Jonnes, motivo=("Consta na planilha de associado
 CMC.data("2019-02-19")
 # ...
 
+#FIXME: Antonio Celso Cavalieri Lins de Souza não consta na planilha de associados. Aparentemente foi co-fundador.
+#FIXME: Cleiton Alves (padawan do Anchises, JUN/2011) não consta na planilha de associados.
+#FIXME: Gustavo Lima, o "Coruja", (padawan do Anchises, NOV/2011) não consta na planilha de associados.
+#FIXME: Emerson Monteiro Sobreiro (padawan do Fabricio Biazzotto, MAR/2017) não consta na planilha de associados.
+#FIXME: Emerson Marques Pedro não consta na planilha de associados.
+#FIXME: Erick Emiliano não consta na planilha de associados.
+#FIXME: Erik Dataleak Ramos não consta na planilha de associados.
+#FIXME: Qual o nome completo de 'Ferno', padawan de Mike Howard? Na planilha consta Fernando Molina, admissao:2014-10-21 e ainda ativo.
+#FIXME: Felipe Souza consta em vermelho na planilha de associados. O que significa?
+#FIXME: Qual é o nome real de Erik Dataleak Ramos?
+#FIXME: BrunoDJ e BrunoLP (Luiz de Paula) são a mesma pessoa?
+#FIXME: Quem é 'Buzz'?
+#FIXME: Carlos CM (do CTF) e 'CSM' são a mesma pessoa?
+#FIXME: Mateus Zitelli "Gafanhoto" não consta na planilha de associados.
+#FIXME: James Souza não consta na planilha de associados.
+#FIXME: James Raznor não consta na planilha de associados. Seria 'James Souza' a mesma pessoa?
+#FIXME: Kátia Kitahara não consta na planilha de associados.
+#FIXME: Quem é Juan? Qual o nome completo?
+#FIXME: Qual o nome completo da Karol, padawan da Priscila Gutierres?
+#FIXME: Ricardo Martins de Oliveira não consta em atas? Planilha diz: admissão em 2012-08-05 / desligamento em 2015-05-01.
+#FIXME: Spinola não consta na planilha de associados.
+#FIXME: Nelson Brito não consta na planilha de associados!
+#FIXME: Matheus Vral Vrech consta em vermelho na planilha de associados. O que significa?
+#FIXME: Wesley Shaimon consta em vermelho na planilha de associados. O que significa?
+#FIXME: Constam também diversos outros nomes incompletos que precisariamos revisar/completar.
 
 # CMC de 19 de Março de 2019:
 CMC.data("2019-03-19")

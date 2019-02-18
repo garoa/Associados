@@ -12,5 +12,5 @@ install:
 
 script:
 - export WONT_FIX=invalid-name,bad-indentation,too-many-lines,too-many-instance-attributes
-- export MAYBE_LATER=line-too-long,missing-docstring,bad-continuation,bad-whitespace,fixme
+- export MAYBE_LATER=line-too-long,missing-docstring,bad-continuation,bad-whitespace
 - pylint --disable=$WONT_FIX,$MAYBE_LATER *.py
