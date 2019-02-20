@@ -128,6 +128,7 @@ Mesel = Pessoa("Vinicius Carqueijo Mesel")
 Micael = Pessoa("Micael Vitor DJ")
 Mike = Pessoa("Michael Howard", wiki="h00man", apelido="Mike")
 Miklos = Pessoa("Cláudio Miklos")
+Monge = Pessoa("Monge") #nome completo? Padawan do Allan Trindade
 Moreno = Pessoa("Moreno Hassem", apelido="Yanava")
 Murilo = Pessoa("Murilo Prestes")
 NelsonCanton = Pessoa("Nelson Canton Filho")
@@ -1181,7 +1182,12 @@ CMC.nao_documentou_desligamento(Jonnes, motivo=("Consta na planilha de associado
 
 # CMC de 19 de Fevereiro de 2019:
 CMC.data("2019-02-19")
-# ...
+# LucianaMarques vai continuar como padawan por mais algum tempo
+CMC.aprova_associado(AffonsoAmendola, endosso=[Juca])
+CMC.aprova_associado(JMBichara, endosso=[Juca])
+CMC.aprova_associado(Dandara, endosso=[AfonsoCoutinho])
+AllanTrindade.apresenta_padawan(Monge)
+
 
 #FIXME: Antonio Celso Cavalieri Lins de Souza não consta na planilha de associados. Aparentemente foi co-fundador.
 #FIXME: Cleiton Alves (padawan do Anchises, JUN/2011) não consta na planilha de associados.
