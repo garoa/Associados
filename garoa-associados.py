@@ -1168,8 +1168,6 @@ CMC.nao_documentou_desligamento(Markun, motivo=("Não consta na planilha de asso
 
 # SEM DATA:
 # Consta na planilha de associados:
-CMC.nao_documentou_desligamento(LAlcantara, motivo=("Consta na planilha de associados"
-                                                    " como desligado, mas sem a data.")) #FIXME: desligamento LAlcantara
 CMC.nao_documentou_desligamento(TiagoQueiroz, motivo=("Consta na planilha de associados"
                                                       " como desligado, mas sem a data.")) #FIXME: desligamento TiagoQueiroz
 CMC.nao_documentou_desligamento(Jonnes, motivo=("Consta na planilha de associados"
@@ -1187,7 +1185,10 @@ CMC.aprova_associado(AffonsoAmendola, endosso=[Juca])
 CMC.aprova_associado(JMBichara, endosso=[Juca])
 CMC.aprova_associado(Dandara, endosso=[AfonsoCoutinho])
 AllanTrindade.apresenta_padawan(Monge)
-
+CMC.observa_desligamento(LAlcantara, motivo=ATRASO)
+CMC.observa_desligamento(Alexandra, motivo=ATRASO)
+CMC.observa_desligamento(FSouza, motivo=ATRASO)
+CMC.observa_desligamento(Wesley, motivo=ATRASO)
 
 #FIXME: Antonio Celso Cavalieri Lins de Souza não consta na planilha de associados. Aparentemente foi co-fundador.
 #FIXME: Cleiton Alves (padawan do Anchises, JUN/2011) não consta na planilha de associados.
@@ -1197,7 +1198,6 @@ AllanTrindade.apresenta_padawan(Monge)
 #FIXME: Erick Emiliano não consta na planilha de associados.
 #FIXME: Erik Dataleak Ramos não consta na planilha de associados.
 #FIXME: Qual o nome completo de 'Ferno', padawan de Mike Howard? Na planilha consta Fernando Molina, admissao:2014-10-21 e ainda ativo.
-#FIXME: Felipe Souza consta em vermelho na planilha de associados. O que significa?
 #FIXME: Qual é o nome real de Erik Dataleak Ramos?
 #FIXME: BrunoDJ e BrunoLP (Luiz de Paula) são a mesma pessoa?
 #FIXME: Quem é 'Buzz'?
@@ -1212,7 +1212,6 @@ AllanTrindade.apresenta_padawan(Monge)
 #FIXME: Spinola não consta na planilha de associados.
 #FIXME: Nelson Brito não consta na planilha de associados!
 #FIXME: Matheus Vral Vrech consta em vermelho na planilha de associados. O que significa?
-#FIXME: Wesley Shaimon consta em vermelho na planilha de associados. O que significa?
 #FIXME: Constam também diversos outros nomes incompletos que precisariamos revisar/completar.
 
 # CMC de 19 de Março de 2019:
