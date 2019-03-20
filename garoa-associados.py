@@ -1190,6 +1190,12 @@ CMC.observa_desligamento(Alexandra, motivo=ATRASO)
 CMC.observa_desligamento(FSouza, motivo=ATRASO)
 CMC.observa_desligamento(Wesley, motivo=ATRASO)
 
+
+# CMC de 19 de Março de 2019:
+CMC.data("2019-03-19")
+CMC.observa_desligamento(Priscila, motivo="Requisitou desligamento.")
+
+
 #FIXME: Antonio Celso Cavalieri Lins de Souza não consta na planilha de associados. Aparentemente foi co-fundador.
 #FIXME: Cleiton Alves (padawan do Anchises, JUN/2011) não consta na planilha de associados.
 #FIXME: Gustavo Lima, o "Coruja", (padawan do Anchises, NOV/2011) não consta na planilha de associados.
@@ -1213,11 +1219,6 @@ CMC.observa_desligamento(Wesley, motivo=ATRASO)
 #FIXME: Nelson Brito não consta na planilha de associados!
 #FIXME: Matheus Vral Vrech consta em vermelho na planilha de associados. O que significa?
 #FIXME: Constam também diversos outros nomes incompletos que precisariamos revisar/completar.
-
-# CMC de 19 de Março de 2019:
-CMC.data("2019-03-19")
-# ...
-
 
 # CMC de 16 de Abril de 2019:
 CMC.data("2019-04-16")
