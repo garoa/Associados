@@ -1195,6 +1195,13 @@ CMC.observa_desligamento(Wesley, motivo=ATRASO)
 CMC.data("2019-03-19")
 CMC.observa_desligamento(Priscila, motivo="Requisitou desligamento.")
 
+# CMC de 23 de Abril de 2019:
+CMC.data("2019-04-23")
+CMC.observa_desligamento(GustavoRibeiro, motivo="Requisitou desligamento.")
+# Não consta em ata por que esquecemos de verificar a lista de emails, mas:
+CMC.observa_desligamento(FabioH, motivo=("Em 12/FEV/2019, Fabio Hirano anunciou desligamento"
+                                         " via lista de emails de associados."))
+
 
 #FIXME: Antonio Celso Cavalieri Lins de Souza não consta na planilha de associados. Aparentemente foi co-fundador.
 #FIXME: Cleiton Alves (padawan do Anchises, JUN/2011) não consta na planilha de associados.
@@ -1219,12 +1226,6 @@ CMC.observa_desligamento(Priscila, motivo="Requisitou desligamento.")
 #FIXME: Nelson Brito não consta na planilha de associados!
 #FIXME: Matheus Vral Vrech consta em vermelho na planilha de associados. O que significa?
 #FIXME: Constam também diversos outros nomes incompletos que precisariamos revisar/completar.
-
-# CMC de 16 de Abril de 2019:
-CMC.data("2019-04-16")
-# ...
-CMC.observa_desligamento(FabioH, motivo=("Em 12/FEV/2019, Fabio Hirano anunciou desligamento"
-                                         " via lista de emails de associados."))
 
 
 CMC.print_padawans()
