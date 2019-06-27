@@ -1203,28 +1203,59 @@ CMC.observa_desligamento(FabioH, motivo=("Em 12/FEV/2019, Fabio Hirano anunciou 
                                          " via lista de emails de associados."))
 
 
+######## Ajustes baseados em suposições ########
+#             (em 27/Junho/2019)
+#
+# Os ajustes abaixo são suposições relativamente seguras
+# para alguns casos em que faltam registro escritos:
+PRESUME_SE_QUE_NAO_ESTEJA_ATIVO = ("Presume-se que não seja associado ativo."
+                                   " Porém não temos informação sobre a data de desligamento.")
+
+# Cleiton Alves (padawan do Anchises, JUN/2011) não consta na planilha de associados.
+CMC.observa_desligamento(Cleiton, motivo=PRESUME_SE_QUE_NAO_ESTEJA_ATIVO)
+
+# Gustavo Lima, o "Coruja", (padawan do Anchises, NOV/2011) não consta na planilha de associados.
+CMC.observa_desligamento(Coruja, motivo=PRESUME_SE_QUE_NAO_ESTEJA_ATIVO)
+
+# Kátia Kitahara (co-fundadora) não consta na planilha de associados.
+CMC.observa_desligamento(Katia, motivo=PRESUME_SE_QUE_NAO_ESTEJA_ATIVO)
+
+# Spinola (co-fundador) não consta na planilha de associados.
+CMC.observa_desligamento(Spinola, motivo=PRESUME_SE_QUE_NAO_ESTEJA_ATIVO)
+
+# Nelson Brito não consta na planilha de associados!
+CMC.observa_desligamento(NelsonBrito, motivo=PRESUME_SE_QUE_NAO_ESTEJA_ATIVO)
+
+# Matheus Vral Vrech consta em vermelho na planilha de associados. O que significa?
+CMC.observa_desligamento(Vrech, motivo=PRESUME_SE_QUE_NAO_ESTEJA_ATIVO)
+
+# Emerson Monteiro Sobreiro (padawan do Fabricio Biazzotto, MAR/2017) não consta na planilha de associados
+CMC.observa_desligamento(EmersonMonteiro, motivo=PRESUME_SE_QUE_NAO_ESTEJA_ATIVO)
+
+# Erik Dataleak Ramos não consta na planilha de associados.
+CMC.observa_desligamento(ErikDataleak, motivo=PRESUME_SE_QUE_NAO_ESTEJA_ATIVO)
+
+# Mateus Zitelli "Gafanhoto" não consta na planilha de associados.
+CMC.observa_desligamento(Gafanhoto, motivo=PRESUME_SE_QUE_NAO_ESTEJA_ATIVO)
+
+# James Souza não consta na planilha de associados.
+CMC.observa_desligamento(JamesSouza, motivo=PRESUME_SE_QUE_NAO_ESTEJA_ATIVO)
+
+
+
+
+####### Outras pendencias ainda faltando esclarecer: #######
 #FIXME: Antonio Celso Cavalieri Lins de Souza não consta na planilha de associados. Aparentemente foi co-fundador.
-#FIXME: Cleiton Alves (padawan do Anchises, JUN/2011) não consta na planilha de associados.
-#FIXME: Gustavo Lima, o "Coruja", (padawan do Anchises, NOV/2011) não consta na planilha de associados.
-#FIXME: Emerson Monteiro Sobreiro (padawan do Fabricio Biazzotto, MAR/2017) não consta na planilha de associados.
-#FIXME: Emerson Marques Pedro não consta na planilha de associados.
-#FIXME: Erick Emiliano não consta na planilha de associados.
-#FIXME: Erik Dataleak Ramos não consta na planilha de associados.
 #FIXME: Qual o nome completo de 'Ferno', padawan de Mike Howard? Na planilha consta Fernando Molina, admissao:2014-10-21 e ainda ativo.
+#FIXME: O Mike Howard ainda é assciado hoje em dia?
 #FIXME: Qual é o nome real de Erik Dataleak Ramos?
 #FIXME: BrunoDJ e BrunoLP (Luiz de Paula) são a mesma pessoa?
 #FIXME: Quem é 'Buzz'?
 #FIXME: Carlos CM (do CTF) e 'CSM' são a mesma pessoa?
-#FIXME: Mateus Zitelli "Gafanhoto" não consta na planilha de associados.
-#FIXME: James Souza não consta na planilha de associados.
-#FIXME: James Raznor não consta na planilha de associados. Seria 'James Souza' a mesma pessoa?
-#FIXME: Kátia Kitahara não consta na planilha de associados.
 #FIXME: Quem é Juan? Qual o nome completo?
+#FIXME: James Raznor (padawan) não consta na planilha de associados. Seria 'James Souza' a mesma pessoa?
 #FIXME: Qual o nome completo da Karol, padawan da Priscila Gutierres?
 #FIXME: Ricardo Martins de Oliveira não consta em atas? Planilha diz: admissão em 2012-08-05 / desligamento em 2015-05-01.
-#FIXME: Spinola não consta na planilha de associados.
-#FIXME: Nelson Brito não consta na planilha de associados!
-#FIXME: Matheus Vral Vrech consta em vermelho na planilha de associados. O que significa?
 #FIXME: Constam também diversos outros nomes incompletos que precisariamos revisar/completar.
 
 
