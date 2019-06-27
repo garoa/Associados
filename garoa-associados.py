@@ -74,6 +74,7 @@ Gola = Pessoa("Bruno Gola", wiki="Brunogola")
 Guima = Pessoa("Ricardo Guimarães", apelido="Guima")
 Guisso = Pessoa("Fernando Guisso")
 GustavoRibeiro = Pessoa("Gustavo de Paula Ribeiro")
+GustavoVilela = Pessoa("Gustavo Vilela Boccia", wiki="Whoisgvb")
 Gutem = Pessoa("Gutemberg Nunes de Carvalho", apelido="Gutem")
 GutoMaia = Pessoa("Gustavo Maia Neto", apelido="Guto Maia")
 Haoji = Pessoa("Haoji") #nome?
@@ -1202,6 +1203,12 @@ CMC.observa_desligamento(GustavoRibeiro, motivo="Requisitou desligamento.")
 CMC.observa_desligamento(FabioH, motivo=("Em 12/FEV/2019, Fabio Hirano anunciou desligamento"
                                          " via lista de emails de associados."))
 
+# CMC de Maio de 2019 foi cancelado por falta de quorum
+
+# CMC de 18 de Junho de 2019:
+CMC.data("2019-06-18")
+FabricioBiazzotto.apresenta_padawan(GustavoVilela)
+
 
 ######## Ajustes baseados em suposições ########
 #             (em 27/Junho/2019)
@@ -1212,7 +1219,7 @@ PRESUME_SE_QUE_NAO_ESTEJA_ATIVO = ("Presume-se que não seja associado ativo."
                                    " Porém não temos informação sobre a data de desligamento.")
 
 # Cleiton Alves (padawan do Anchises, JUN/2011) não consta na planilha de associados.
-CMC.observa_desligamento(Cleiton, motivo=PRESUME_SE_QUE_NAO_ESTEJA_ATIVO)
+CMC.observa_desligamento(CleitonAlves, motivo=PRESUME_SE_QUE_NAO_ESTEJA_ATIVO)
 
 # Gustavo Lima, o "Coruja", (padawan do Anchises, NOV/2011) não consta na planilha de associados.
 CMC.observa_desligamento(Coruja, motivo=PRESUME_SE_QUE_NAO_ESTEJA_ATIVO)
